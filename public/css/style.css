@@ -1,0 +1,9 @@
+.roxo{
+    background-color: #563d7c !important;
+}
+.roxo a, .roxo .title {
+    color: #cbbde2 !important;
+}
+.roxo a:hover{
+    color: #fff !important;
+}
