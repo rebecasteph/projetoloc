@@ -16,3 +16,7 @@ a{
     color: #563d7c !important;
 }
 
+.foo {
+    /* border-right: thick dotted black; */
+    height:100vh; 
+}
