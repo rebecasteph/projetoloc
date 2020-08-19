@@ -6,44 +6,44 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    /* MENU ALUNO */
+/*     
     public function heroiAluno(){
-        return 'heroiAluno';
+        return view ('telaAluno.heroiAluno');
     }
     public function jogadoresAluno(){
-        return 'jogadoresAluno';
+        return view ('telaAluno.jogadoresAluno');
     }
     public function equipamentosAluno(){
-        return 'equipamentosAluno';
+        return view ('telaAluno.equipamentosAluno');
     }
     public function chefaoAluno(){
-        return 'chefaoAluno';
+        return view ('telaAluno.chefaoAluno');
     }
     public function missaoAluno(){
-        return 'missaoAluno';
+        return view ('telaAluno.missaoAluno');
     }
     public function chatAluno(){
-        return 'chatAluno';
+        return view ('telaAluno.chatAluno');
     }
 
-    /* MENU PROFESSOR */
+    
 
     public function alunosProf(){
-        return 'alunosProf';
+        return view ('telaProf.alunosProf');
     }
-    public function missoesProf(){
-        return 'missoesProf';
+    public function missaoProf(){
+        return view ('telaProf.missaoProf');
     }
     public function chefaoProf(){
-        return 'chefaoProf';
+        return view ('telaProf.chefaoProf');
     }
     public function relatorioProf(){
-        return 'relatorioProf';
+        return view ('telaProf.relatorioProf');
     }
     public function chatProf(){
-        return 'chatProf';
+        return view ('telaProf.chatProf');
     }
-
+ */
 
 
 

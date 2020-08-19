@@ -12,9 +12,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function index(){
-        view ('welcome');
+        return view ('welcome');
     }
     public function inicial(){
-        view('inicial');
+        return view('inicial');
     }
 }
