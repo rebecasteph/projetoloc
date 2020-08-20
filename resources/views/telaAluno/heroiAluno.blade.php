@@ -3,11 +3,16 @@
     <p>Nome Turma</p>
 </div>
 
-<div class="row">
+<div class="d-flex flex-md-row flex-column">
+
     <div class="col-md-4">
-        oi
+        <div class="">
+            <img src="" alt="">
+            <h6>Nome do Time</h6>
+        </div>
+        <h4>Nome do Aluno</h4>
     </div>
-    <div class="col-md-auto">
+    <div class="col-md-8">
         ola
     </div>
 </div>

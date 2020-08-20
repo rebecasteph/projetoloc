@@ -51,7 +51,7 @@
         </div>   
     </main> 
 </body>
-<footer class="fixed-bottom"style="background-color: #f2f2f2;">
+<footer style="background-color: #f2f2f2;"><!-- class="fixed-bottom" -->
     <div class="footer footer-copyright text-center py-3">© 2020 League of Class:
         <a href="#">www.leagueofclass.com.br</a>
     </div>

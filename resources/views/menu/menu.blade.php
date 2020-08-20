@@ -1,6 +1,6 @@
 
 <div class="col-md-2 pill-resp" style="background-color: #f2f2f2;"><!-- background-color: #cbbde2; -->
-  <div class="nav nav-pills flex-md-column nav-md-fill nav-md-justified mt-3" id="pills-tab" role="tablist" >
+  <div class="nav nav-pills flex-md-column nav-md-fill mb-3 mt-3" id="pills-tab" role="tablist" >
     <a class="nav-link active" id="heroiAluno-tab"    data-toggle="pill" href="#heroi" role="tab" aria-controls="heroiAluno" aria-selected="true">Herói</a>
     <a class="nav-link"   id="jogadoresAluno-tab"     data-toggle="pill" href="#jogadores" role="tab" aria-controls="jogadoresAluno" aria-selected="false">Jogadores</a>
     <a class="nav-link" id="equipamentosAluno-tab"    data-toggle="pill" href="#equipamentos" role="tab" aria-controls="equipamentosAluno" aria-selected="false">Equipamentos</a>
