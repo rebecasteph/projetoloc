@@ -1,12 +1,9 @@
-.roxo{
-    background-color: #563d7c !important;
-}
-.roxo a, .roxo .title {
-    color: #cbbde2 !important;
-}
-.roxo a:hover{
-    color: #fff !important;
-}
+.roxo{ background-color: #563d7c !important;}
+
+.roxo a, .roxo .title { color: #cbbde2 !important;}
+
+.roxo a:hover{ color: #fff !important;}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff!important;
     background-color: #563d7c !important;
@@ -24,18 +21,14 @@
     padding: .5rem 0rem .5rem 0rem;
     font-size: 1.05rem;
     margin: 0rem;
-
-
 }
-.nav-sec span{
-    color: #b8b4b4 !important;
-}
+.nav-sec span{ color: #b8b4b4 !important;}
 
-a{
-    color: #563d7c !important;
-}
+a{ color: #563d7c !important;}
 
-.foo {
-    /* border-right: thick dotted black; */
-    height:100vh; 
-}
+.foo { height:100vh;/* border-right: thick dotted black; */}
+
+.progress-bar-size { height: 15px; width: 75%; vertical-align: middle;}
+
+.xp {color: #28a745; margin-bottom: 0rem;}
+.pb {color: goldenrod}
