@@ -11,6 +11,25 @@
     color: #fff!important;
     background-color: #563d7c !important;
 }
+.nav-sec .nav-link.active{
+    background-color: #39294f !important;
+}
+.nav-sec{
+    border-bottom: 1px solid #dee2e6!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.nav-sec span, p{
+    padding: .5rem 0rem .5rem 0rem;
+    font-size: 1.05rem;
+    margin: 0rem;
+
+
+}
+.nav-sec span{
+    color: #b8b4b4 !important;
+}
 
 a{
     color: #563d7c !important;
