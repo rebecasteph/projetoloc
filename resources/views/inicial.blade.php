@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="League of Class" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/js/all.js" >
     <!-- Latest compiled and minified CSS -->
@@ -19,6 +19,7 @@
 
     <!-- local style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>League of Class</title>
 </head>
 <body>

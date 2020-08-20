@@ -1,6 +1,6 @@
 
-<div class="col-2 foo" style="background-color: #f2f2f2;"><!-- background-color: #cbbde2; -->
-  <div class="nav flex-column nav-pills mt-3" id="pills-tab" role="tablist" aria-orientation="vertical">
+<div class="col-md-2 pill-resp" style="background-color: #f2f2f2;"><!-- background-color: #cbbde2; -->
+  <div class="nav nav-pills flex-md-column nav-md-fill nav-md-justified mt-3" id="pills-tab" role="tablist" >
     <a class="nav-link active" id="heroiAluno-tab"    data-toggle="pill" href="#heroi" role="tab" aria-controls="heroiAluno" aria-selected="true">Herói</a>
     <a class="nav-link"   id="jogadoresAluno-tab"     data-toggle="pill" href="#jogadores" role="tab" aria-controls="jogadoresAluno" aria-selected="false">Jogadores</a>
     <a class="nav-link" id="equipamentosAluno-tab"    data-toggle="pill" href="#equipamentos" role="tab" aria-controls="equipamentosAluno" aria-selected="false">Equipamentos</a>
@@ -9,7 +9,7 @@
     <a class="nav-link" id="chatAluno-tab"            data-toggle="pill" href="#chat" role="tab" aria-controls="chatAluno" aria-selected="false">Chat</a>
   </div>
 </div>
-<div class="col-10 p-0">
+<div class="col-md-10 p-0 foo">
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="heroi" role="tabpanel" aria-labelledby="heroiAluno-tab">@include('telaAluno.heroiAluno')</div>
     <div class="tab-pane fade" id="jogadores" role="tabpanel" aria-labelledby="jogadoresAluno-tab">@include('telaAluno.jogadoresAluno')</div>

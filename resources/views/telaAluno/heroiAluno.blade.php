@@ -1,13 +1,13 @@
 
-<div class="nav nav-sec">
+<div class="nav nav-sec text-md-center">
     <p>Nome Turma</p>
 </div>
-<div>
+
 <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
         oi
     </div>
-    <div class="col-auto">
+    <div class="col-md-auto">
         ola
     </div>
 </div>
