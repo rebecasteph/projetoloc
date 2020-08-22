@@ -16,8 +16,8 @@
   <!-- JOGADORES -->
   <div class="tab-pane fade show active" id="jogadores" role="tabpanel" aria-labelledby="jogadores-tab">
     <div class=" mb-1">
-        <img class="escudo-elo-md" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-        <h3 class=" pt-3">Nome do Time</h3>
+        <img class="escudo-elo-md d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
+        <h3 class="d-inline ">Nome do Time</h3>
     </div>
 
 
