@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/js/all.js" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -45,16 +46,19 @@
             </ul>
         </div>
     </nav>
-    <main class="container-fluid">
-        <div class="row" style="height: 100%;">
+    <div class="container-fluid">
+        <div class="row" >
             @include('menu.menu')
-        </div>   
-    </main> 
-</body>
-<footer style="background-color: #f2f2f2;"><!-- class="fixed-bottom" -->
-    <div class="footer footer-copyright text-center py-3">© 2020 League of Class:
-        <a href="#">www.leagueofclass.com.br</a>
+        </div>
+        
+        
     </div>
-</footer>
+    <footer style="background-color: #f2f2f2; width: 100%; position: relative;"><!-- class="fixed-bottom" -->
+        <div class="footer footer-copyright text-center py-3">© 2020 League of Class:
+            <a href="#">www.leagueofclass.com.br</a>
+        </div>
+    </footer>    
+</body>
+
 
 </html>

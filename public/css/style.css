@@ -13,8 +13,8 @@
 }
 .nav-sec{
     border-bottom: 1px solid #dee2e6!important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 15px;
 }
 .nav-sec span, p{
@@ -26,9 +26,29 @@
 
 a{ color: #563d7c !important;}
 
-.foo { height:100vh;/* border-right: thick dotted black; */}
+.foo { height:90vh;/* border-right: thick dotted black; */}
 
-.progress-bar-size { height: 15px; width: 75%; vertical-align: middle;}
+.escudo-elo-sm {height: 20px; width: 20px;}
 
-.xp {color: #28a745; margin-bottom: 0rem;}
+.progress-bar-size { height: 7px; width: 70%; vertical-align: middle;}
+
+.xp {color: gold ; margin-bottom: 0rem;} /* #28a745 */
 .pb {color: goldenrod}
+
+.atv{color: darkgrey;}
+.linha-atv{border-bottom: 1px solid #dee2e6;}
+.linha-atv span{ margin-left: 5px;}
+.caixa-atv{
+    border: 1px solid #dee2e6;
+    padding-top: 5px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px;
+    border-radius: 5px;
+    max-height: 200px;  
+}
+.area-heroi{   
+    width: 100%;
+    height: 80vh;
+    background-image: url('/img/floresta.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
