@@ -1,5 +1,5 @@
 
-<div class="col-md-2 pill-resp" style="background-color: #f2f2f2;"><!-- background-color: #cbbde2; -->
+<div class="col-md-2 pill-resp menu-lateral"><!-- background-color: #cbbde2; -->
   <div class="nav nav-pills flex-md-column nav-md-fill mb-3 mt-3" id="pills-tab" role="tablist" >
     <a class="nav-link active" id="heroiAluno-tab"    data-toggle="pill" href="#heroi" role="tab" aria-controls="heroiAluno" aria-selected="true">Herói</a>
     <a class="nav-link"   id="jogadoresAluno-tab"     data-toggle="pill" href="#jogadores" role="tab" aria-controls="jogadoresAluno" aria-selected="false">Jogadores</a>
@@ -9,7 +9,7 @@
     <a class="nav-link" id="chatAluno-tab"            data-toggle="pill" href="#chat" role="tab" aria-controls="chatAluno" aria-selected="false">Chat</a>
   </div>
 </div>
-<div class="col-md-10 p-0 foo">
+<div class="col-md-10 p-0 ml-auto">
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="heroi" role="tabpanel" aria-labelledby="heroiAluno-tab">@include('telaAluno.heroiAluno')</div>
     <div class="tab-pane fade" id="jogadores" role="tabpanel" aria-labelledby="jogadoresAluno-tab">@include('telaAluno.jogadoresAluno')</div>
@@ -19,3 +19,8 @@
     <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chatAluno-tab">@include('telaAluno.chatAluno')</div>
   </div>
 </div>
+<footer>
+  <div class="text-center py-3">© 2020 League of Class:
+    <a href="#">www.leagueofclass.com.br</a>
+  </div>
+</footer>

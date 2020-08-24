@@ -6,13 +6,13 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
@@ -24,7 +24,7 @@
     <title>League of Class</title>
 </head>
 <body>
-    <nav class="roxo navbar navbar-expand-lg navbar-light">
+    <nav class="roxo navbar navbar-expand-lg navbar-light fixed-top" >
         <a class="navbar-brand" href="\">League of Class</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -47,17 +47,10 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="row" >
+        <div class="tela-geral row" >
             @include('menu.menu')
         </div>
-        
-        
     </div>
-    <footer style="background-color: #f2f2f2; width: 100%; position: relative;"><!-- class="fixed-bottom" -->
-        <div class="footer footer-copyright text-center py-3">© 2020 League of Class:
-            <a href="#">www.leagueofclass.com.br</a>
-        </div>
-    </footer>    
 </body>
 
 
