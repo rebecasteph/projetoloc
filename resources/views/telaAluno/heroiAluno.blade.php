@@ -9,7 +9,7 @@
         <div class="mt-3 text-center">
             <div class="align-middle mb-1">
                 <img class="escudo-elo-sm d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <h6 class="d-inline ">Nome do Time</h6>
+                <h6 class="d-inline ">Nome da Equipe</h6>
                 <img class="escudo-elo-sm d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
             </div>
             <div class="mb-2">

@@ -20,7 +20,6 @@
   </div>
 </div>
 <footer>
-  <div class="text-center py-3">© 2020 League of Class:
-    <a href="#">www.leagueofclass.com.br</a>
+  <div class="text-center py-3">© 2020 League of Class
   </div>
 </footer>

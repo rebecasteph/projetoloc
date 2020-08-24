@@ -15,16 +15,16 @@
 <div class="tab-content" id="pills-tabContent">
 
   <!-- JOGADORES -->
-  <div class="tab-pane fade" id="jogadores-heroi" role="tabpanel" aria-labelledby="jogadores-tab">
+  <div class="tab-pane p-4 fade" id="jogadores-heroi" role="tabpanel" aria-labelledby="jogadores-tab">
     jogadores
   </div>
 
   <!-- EQUIPES -->
-  <div class="tab-pane fade p-4 show active" id="equipe" role="tabpanel" aria-labelledby="equipe-tab">
+  <div class="tab-pane p-4 fade show active" id="equipe" role="tabpanel" aria-labelledby="equipe-tab">
     <div class="tabela-equipe">
       <div class=" mb-1">
         <img class="escudo-elo-md d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-        <h3 class="d-inline ">Nome do Time 1</h3>
+        <h3 class="d-inline ">Nome da Equipe 1</h3>
       </div>
       <table class="table table-hover">
         <thead>
@@ -76,7 +76,7 @@
     <div class="tabela-equipe">
       <div class=" mb-1">
         <img class="escudo-elo-md d-inline" src="{!!asset('img/elos/elo_Guerreiro.png')!!}" alt="elo">
-        <h3 class="d-inline ">Nome do Time 2</h3>
+        <h3 class="d-inline ">Nome da Equipe 2</h3>
       </div>
       <table class="table table-hover">
         <thead>
@@ -131,8 +131,103 @@
   </div>
 
   <!-- TURMA -->
-  <div class="tab-pane fade" id="turma" role="tabpanel" aria-labelledby="turma-tab">
-    <h3>turma</h3>
+  <div class="tab-pane p-4 fade" id="turma" role="tabpanel" aria-labelledby="turma-tab">
+    <h3>Ranking da Turma 1</h3>
+    <br>
+    <table class="table table-sm table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col" class="elo-equipe-turma">Equipe</th>
+            <th scope="col" class="nivel">Nível</th>            
+            <th scope="col" class="xp">XP</th>
+            <th scope="col" class="pb">PB</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <th scope="row">1</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mitico.png')!!}" alt="elo"></th>
+            <td class="nivel">6</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">88</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Lenda.png')!!}" alt="elo"></th>
+            <td class="nivel">6</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">88</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo"></th>
+            <td class="nivel">4</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">55</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mestre.png')!!}" alt="elo"></th>
+            <td class="nivel">3</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">65</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Elite.png')!!}" alt="elo"></th>
+            <td class="nivel">3</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">65</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Roberta</td>
+            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Guerreiro.png')!!}" alt="elo"></th>
+            <td class="nivel">3</td>
+            <td class="xp">
+              <div class="d-inline-flex progress progress-bar-size mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+            <td class="pb">65</td>
+          </tr>
+
+
+
+
+
+
+        </tbody>
+      </table>
+
   </div>
 
 </div>
