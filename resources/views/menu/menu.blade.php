@@ -11,7 +11,8 @@
 </div>
 <div class="col-md-10 p-0 ml-auto">
   <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="heroi" role="tabpanel" aria-labelledby="heroiAluno-tab">@include('telaAluno.heroiAluno')</div>
+    <div class="tab-pane fade show active" id="heroi" role="tabpanel" aria-labelledby="heroiAluno-tab">
+      <div class="nav nav-sec text-md-center"><p>Nome Turma</p></div>@include('telaAluno.heroiAluno')</div>
     <div class="tab-pane fade" id="jogadores" role="tabpanel" aria-labelledby="jogadoresAluno-tab">@include('telaAluno.jogadoresAluno')</div>
     <div class="tab-pane fade" id="equipamentos" role="tabpanel" aria-labelledby="equipamentosAluno-tab">@include('telaAluno.equipamentosAluno')</div>
     <div class="tab-pane fade" id="fase-do-chefao" role="tabpanel" aria-labelledby="chefaoAluno-tab">@include('telaAluno.chefaoAluno')</div>

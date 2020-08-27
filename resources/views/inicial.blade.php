@@ -20,7 +20,6 @@
 
     <!-- local style -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
     <title>League of Class</title>
 </head>
 <body>

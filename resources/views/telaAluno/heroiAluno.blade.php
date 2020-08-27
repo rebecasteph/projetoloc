@@ -1,7 +1,4 @@
 
-<div class="nav nav-sec text-md-center">
-    <p>Nome Turma</p>
-</div>
 
 <div class="d-flex flex-md-row flex-column">
 
