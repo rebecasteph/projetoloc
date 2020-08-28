@@ -30,7 +30,7 @@
         </div>
         <!-- --------------------- -->
         <div class="mb-2">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="chapeu-tab" data-toggle="tab" href="#chapeu" role="tab" aria-controls="chapeu" aria-selected="true"><i class="fas fa-hat-cowboy"></i></a>
                 </li>
