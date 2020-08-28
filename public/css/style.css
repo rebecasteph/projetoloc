@@ -7,7 +7,7 @@ footer{
     margin-top:25px;
 }
 
-.tab-pane{ min-height: 83vh;}
+.tab-pane-tela{ min-height: 83vh;}
 
 @media (min-width: 992px) { 
     .menu-lateral {
@@ -73,4 +73,11 @@ a{ color: #563d7c !important;}
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.icon-sm {height: 16.8px; width: 20px; color: #563d7c !important;}
+
+.aba-equip{
+    padding-top: 5px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px;
+    height: 200px;  
 }
