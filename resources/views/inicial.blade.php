@@ -22,6 +22,7 @@
 
     <!-- local style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
     <title>League of Class</title>
 </head>
 <body>
