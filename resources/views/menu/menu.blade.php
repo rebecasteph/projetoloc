@@ -18,7 +18,8 @@
       <div class="nav nav-sec text-md-center"><p>Loja de Equipamentos</p></div>@include('telaAluno.equipamentos.equipamentosAluno')</div>
     <div class="tab-pane-tela tab-pane fade" id="fase-do-chefao" role="tabpanel" aria-labelledby="chefaoAluno-tab">@include('telaAluno.chefao.chefaoAluno')</div>
     <div class="tab-pane-tela tab-pane fade" id="missao" role="tabpanel" aria-labelledby="missaoAluno-tab">@include('telaAluno.missao.missaoAluno')</div>
-    <div class="tab-pane-tela tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chatAluno-tab">@include('telaAluno.chatAluno')</div>
+    <div class="tab-pane-tela tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chatAluno-tab">
+      <div class="nav nav-sec text-md-center"><p>Contatos Recentes</p></div>@include('telaAluno.chatAluno')</div>
   </div>
 </div>
 <footer>
