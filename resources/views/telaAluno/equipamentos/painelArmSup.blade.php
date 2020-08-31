@@ -3,23 +3,38 @@
 
     <a href="#">
         <img src="{!!asset('img/icons/arm-sup.png')!!}" class="item-img" alt="">
-        <span class="badge ">Primary</span>
+        <div class="tags has-addons justify-content-center">
+            <span class="tag is-dark">PB</span>
+            <span class="tag is-warning">333</span>
+        </div>
     </a>
     <a href="#">
         <img src="{!!asset('img/icons/arm-sup.png')!!}" class="item-img" alt="">
-        <span class="badge ">Primary</span> 
+        <div class="tags has-addons justify-content-center">
+            <span class="tag is-dark">PB</span>
+            <span class="tag">333</span>
+        </div>
     </a>
     <a href="#">
         <img src="{!!asset('img/icons/arm-sup.png')!!}" class="item-img" alt="">
-        <span class="badge ">Primary</span>
+        <div class="tags has-addons justify-content-center">
+            <span class="tag is-dark">PB</span>
+            <span class="tag">333</span>
+        </div>
     </a>
     <a href="#">
         <img src="{!!asset('img/icons/arm-sup.png')!!}" class="item-img" alt="">
-        <span class="badge ">Primary</span>
+        <div class="tags has-addons justify-content-center">
+            <span class="tag is-dark">PB</span>
+            <span class="tag">333</span>
+        </div>
     </a>
     <a href="#">
         <img src="{!!asset('img/icons/arm-sup.png')!!}" class="item-img" alt="">
-        <span class="badge ">Primary</span>
+        <div class="tags has-addons justify-content-center">
+            <span class="tag is-dark">PB</span>
+            <span class="tag">333</span>
+        </div>
     </a>
 
 

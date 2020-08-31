@@ -87,15 +87,17 @@ a{ color: #563d7c !important;}
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    margin-left:auto;
-    margin-right:auto;
   }
-  
+
   .item-img {
     width: 60%;
     height: 60%;
     object-fit: cover;
-    display: block; 
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .equip-item {
