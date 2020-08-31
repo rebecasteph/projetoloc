@@ -50,8 +50,8 @@
                     <a class="nav-link" id="adereco-tab" data-toggle="tab" href="#adereco" role="tab" aria-controls="adereco" aria-selected="false"><i class="fas fa-glasses"></i></a>
                 </li>
             </ul>
-            <div class="tab-content" id="caixa-equipamentos">
-                <div class="aba-equip tab-pane fade show active" id="chapeu" role="tabpanel" aria-labelledby="chapeu-tab">.1..</div>
+            <div class="tab-content">
+                <div class="aba-equip tab-pane fade show active" id="chapeu" role="tabpanel" aria-labelledby="chapeu-tab">@include('telaAluno.equipamentos.painelChapeu')</div>
                 <div class="aba-equip tab-pane fade" id="arm-sup" role="tabpanel" aria-labelledby="arm-sup-tab">.2..</div>
                 <div class="aba-equip tab-pane fade" id="arm-inf" role="tabpanel" aria-labelledby="arm-inf-tab">.3..</div>
                 <div class="aba-equip tab-pane fade" id="arma" role="tabpanel" aria-labelledby="arma-tab">..5.</div>

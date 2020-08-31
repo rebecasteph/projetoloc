@@ -78,6 +78,35 @@ a{ color: #563d7c !important;}
 .icon-sm {height: 16.8px; width: 20px; color: #563d7c !important;}
 
 .aba-equip{
-    padding-top: 5px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px;
-    height: 200px;  
+    padding-top: 15px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px;
+    height: 200px; 
 }
+
+.grid-itens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .item-img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    display: block; 
+  }
+  
+  .equip-item {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+
+  
