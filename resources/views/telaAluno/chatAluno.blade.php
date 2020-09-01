@@ -75,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="mesgs">
+    <div class="mesgs tela-dir">
         <div class="msg_history">
             <div class="incoming_msg">
                 <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
