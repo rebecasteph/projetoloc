@@ -21,9 +21,9 @@
 
     
       <div class="inbox_people">
-        <div class="inbox_chat">
+        <div class="inbox_chat nav nav-tab" role="tablist">
 
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-1" href="#heroi-1" role="tab" aria-controls="heroiAluno-1" aria-selected="true">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -35,7 +35,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list" data-toggle="tab" id="heroiAluno-tab-2" href="#heroi-2" role="tab" aria-controls="heroiAluno-2" aria-selected="false">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-3" role="tab" aria-controls="heroiAluno-3" aria-selected="false">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-4" role="tab" aria-controls="heroiAluno-4" aria-selected="false">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -71,7 +71,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-5" role="tab" aria-controls="heroiAluno-5" aria-selected="false">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -83,7 +83,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
+          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-6" role="tab" aria-controls="heroiAluno-6" aria-selected="false">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -95,78 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Sunil Rajput <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Bráulio Freiria <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Lineu Campelo <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Arnaldo Lagoa<span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Bruno Villaça <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="chat_list active_chat">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Sunil Rajput <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
       </div>  
