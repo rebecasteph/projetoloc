@@ -9,7 +9,7 @@
                 <div class="chat_ib">
                     <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
                     <p>Test, which is a new approach to have all solutions 
-                    astrology under one roof.</p>
+                    astrology under one roof.</p> 
                 </div>
                 </div>
             </div>

@@ -17,18 +17,18 @@
   <!-- JOGADORES -->
   <div class="tab-pane fade" id="jogadores-heroi" role="tabpanel" aria-labelledby="jogadores-tab">
   <div class="container-fluid">
-    <div class="row inbox_msg">
+    <div class="row">
 
     
   
-      <div class="inbox_people"><!-- background-color: #cbbde2; -->
-        <div class="inbox_chat" role="tablist" >
-          <a class="chat_listchat_people active" id="heroiAluno-tab-1"    data-toggle="pill" href="#heroi-1" role="tab" aria-controls="heroiAluno-1" aria-selected="true">Aluno 1</a>
-          <a class="chat_list chat_people"   id="heroiAluno-tab-2"     data-toggle="pill" href="#heroi-2" role="tab" aria-controls="heroiAluno-2" aria-selected="false">Aluno 2</a>
-          <a class="chat_list chat_people" id="heroiAluno-tab-3"    data-toggle="pill" href="#heroi-3" role="tab" aria-controls="heroiAluno-3" aria-selected="false">Aluno 3</a>
-          <a class="chat_list chat_people" id="heroiAluno-tab-4"    data-toggle="pill" href="#heroi-4" role="tab" aria-controls="heroiAluno-4" aria-selected="false">Aluno 4</a>
-          <a class="chat_list chat_people"   id="heroiAluno-tab-5"     data-toggle="pill" href="#heroi-5" role="tab" aria-controls="heroiAluno-5" aria-selected="false">Aluno 5</a>
-          <a class="chat_list chat_people" id="heroiAluno-tab-6"    data-toggle="pill" href="#heroi-6" role="tab" aria-controls="heroiAluno-6" aria-selected="false">Aluno 6</a>
+      <div class="col-md-2 pill-resp lista-lateral-alunos border-left p-0"><!-- background-color: #cbbde2; -->
+        <div class="nav nav-pills flex-md-column nav-md-fill mb-3 mt-3" id="pills-tab-alunos" role="tablist" >
+          <a class="nav-link active" id="heroiAluno-tab-1"    data-toggle="pill" href="#heroi-1" role="tab" aria-controls="heroiAluno-1" aria-selected="true">Aluno 1</a>
+          <a class="nav-link"   id="heroiAluno-tab-2"     data-toggle="pill" href="#heroi-2" role="tab" aria-controls="heroiAluno-2" aria-selected="false">Aluno 2</a>
+          <a class="nav-link" id="heroiAluno-tab-3"    data-toggle="pill" href="#heroi-3" role="tab" aria-controls="heroiAluno-3" aria-selected="false">Aluno 3</a>
+          <a class="nav-link" id="heroiAluno-tab-4"    data-toggle="pill" href="#heroi-4" role="tab" aria-controls="heroiAluno-4" aria-selected="false">Aluno 4</a>
+          <a class="nav-link"   id="heroiAluno-tab-5"     data-toggle="pill" href="#heroi-5" role="tab" aria-controls="heroiAluno-5" aria-selected="false">Aluno 5</a>
+          <a class="nav-link" id="heroiAluno-tab-6"    data-toggle="pill" href="#heroi-6" role="tab" aria-controls="heroiAluno-6" aria-selected="false">Aluno 6</a>
         </div>
       </div>
       <div class="col-md-10 p-0">
