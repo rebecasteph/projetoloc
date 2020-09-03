@@ -6,6 +6,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'Controller@index');
 Route::get('/inicial', 'Controller@inicial');
 
+Route::group(['prefix' => 'missao-aluno'],function(){
+    Route::get('/nome-missao','MissaoController@missaoAluno')            -> name ('telaMissao');
+
+
+
+});
+
 /* Route::group(['prefix' => 'nome-aluno'], function(){
     Route::get('/meu-heroi','MenuController@heroiAluno')            -> name ('heroiAluno');
     Route::get('/jogadores','MenuController@jogadoresAluno')        -> name('jogadoresAluno');
