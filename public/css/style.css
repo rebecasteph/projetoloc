@@ -115,5 +115,9 @@ a{ color: #563d7c !important;}
     /* grid-column: 1 / span 2;  */
     /* grid-row: 1 / span 2; */
   }
-.caixa-missao{margin: 0 auto;}
-  
+  .caixa-missao {
+    display: flex;
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* cetraliza verticalmente */
+    padding: 0px;
+}
