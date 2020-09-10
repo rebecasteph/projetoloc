@@ -7,7 +7,7 @@ Route::get('/', 'Controller@index');
 Route::get('/inicial', 'Controller@inicial');
 
 Route::group(['prefix' => 'missao-aluno'],function(){
-    Route::get('/nome-missao','MissaoController@missaoAluno')            -> name ('telaMissao');
+    Route::get('/nome-missao','MissaoController@missaoAluno');
 
 
 

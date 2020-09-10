@@ -1,7 +1,7 @@
 <div class="container w-75" style="margin: 0 auto;">
 
     <br>
-    <a href="{{url('telaMissao')}}" class=" card p-0 tile is-child notification is-link">
+    <a href="missao-aluno/nome-missao" class=" card p-0 tile is-child notification is-link">
         <div class="card-header d-flex flex-md-row flex-column">
             <div class="col-11">
                 <h5 class="card-title mb-2">Nome da Missão</h5>
