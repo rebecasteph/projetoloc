@@ -121,3 +121,12 @@ a{ color: #563d7c;}
     justify-content: center; /* cetraliza verticalmente */
     padding: 0px;
 }
+.area-missao{   
+    width: 100%;
+    height: 90vh;
+    background-image: url('/img/mapa-missao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

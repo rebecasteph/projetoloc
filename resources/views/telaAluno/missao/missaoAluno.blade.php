@@ -25,15 +25,5 @@
         <h5 class="card-header p-3">Nome da Missão</h5>
     </a>
 
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-        ...
-        </div>
-    </div>
-    </div>
-
-    <!-- href="missao-aluno/nome-missao" -->
-    <!-- data-toggle="modal" data-target=".bd-example-modal-xl" -->
 
 </div>
