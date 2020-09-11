@@ -9,6 +9,7 @@
     <span>/Nome do Desafio</span>
 </div>
 <div class="area-missao">
+    <span class="item-missao">item-missao</span>
 
 
 
