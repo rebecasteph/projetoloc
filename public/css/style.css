@@ -47,7 +47,7 @@ footer{
 }
 .nav-sec span{ color: #b8b4b4 !important;}
 
-a:not(.card){ color: #563d7c !important;}
+a{ color: #563d7c;}
 
 .menu-lateral {background-color: #f2f2f2; border-right: 1px solid #c4c4c4;}
 
@@ -96,7 +96,7 @@ a:not(.card){ color: #563d7c !important;}
 
   .item-img {
     width: 60%;
-    height: 60%;
+    /* height: 60%; */
     object-fit: cover;
     display: block;
     margin-top: 8px;
