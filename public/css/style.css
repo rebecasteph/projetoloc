@@ -56,10 +56,10 @@ a{ color: #563d7c;}
 
 .progress-bar-size { height: 7px; width: 70%; vertical-align: middle;}
 
-.xp {color: gold ; margin-bottom: 0rem;} /* #28a745 */
-.pb {color: goldenrod; text-align: center;}
-.nivel {color: #28a745; text-align: center;}
-.elo-equipe-turma{ text-align: center; }
+.xp {color: gold !important; margin-bottom: 0rem !important; } /* #28a745 */
+.pb {color: goldenrod !important; text-align: center !important;}
+.nivel {color: #28a745 !important; text-align: center !important;}
+.elo-equipe-turma{ text-align: center !important; }
 
 .atv{color: darkgrey;}
 .linha-atv{border-bottom: 1px solid #dee2e6;}
