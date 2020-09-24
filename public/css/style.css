@@ -25,8 +25,8 @@ footer{
 }
 
 .roxo{ background-color: #563d7c !important;}
-.roxo a, .roxo .title { color: #cbbde2 !important;}
-.roxo a:hover{ color: #fff !important;}
+.roxo a, .roxo .title,.roxo span { color: #cbbde2 !important;}
+.roxo a:hover, .roxo span:hover, .icon-tarefa{ color: #fff !important;}
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff!important;
@@ -47,7 +47,7 @@ footer{
 }
 .nav-sec span{ color: #b8b4b4 !important;}
 
-a{ color: #563d7c;}
+a, .nome-tarefa{ color: #563d7c;}
 
 .menu-lateral {background-color: #f2f2f2; border-right: 1px solid #c4c4c4;}
 
@@ -132,5 +132,19 @@ padding: 0px;
 
 .item-missao{
     position: absolute;
-    top: 30%; left: 5%;
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* cetraliza verticalmente */
+
+}
+
+.item-missao .icon-tarefa{
+    height: 2.8rem; width: 2.8rem;
+    font-size: 1.5rem;
+    
+}
+
+.item-missao .nome-tarefa{
+    font-size: 0.8rem;
+    width: 3.5rem;
+    word-break: break-word;
 }
