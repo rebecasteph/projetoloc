@@ -17,7 +17,9 @@
 </div>
 <div class="area-missao">
     <!-- Botão para acionar modal -->
+    <a href="{{ url('/inicial') }}">
     <button type="button" class="roxo btn btn-primary"><span class="fas fa-angle-double-left"></span></button>
+    </a>
 
     <div class="item-missao" style="top: 30%; left: 10%;">
         <span class="d-block icon-tarefa roxo rounded-circle fas fa-home p-2 mx-auto text-center" data-toggle="modal" data-target="#modalExemplo"></span>
