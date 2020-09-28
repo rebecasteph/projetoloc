@@ -78,13 +78,9 @@
                 </div>
                 -->
                 <div class="links">
-                    <a href="{{ url('/inicial') }}">Iniciar</a>
-                    <a href="">News</a>
+                    <a href="{{ url('/inicial') }}">Login</a>
                     <a href="">Blog</a>
-                    <a href="">Nova</a>
-                    <a href="">Forge</a>
-                    <a href="">Vapor</a>
-                    <a href="">GitHub</a>
+                    <a href="">Sobre nós</a>
                 </div>
             </div>
         </div>

@@ -27,6 +27,7 @@
     </div>
 
     <div class="item-missao" style="top: 50%; left: 20%;">
+        <span class="d-block icon-tarefa roxo rounded-circle fas fa-map-marker-alt p-2 mx-auto text-center" data-toggle="modal" data-target="#modalExemplo"></span>
         <span class="d-block mx-auto text-center font-weight-bold nome-tarefa">Nome 2 da Tarefa</span>
     </div>
 
