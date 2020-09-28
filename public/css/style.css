@@ -27,9 +27,13 @@ footer{
 
 .none-mobile{display:none;}
 
-.roxo{ background-color: #563d7c !important;}
-.roxo a, .roxo .title,.roxo span { color: #cbbde2 !important;}
-.roxo a:hover, .roxo span:hover, .icon-tarefa{ color: #fff !important;}
+.roxo, .btn-roxo, .icon-tarefa{ background-color: #563d7c !important;}
+.btn-roxo:hover,.icon-tarefa:hover { background-color: #2f2143 !important;}
+.roxo a, .roxo .title,.roxo span, .btn-roxo, .icon-tarefa { color: #cbbde2 !important;}
+.roxo a:hover, .roxo span:hover,.btn-roxo:hover, .icon-tarefa:hover{ color: #fff !important;}
+a, .nome-tarefa{ color: #563d7c;}
+#nav-tab-atv .nav-link:hover, .active{color: #2f2143 !important;}
+
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff!important;
@@ -49,8 +53,6 @@ footer{
     margin: 0rem;
 }
 .nav-sec span{ color: #b8b4b4 !important;}
-
-a, .nome-tarefa{ color: #563d7c;}
 
 .menu-lateral {background-color: #f2f2f2; border-right: 1px solid #c4c4c4;}
 
