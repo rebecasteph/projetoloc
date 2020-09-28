@@ -34,21 +34,49 @@
     
     <!-- Modal -->
     <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Título da Atividade</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar mudanças</button>
-            </div>
+                <div class="modal-header">
+                    <div class="col-auto">
+                        <h5 class="modal-title" id="exampleModalLabel">Título da Atividade</h5>
+                        <div class="row show-moblie">
+                            <div class="col-auto tags has-addons mb-0">
+                                <span class="tag is-dark mb-0">XP</span>
+                                <span class="tag is-success mb-0">15</span>
+                            </div>
+                            <div class="col-auto tags has-addons mb-0">
+                                <span class="tag is-dark mb-0">PB</span>
+                                <span class="tag is-success mb-0">33</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="row justify-content-end">
+                            <div class="col-auto tags has-addons mb-0 none-mobile">
+                                <span class="tag is-dark mb-0">XP</span>
+                                <span class="tag is-success mb-0">15</span>
+                            </div>
+                            <div class="col-auto tags has-addons mb-0 none-mobile">
+                                <span class="tag is-dark mb-0">PB</span>
+                                <span class="tag is-success mb-0">33</span>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
             </div>
         </div>
     </div>
