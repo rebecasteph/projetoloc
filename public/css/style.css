@@ -32,7 +32,7 @@ footer{
 .roxo a, .roxo .title,.roxo span, .btn-roxo, .icon-tarefa { color: #cbbde2 !important;}
 .roxo a:hover, .roxo span:hover,.btn-roxo:hover, .icon-tarefa:hover{ color: #fff !important;}
 a, .nome-tarefa{ color: #563d7c;}
-#nav-tab-atv .nav-link:hover, .active{color: #2f2143 !important;}
+#nav-tab-atv .nav-link:hover,#nav-tab-atv .nav-link .active{color: #2f2143 !important;}
 
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
