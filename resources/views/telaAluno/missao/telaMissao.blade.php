@@ -35,7 +35,7 @@
     <!-- Modal -->
     <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content" style="height: 65vh">
+            <div class="modal-content">
                 <div class="modal-header">
                     <div class="col-auto">
                         <h5 class="modal-title">Título da Atividade</h5>
@@ -70,7 +70,7 @@
 
                     </div>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="height: 70vh">
                     @include('telaAluno.missao.painelAtvAluno')
                 </div>
                 <div class="modal-footer">
