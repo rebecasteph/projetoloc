@@ -35,10 +35,10 @@
     <!-- Modal -->
     <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content" style="height: 65vh">
                 <div class="modal-header">
                     <div class="col-auto">
-                        <h5 class="modal-title" id="exampleModalLabel">Título da Atividade</h5>
+                        <h5 class="modal-title">Título da Atividade</h5>
                         <div class="row show-moblie">
                             <div class="col-auto tags has-addons mb-0">
                                 <span class="tag is-dark mb-0">XP</span>

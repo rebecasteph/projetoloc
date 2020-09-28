@@ -23,9 +23,11 @@ footer{
     .chat_ib { padding: 0 0 0 15px !important;}
     .show-moblie{display:none;}
     .none-mobile{display:flex !important;}
+    .coment_img{width: 4% !important;}
 }
 
 .none-mobile{display:none;}
+.coment_img{width: 15%;}
 
 .roxo, .btn-roxo, .icon-tarefa{ background-color: #563d7c !important;}
 .btn-roxo:hover,.icon-tarefa:hover { background-color: #2f2143 !important;}
