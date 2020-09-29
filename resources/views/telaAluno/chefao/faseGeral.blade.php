@@ -24,36 +24,6 @@
     <div class="modal fade" id="quest-fase" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                    <div class="col-auto">
-                        <h5 class="modal-title">Nome da Fase</h5>
-                        <div class="row show-moblie">
-                            <div class="col-auto tags has-addons mb-0">
-                                <span class="tag is-dark mb-0">XP</span>
-                                <span class="tag is-warning mb-0">33</span>
-                            </div>
-                            <div class="col-auto tags has-addons mb-0">
-                                <span class="tag is-dark mb-0">HP</span>
-                                <span class="tag is-danger mb-0">15</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="row justify-content-end">
-                            <div class="col-auto tags has-addons mb-0 none-mobile">
-                                <span class="tag is-dark mb-0">PB</span>
-                                <span class="tag is-warning mb-0">33</span>
-                            </div>
-                            <div class="col-auto tags has-addons mb-0 none-mobile">
-                                <span class="tag is-dark mb-0">XP</span>
-                                <span class="tag is-danger mb-0">15</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
                 @include('telaAluno.chefao.painelQuestFase')
             </div>
         </div>

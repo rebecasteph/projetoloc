@@ -1,3 +1,33 @@
+<div class="modal-header">
+    <div class="col-auto">
+        <h5 class="modal-title">Nome da Fase</h5>
+        <div class="row show-moblie">
+            <div class="col-auto tags has-addons mb-0">
+                <span class="tag is-dark mb-0">XP</span>
+                <span class="tag is-warning mb-0">33</span>
+            </div>
+            <div class="col-auto tags has-addons mb-0">
+                <span class="tag is-dark mb-0">HP</span>
+                <span class="tag is-danger mb-0">15</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="row justify-content-end">
+            <div class="col-auto tags has-addons mb-0 none-mobile">
+                <span class="tag is-dark mb-0">PB</span>
+                <span class="tag is-warning mb-0">33</span>
+            </div>
+            <div class="col-auto tags has-addons mb-0 none-mobile">
+                <span class="tag is-dark mb-0">XP</span>
+                <span class="tag is-danger mb-0">15</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <div class="modal-body pr-4 pl-4">
     <h5 class="text-center pt-2">Questão simples relacionada aos conteúdos vistos em aula e em Missões (?) </h5>
     <br>
