@@ -175,3 +175,12 @@ padding: 0px;
     border-color: #00d1b2;
     background-color: #00d1b2;
 }
+.barra-hp-fase{ 
+    width: 100%;
+    background-color: #00d1b2;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
