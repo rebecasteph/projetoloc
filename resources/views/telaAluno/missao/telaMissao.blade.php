@@ -70,12 +70,8 @@
 
                     </div>
                 </div>
-                <div class="modal-body" style="height: 70vh">
+                <div class="modal-body">
                     @include('telaAluno.missao.painelAtvAluno')
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn light" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-roxo">Salvar mudanças</button>
                 </div>
             </div>
         </div>
