@@ -21,12 +21,21 @@ footer{
     .chat_img-2 { display: none !important; text-align: center;}
     .chat_img-1 { display: block !important;}
     .chat_ib { padding: 0 0 0 15px !important;}
-
+    .show-moblie{display:none;}
+    .none-mobile{display:flex !important;}
+    .coment_img{width: 4% !important;}
 }
 
-.roxo{ background-color: #563d7c !important;}
-.roxo a, .roxo .title,.roxo span { color: #cbbde2 !important;}
-.roxo a:hover, .roxo span:hover, .icon-tarefa{ color: #fff !important;}
+.none-mobile{display:none;}
+.coment_img{width: 15%;}
+
+.roxo, .btn-roxo, .icon-tarefa{ background-color: #563d7c !important;}
+.btn-roxo:hover,.icon-tarefa:hover { background-color: #2f2143 !important;}
+.roxo a, .roxo .title,.roxo span, .btn-roxo, .icon-tarefa { color: #cbbde2 !important;}
+.roxo a:hover, .roxo span:hover,.btn-roxo:hover, .icon-tarefa:hover{ color: #fff !important;}
+a, .nome-tarefa{ color: #563d7c;}
+#nav-tab-atv .nav-link:hover,#nav-tab-atv .nav-link .active{color: #2f2143 !important;}
+
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff!important;
@@ -46,8 +55,6 @@ footer{
     margin: 0rem;
 }
 .nav-sec span{ color: #b8b4b4 !important;}
-
-a, .nome-tarefa{ color: #563d7c;}
 
 .menu-lateral {background-color: #f2f2f2; border-right: 1px solid #c4c4c4;}
 

@@ -1,5 +1,5 @@
 <nav class="roxo navbar navbar-expand-lg navbar-light fixed-top" >
-    <a class="navbar-brand" href="\">League of Class</a>
+    <a class="navbar-brand pt-2" href="\">League of Class</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
     </button>
