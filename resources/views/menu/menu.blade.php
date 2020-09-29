@@ -17,7 +17,7 @@
     <div class="tab-pane-tela tab-pane fade" id="equipamentos" role="tabpanel" aria-labelledby="equipamentosAluno-tab">
       <div class="nav nav-sec text-md-center"><p>Loja de Equipamentos</p></div>@include('telaAluno.equipamentos.equipamentosAluno')</div>
     <div class="tab-pane-tela tab-pane fade" id="fase-do-chefao" role="tabpanel" aria-labelledby="chefaoAluno-tab">
-      <div class="nav nav-sec text-md-center"><p>Nome Fase blaa</p></div>@include('telaAluno.chefao.chefaoAluno')</div>
+      <div class="nav nav-sec text-md-center"><p>Nome da Turma</p></div>@include('telaAluno.chefao.chefaoAluno')</div>
     <div class="tab-pane-tela tab-pane fade" id="missao" role="tabpanel" aria-labelledby="missaoAluno-tab">
       <div class="nav nav-sec text-md-center">
         <p>Nome Turma</p></div>@include('telaAluno.missao.missaoAluno')

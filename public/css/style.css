@@ -24,6 +24,10 @@ footer{
     .show-moblie{display:none;}
     .none-mobile{display:flex !important;}
     .coment_img{width: 4% !important;}
+    .received_withd_msg {padding: 0px !important; width: 57% !important;}
+    .mesgs { padding: 30px 15px 0px 25px  !important;}
+    .inbox_chat { height: 95.5% !important;}
+
 }
 
 .none-mobile{display:none;}

@@ -49,7 +49,7 @@ img{ max-width:100%;}
   margin: 0;
   padding: 5px;
 }
-.inbox_chat { height: 95.6%; overflow-y: scroll; display: block !important;}
+.inbox_chat { height: 46%; overflow-y: scroll; display: block !important;}
 
 .inbox_chat .active{ background:#ebebeb;}
 
@@ -78,8 +78,7 @@ img{ max-width:100%;}
   font-size: 12px;
   margin: 8px 0 0;
 }
-.received_withd_msg { width: 57%;}
-.mesgs { padding: 30px 15px 15px 25px;}
+.mesgs { padding: 10px 15px 15px 10px;}
 .tela-dir{ float: left;  width: 70%;}
 
 .sent_msg p {
@@ -93,7 +92,6 @@ img{ max-width:100%;}
 .outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
 .sent_msg {
   float: right;
-  width: 46%;
 }
 .input_msg_write input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
