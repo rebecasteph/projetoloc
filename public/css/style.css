@@ -6,6 +6,7 @@ footer{
     width:  100%;
     margin-top:25px;
 }
+a:hover{color: #00d1b2;}
 
 .tab-pane-tela{ min-height: 83vh;}
 
@@ -163,9 +164,14 @@ padding: 0px;
 
 .area-fase-chefao{   
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-image: url('/img/floresta.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #00d1b2;
+    background-color: #00d1b2;
 }
