@@ -1,29 +1,50 @@
 <div class="container w-75" style="margin: 0 auto;" >
 
-<br>
-    <a href="missao-aluno/nome-missao" class="card p-0 tile is-child notification is-link">
-        <h5 class="card-header p-3">Nome da Missão</h5>
-    </a>
+    <br>
+    <div class="card">
+        <h5 class="card-header roxo"><span>Nome Missão</span></h5>
+        <div class="card-body text-center">
+            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="missao-aluno/nome-missao" class="button is-primary is-outlined">Visitar</a>
+        </div>
+    </div>
 
     <br>
-    <a href="missao-aluno/nome-missao" class="card p-0 tile is-child notification is-warning">
-        <h5 class="card-header p-3">Nome da Missão</h5>
-    </a>
+    <div class="card">
+        <h5 class="card-header roxo"><span>Nome Missão</span></h5>
+        <div class="card-body text-center">
+            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="missao-aluno/nome-missao" class="button is-primary is-outlined">Visitar</a>
+        </div>
+    </div>
 
     <br>
-    <a href="missao-aluno/nome-missao" class="card p-0 tile is-child notification is-success">
-        <h5 class="card-header p-3">Nome da Missão</h5>
-    </a>
+    <div class="card">
+        <h5 class="card-header roxo"><span>Nome Missão</span></h5>
+        <div class="card-body text-center">
+            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="missao-aluno/nome-missao" class="button is-primary is-outlined">Visitar</a>
+        </div>
+    </div>
 
     <br>
-    <a href="missao-aluno/nome-missao" class="card p-0 tile is-child notification is-primary">
-        <h5 class="card-header p-3">Nome da Missão</h5>
-    </a>
+    <div class="card">
+        <h5 class="card-header roxo"><span>Nome Missão</span></h5>
+        <div class="card-body text-center">
+            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="missao-aluno/nome-missao" class="button is-primary is-outlined">Visitar</a>
+        </div>
+    </div>
 
     <br>
-    <a href="missao-aluno/nome-missao" class="card p-0 tile is-child notification is-danger">
-        <h5 class="card-header p-3">Nome da Missão</h5>
-    </a>
+    <div class="card">
+        <h5 class="card-header roxo"><span>Nome Missão</span></h5>
+        <div class="card-body text-center">
+            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <a href="missao-aluno/nome-missao" class="button is-primary is-outlined">Visitar</a>
+        </div>
+    </div>
+
 
 
 </div>

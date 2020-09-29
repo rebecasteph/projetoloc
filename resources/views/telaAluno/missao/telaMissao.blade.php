@@ -5,8 +5,7 @@
 @section('content')
 <div class="nav nav-sec" aria-label="breadcrumb">
     <p>Nome da Turma</p>
-    <span>/Fase do Chefão</span>
-    <span>/Nome do Desafio</span>
+    <span>/Nome da Missão</span>
     <!--
     <form class="form-inline">
         <button type="button" class="roxo btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
