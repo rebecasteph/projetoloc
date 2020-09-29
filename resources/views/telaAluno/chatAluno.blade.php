@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="escrever" aria-describedby="button-addon2">
+                    <input type="text" class="form-control" placeholder="escrever..." aria-label="escrever..." aria-describedby="button-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-roxo" type="button" id="button-addon2">Enviar</button>
                     </div>
