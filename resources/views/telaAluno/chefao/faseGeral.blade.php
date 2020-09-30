@@ -29,10 +29,35 @@
         </div>
     </div>
 
-    <div class="barra-hp-fase" style="">
-        oi
+    <div class="d-flex justify-content-between barra-hp-fase">
+        <div class="p-2 flex-fill bd-highlight">
+            <div class="col-2"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+            <div class="col-10">
+                <h6>Nome Aluno</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="p-2 bd-highlight">
+            Flex item 2
+        </div>
+        <div class="p-2 flex-fill bd-highlight">
+            <div class="col-2"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+            <div class="col-10">
+            <h6>Nome Aluno</h6>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
- 
+ <!--         <div class="col-6 pt-3 pb-3">
+        </div>
+        <div class="col-6 pt-3 pb-3 hp-chefao">
+        </div> -->
  </div>
   
  @endsection
