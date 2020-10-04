@@ -30,9 +30,10 @@
     </div>
 
     <div class="d-flex justify-content-between barra-hp-fase">
-        <div class="p-2 flex-fill bd-highlight">
-            <div class="col-2"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-            <div class="col-10">
+
+        <div class="d-inline-flex p-2 flex-fill bd-highlight" style="justify-content: flex-end;">
+            <div class="none-mobile"> <img src="https://ptetutorials.com/images/user-profile.png" alt="img-aluno" class="img-hp"> </div>
+            <div class="col-md-9">
                 <h6>Nome Aluno</h6>
                 <div class="progress">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
@@ -40,17 +41,17 @@
 
             </div>
         </div>
-        <div class="p-2 bd-highlight">
-            Flex item 2
+        <div class="p-2 mr-md-5 ml-md-5 bd-highlight">
+            <img src="{!!asset('img/vs.png')!!}" alt="versus" class="img-hp">
         </div>
-        <div class="p-2 flex-fill bd-highlight">
-            <div class="col-2"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-            <div class="col-10">
-            <h6>Nome Aluno</h6>
-                <div class="progress">
+        <div class="d-inline-flex p-2 flex-fill bd-highlight">
+            <div class="col-md-9 text-right">
+            <h6>Nome Monstro</h6>
+                <div class="progress" style="direction: rtl;">
                     <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
+            <div class="none-mobile"> <img src="https://ptetutorials.com/images/user-profile.png" alt="img-chefao"class="img-hp"> </div>
         </div>
 
     </div>
