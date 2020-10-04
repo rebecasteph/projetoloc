@@ -16,7 +16,7 @@
      </a> 
 
     <!-- Botão para acionar modal -->
-    <button type="button" class="btn btn-roxo bnt-go-quest" data-toggle="modal" data-target="#quest-fase">
+    <button type="button" class="centralizar btn btn-roxo bnt-go-quest" data-toggle="modal" data-target="#quest-fase">
         Abrir modal de demonstração
     </button>
 

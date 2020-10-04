@@ -41,11 +41,11 @@
                         <div class="row show-moblie">
                             <div class="col-auto tags has-addons mb-0">
                                 <span class="tag is-dark mb-0">XP</span>
-                                <span class="tag is-success mb-0">15</span>
+                                <span class="tag is-warning mb-0">15</span>
                             </div>
                             <div class="col-auto tags has-addons mb-0">
                                 <span class="tag is-dark mb-0">PB</span>
-                                <span class="tag is-success mb-0">33</span>
+                                <span class="tag is-warning mb-0">33</span>
                             </div>
                         </div>
                     </div>
@@ -54,11 +54,11 @@
                         <div class="row justify-content-end">
                             <div class="col-auto tags has-addons mb-0 none-mobile">
                                 <span class="tag is-dark mb-0">XP</span>
-                                <span class="tag is-success mb-0">15</span>
+                                <span class="tag is-warning mb-0">15</span>
                             </div>
                             <div class="col-auto tags has-addons mb-0 none-mobile">
                                 <span class="tag is-dark mb-0">PB</span>
-                                <span class="tag is-success mb-0">33</span>
+                                <span class="tag is-warning mb-0">33</span>
                             </div>
                             <div class="col-auto">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
