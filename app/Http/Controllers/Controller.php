@@ -17,4 +17,10 @@ class Controller extends BaseController
     public function inicial(){
         return view('inicial');
     }
+    public function missaoAluno(){
+        return view ('telaAluno.missao.telaMissao');
+    }
+    public function faseAluno(){
+        return view ('telaAluno.chefao.faseGeral');
+    }
 }
