@@ -23,4 +23,10 @@ class Controller extends BaseController
     public function faseAluno(){
         return view ('telaAluno.chefao.faseGeral');
     }
+    public function listaTurmas(){
+        return view ('telaAluno.listaTurmas');
+    }
+    public function telaPerfilAluno(){
+        return view ('telaAluno.telaPerfilAluno');
+    }
 }

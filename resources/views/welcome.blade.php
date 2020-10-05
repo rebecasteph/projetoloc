@@ -78,7 +78,7 @@
                 </div>
                 -->
                 <div class="links">
-                    <a href="{{ url('/inicial') }}">Aluno</a>
+                    <a href="inicial">Aluno</a>
                     <a href="">Professor</a>
                     <a href="">Blog</a>
                     <a href="">Sobre nós</a>
