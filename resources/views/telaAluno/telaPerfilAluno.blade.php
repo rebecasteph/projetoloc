@@ -48,12 +48,12 @@
 
     	<div class="col-sm-9">
             <form class="needs-validation" novalidate>
-                <div class="form-row">
+                <!-- <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="validar-codigo-aluno">Código do Aluno</label>
                         <input class="form-control" type="text" placeholder="XXX098abc" readonly>                    
                     </div>
-                </div>
+                </div> -->
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label>Primeiro nome</label>
