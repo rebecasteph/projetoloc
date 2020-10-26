@@ -31,7 +31,7 @@ a:hover{color: #00d1b2;}
 
 }
 
-.none-mobile{display:none;}
+.none-mobile{display:none;} 
 .coment_img{width: 15%;}
 
 .roxo, .btn-roxo, .icon-tarefa{ background-color: #563d7c !important;}
@@ -182,7 +182,20 @@ padding: 0px;
     top: 76%;
     font-size: 18px;
 }
-
+.bnt-go-quest{
+    background-image: url('/img/espadas.png');
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    /* box-shadow: 0 0 1em gold; */
+}
+.alert {
+    width:90%;
+    z-index: 2;   
+    position: absolute; left: 50%; top: 30%; transform: translateX(-50%); 
+ }
 .img-hp{
     height: 75px; width: 75px;
 }

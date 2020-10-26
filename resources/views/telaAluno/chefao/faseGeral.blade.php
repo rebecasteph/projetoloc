@@ -15,10 +15,21 @@
         <button type="button" class="btn btn-roxo"><span class="fas fa-angle-double-left"></span></button>
      </a> 
 
+     <div class="alert alert-warning  alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">Guerreiro, prepare-se!</h4>
+        <p>Aêêê! Você conseguiu ler essa mensagem de alerta. Esse texto vai ter quer se extender um pouquinho pra você conseguir ver como o espaçamento dentro de um alerta funciona.</p>
+        <hr>
+        <p class="mb-0">Sempre que precisar, use utilitários de margem para manter as coisas perfeitas.</p>        
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
     <!-- Botão para acionar modal -->
-    <button type="button" class="centralizar btn btn-roxo bnt-go-quest" data-toggle="modal" data-target="#quest-fase">
-        Abrir modal de demonstração
-    </button>
+    
+    <span style="color: #414141; z-index: 1; text-shadow: 0.1em 0.1em 0.1em;position: absolute; left: 50%; top: 47%; transform: translateX(-50%);">press to play</span>
+    <button type="button" class="centralizar btn bnt-go-quest" data-toggle="modal" data-target="#quest-fase"></button>
 
     <!-- Modal -->
     <div class="modal fade" id="quest-fase" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
