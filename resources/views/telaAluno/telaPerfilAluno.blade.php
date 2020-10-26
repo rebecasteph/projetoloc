@@ -6,72 +6,109 @@
 
 <div class="container mt-4 w-75 tab-pane-tela" style="margin: 0 auto;" >
 
+    <div class="row">
+  		<h3>Meu perfil</h3>
+    </div>
 
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-            <label for="validationCustom01">Primeiro nome</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value="Mark" required>
-            <div class="valid-feedback">
-                Tudo certo!
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+            <div class="panel panel-default">
+                <div class="panel-heading">Turmas <i class="fa fas fa-award fa-1x"></i></div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>Turma Alfa</strong>
+                                <span class="badge badge-pill badge-success">Nível 2</span>
+                            </span>
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>Turma Base</strong>
+                                <span class="badge badge-pill badge-success">Nível 3</span>
+                            </span>
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>Turma 1ºC</strong>
+                                <span class="badge badge-pill badge-success">Nível 1</span>
+                            </span>
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>Turma Matemática</strong>
+                                <span class="badge badge-pill badge-success">Nível 5</span>
+                            </span>
+                        </li>
+                    </ul> 
+                </div>
             </div>
-            </div>
-            <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Sobrenome</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" value="Otto" required>
-            <div class="valid-feedback">
-                Tudo certo!
-            </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Usuário</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+               
+        </div><!--/col-3-->
+
+    	<div class="col-sm-9">
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validar-codigo-aluno">Código do Aluno</label>
+                        <input class="form-control" type="text" placeholder="XXX098abc" readonly>                    
                     </div>
-                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                    Por favor, escolha um nome de usuário.
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Primeiro nome</label>
+                        <input type="text" class="form-control" id="nome-aluno" placeholder="Nome" value="Nome" required>
+                        <div class="valid-feedback">
+                            Tudo certo!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome-aluno" placeholder="Sobrenome" value="Sobrenome" required>
+                        <div class="valid-feedback">
+                            Tudo certo!
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>E-mail</label>
+                        <input type="text" class="form-control" id="email-aluno" placeholder="e-mail" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um e-mail válido.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Senha</label>
+                        <input type="text" class="form-control" id="senha" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um estado válido.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Nova Senha</label>
+                        <input type="text" class="form-control" id="nova-senha-1" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um CEP válido.
+                        </div>
+                        <label>Confirme a senha</label>
+                        <input type="text" class="form-control" id="nova-senha-2" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um CEP válido.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex align-items-end">
+                    <button class="btn btn-roxo" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom03">Cidade</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
-                <div class="invalid-feedback">
-                    Por favor, informe uma cidade válida.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom04">Estado</label>
-                <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
-                <div class="invalid-feedback">
-                    Por favor, informe um estado válido.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">CEP</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
-                <div class="invalid-feedback">
-                    Por favor, informe um CEP válido.
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="check form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Concordo com os termos e condições
-                </label>
-                <div class="invalid-feedback">
-                    Você deve concordar, antes de continuar.
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-roxo" type="submit">Enviar</button>
-    </form>
+
+              
+    </div><!--/row-->
+
+
 
     <script>
         // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
