@@ -18,3 +18,7 @@ Route::group(['prefix' => 'fase-do-chefao'],function(){
 
 Route::get('minhas-turmas', 'Controller@listaTurmas');
 Route::get('meu-perfil', 'Controller@telaPerfilAluno');
+
+Route::get('gerenciar-turmas', 'Controller@listaTurmasProf');
+Route::get('config-turma', 'Controller@configTurma');
+Route::get('perfil-do-professor', 'Controller@telaPerfilProf');

@@ -14,11 +14,13 @@ class Controller extends BaseController
     public function index(){
         return view ('welcome');
     }
-    public function inicial(){
-        return view('inicial');
-    }
     public function login(){
         return view('login');
+    }
+
+    /* ROTAS ALUNO */
+    public function inicial(){
+        return view('inicial');
     }
     public function missaoAluno(){
         return view ('telaAluno.missao.telaMissao');
@@ -32,4 +34,26 @@ class Controller extends BaseController
     public function telaPerfilAluno(){
         return view ('telaAluno.telaPerfilAluno');
     }
+
+    /* ROTAS PROF */
+    public function inicialProf(){
+        return view('inicial');
+    }
+    public function missaoProf(){
+        return view ('telaProf.missao.telaMissao');
+    }
+    public function faseProf(){
+        return view ('telaProf.chefao.faseGeral');
+    }
+    public function listaTurmasProf(){
+        return view ('telaProf.listaTurmas');
+    }
+    public function configTurma(){
+        return view ('telaProf.configTurma');
+    }
+    public function telaPerfilAlunoProf(){
+        return view ('telaProf.telaPerfilProf');
+    }
+
+
 }

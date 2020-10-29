@@ -79,8 +79,8 @@
                 -->
                 <div class="links">
                     <a href="login">login</a>
-                    <a href="inicial">Aluno</a>
-                    <a href="">Professor</a>
+                    <a href="minhas-turmas">Aluno</a>
+                    <a href="gerenciar-turmas">Professor</a>
                     <a href="">Blog</a>
                     <a href="">Sobre nós</a>
 

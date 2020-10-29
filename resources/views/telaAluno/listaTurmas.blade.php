@@ -68,7 +68,9 @@
 
                 <div class="modal-footer">
                     <button type="button" class="button is-white" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="button is-primary" data-toggle="modal" data-target=" ">Escolher</button>
+                    <a href="inicial">
+                        <button class="button is-primary is-outlined">Escolher</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -80,7 +82,9 @@
         <div class="card-body">
             <h5 class="card-title">Nome da Turma</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="inicial" class="button is-primary is-outlined">Visitar</a>
+            <a href="inicial">
+                <button class="button is-primary is-outlined"> Visitar</button>
+            </a>
         </div>
     </div>
 
@@ -90,7 +94,9 @@
         <div class="card-body">
             <h5 class="card-title">Nome da Turma</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="inicial" class="button is-primary is-outlined">Visitar</a>
+            <a href="inicial">
+                <button class="button is-primary is-outlined"> Visitar</button>
+            </a>
         </div>
     </div>
 
@@ -100,7 +106,9 @@
         <div class="card-body">
             <h5 class="card-title">Nome da Turma</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="inicial" class="button is-primary is-outlined">Visitar</a>
+            <a href="inicial">
+                <button class="button is-primary is-outlined"> Visitar</button>
+            </a>
         </div>
     </div>
 
