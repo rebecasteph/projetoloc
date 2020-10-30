@@ -40,25 +40,33 @@
 
     <br>
     <div class="card text-center">
-        <div class="card-header roxo">
+        <div class="card-header roxo justify-content-between">
             <span>Nome da Instituição</span>
-            <a href="inicial" class="button is-small is-primary is-outlined"><i class="fas fa-pen"></i> </a>
+            <a class="" href="config-turma">
+                <button class="button is-small is-primary is-outlined fas fa-pen"></button>
+            </a>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Nome da Turma</h5>
+            <h5 class="card-title mb-0">Nome da Turma</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="inicial">
-                <button class="button is-primary is-outlined">Visitar</button>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="tags has-addons mt-2 mr-2 mb-0">
+                    <span class="tag is-dark fas fa-users"></span>
+                    <span class="tag is-primary">20</span>
+                </div>
+                <div class="tags has-addons">
+                    <span class="tag is-dark far fa-clipboard"></span>
+                    <span class="tag is-primary">13</span>
+                </div>
+            </div>
+            <a href="config-turma">
+                <button class="button is-primary is-outlined">Abrir</button>
             </a>
 
+
         </div>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Abrir</a>
-            <a href="#" class="card-footer-item">Configurações</a>
-        </footer>
     </div>
 
-    <br>
 
 
 
