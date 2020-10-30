@@ -6,10 +6,8 @@
 
 <div class="container mt-4 w-75 tab-pane-tela" style="margin: 0 auto;" >
 
-    <div class="row">
-  		<h3>Meu perfil</h3>
-    </div>
-
+    <h3>Meu perfil</h3>
+    <hr>
     <div class="row">
   		<div class="col-sm-3"><!--left col-->
             <div class="panel panel-default">
