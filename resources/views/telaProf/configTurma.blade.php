@@ -5,24 +5,32 @@
 @section('content')
 
 <div class="container tab-pane-tela mt-4" style="margin: 0 auto;" > 
-    <h3>Configurações de Turma/Nome Turma</h3>
+    <h3>Configurações de Turma<small class="text-muted">/Nome Turma</small></h3>
     <hr>
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Perfil</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contact" aria-selected="false">Contato</a>
-    </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="dados-tab" data-toggle="tab" href="#painel-dados" role="tab" aria-controls="painel-dados" aria-selected="true">Dados</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="alunos-tab" data-toggle="tab" href="#painel-alunos" role="tab" aria-controls="painel-alunos" aria-selected="false">Alunos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="regras-tab" data-toggle="tab" href="#painel-regras" role="tab" aria-controls="painel-regras" aria-selected="false">Regras do Jogo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="sentencas-tab" data-toggle="tab" href="#painel-sentencas" role="tab" aria-controls="painel-sentencas" aria-selected="false">Sentenças</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="elos-tab" data-toggle="tab" href="#painel-elos" role="tab" aria-controls="contact" aria-selected="painel-elos">Elos de Equipe</a>
+        </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-    <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade show active" id="painel-dados" role="tabpanel" aria-labelledby="dados-tab">.dados..</div>
+        <div class="tab-pane fade" id="painel-alunos" role="tabpanel" aria-labelledby="alunos-tab">..alunos.</div>
+        <div class="tab-pane fade" id="painel-regras" role="tabpanel" aria-labelledby="regras-tab">.regras..</div>
+        <div class="tab-pane fade" id="painel-sentencas" role="tabpanel" aria-labelledby="sentencas-tab">.sentencas..</div>
+        <div class="tab-pane fade" id="painel-elos" role="tabpanel" aria-labelledby="elos-tab">.elos..</div>
     </div>
 
 
