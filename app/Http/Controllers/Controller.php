@@ -49,7 +49,7 @@ class Controller extends BaseController
         return view ('telaProf.listaTurmas');
     }
     public function configTurma(){
-        return view ('telaProf.configTurma');
+        return view ('telaProf.configTurma.configTurma');
     }
     public function telaPerfilProf(){
         return view ('telaProf.telaPerfilProf');

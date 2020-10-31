@@ -30,7 +30,7 @@
         <div class="tab-pane fade" id="painel-alunos" role="tabpanel" aria-labelledby="alunos-tab">..alunos.</div>
         <div class="tab-pane fade" id="painel-regras" role="tabpanel" aria-labelledby="regras-tab">.regras..</div>
         <div class="tab-pane fade" id="painel-sentencas" role="tabpanel" aria-labelledby="sentencas-tab">.sentencas..</div>
-        <div class="tab-pane fade" id="painel-elos" role="tabpanel" aria-labelledby="elos-tab">.elos..</div>
+        <div class="tab-pane fade pl-5 pr-5" id="painel-elos" role="tabpanel" aria-labelledby="elos-tab">@include('telaprof.configTurma.painel-elos')</div>
     </div>
 
 
