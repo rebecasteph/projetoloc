@@ -146,8 +146,8 @@ outline: 0px solid transparent !important;
 }
 .timeline-image::before {
     content: "";
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 2px dashed #563d7c;
     border-radius: 50%;
     display: block;
@@ -224,8 +224,8 @@ outline: 0px solid transparent !important;
     text-align: left;
 }
 .timeline-image::before {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
 }
 }
 
@@ -243,8 +243,8 @@ outline: 0px solid transparent !important;
     left: -5%;
     }
 .timeline-image::before {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 }
     
