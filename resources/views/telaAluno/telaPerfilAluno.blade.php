@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="d-flex align-items-end">
+                <div class="d-flex justify-content-end">
                     <button class="btn btn-roxo" type="submit">Enviar</button>
                 </div>
             </form>
