@@ -16,8 +16,8 @@ class CreateAlunoParticipasTable extends Migration
         Schema::create('aluno_participas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-
-            $table->integer('aluno_id')->unsigned();
+            
+/*             $table->integer('aluno_id')->unsigned();
             $table->foreign('aluno_id')->references('id')->on('alunos')->onDelete('cascade');
 
             $table->integer('turma_id')->unsigned();
@@ -25,7 +25,7 @@ class CreateAlunoParticipasTable extends Migration
             
             $table->integer('equipe_id')->unsigned();
             $table->foreign('equipe_id')->references('id')->on('equipes')->onDelete('cascade');
-
+ */
         });
     }
 
