@@ -17,15 +17,12 @@ class CreateAlunoParticipasTable extends Migration
             $table->id();
             $table->timestamps();
             
-/*             $table->integer('aluno_id')->unsigned();
+            $table->unsignedBigInteger('aluno_id');
             $table->foreign('aluno_id')->references('id')->on('alunos')->onDelete('cascade');
 
-            $table->integer('turma_id')->unsigned();
-            $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
-            
-            $table->integer('equipe_id')->unsigned();
+            $table->unsignedBigInteger('equipe_id');
             $table->foreign('equipe_id')->references('id')->on('equipes')->onDelete('cascade');
- */
+
         });
     }
 

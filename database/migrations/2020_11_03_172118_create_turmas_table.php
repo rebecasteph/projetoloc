@@ -16,6 +16,10 @@ class CreateTurmasTable extends Migration
         Schema::create('turmas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            
+            $table->unsignedBigInteger('aluno_participa_id');
+            $table->foreign('aluno_participa_id')->references('id')->on('aluno_participa')->onDelete('cascade');
+
         });
     }
 
