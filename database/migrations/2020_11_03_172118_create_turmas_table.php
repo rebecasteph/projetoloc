@@ -18,7 +18,7 @@ class CreateTurmasTable extends Migration
             $table->timestamps();
             
             $table->unsignedBigInteger('aluno_participa_id');
-            $table->foreign('aluno_participa_id')->references('id')->on('aluno_participa')->onDelete('cascade');
+            $table->foreign('aluno_participa_id')->references('id')->on('aluno_participas')->onDelete('cascade');
 
         });
     }
