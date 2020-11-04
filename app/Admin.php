@@ -9,12 +9,12 @@ use Illuminate\Notifications\Notifiable;
 class Admin extends Authenticatable
 {
     protected $fillable = [
-        'nome', 'email', 'senha',
+        'nome', 'email', 'password',
     ];
 
 
     protected $hidden = [
-        'senha', 'remember_token',
+        'password', 'remember_token',
     ];
 
     protected $casts = [
