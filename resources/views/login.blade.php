@@ -51,22 +51,44 @@
                             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
                                 <!--Body-->
                                 <div class="modal-body mb-1">
-                                    <div class="md-form form-sm mb-4">   
-                                        <label data-error="wrong" data-success="right" for="modalLRInput10">
-                                            <i class="fas fa-envelope prefix"></i> E-mail
-                                        </label>
-                                        <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                                    </div>
+                                    <form role="form" action="{{url('/login')}}" method="post">
+                                        {!! csrf_field() !!}
 
-                                    <div class="md-form form-sm mb-4">                                    
-                                        <label data-error="wrong" data-success="right" for="modalLRInput11">
-                                            <i class="fas fa-lock prefix"></i> Senha
-                                        </label>
-                                        <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                                    </div>
-                                    <div class="text-center mt-2">
-                                        <button class="button is-primary is-outlined">Login</button>
-                                    </div>
+                                        <div class="md-form form-sm mb-4 form-group {{$errors->has('email') ? ' has-error' : ''}}">  
+                                            <label data-error="wrong" data-success="right">
+                                                <i class="fas fa-envelope prefix"></i> E-mail
+                                            </label>
+                                            <input type="email" name="email" class="form-control form-control-sm validate" value="{{old('email')}}">
+                                            @if ($errors->has('email'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
+
+                                        </div>
+
+                                        <div class="md-form form-sm mb-4 form-group {{$errors->has('password') ? ' has-error' : ''}}">                                    
+                                            <label data-error="wrong" data-success="right">
+                                                <i class="fas fa-lock prefix"></i> Senha
+                                            </label>
+                                            <input type="password" name="password" class="form-control form-control-sm validate">
+
+                                            @if ($errors->has('password'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('password') }}</strong>
+                                                </span>
+                                            @endif
+
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="login" class="text-center mt-2 mr-2">
+                                                <button class="btn btn-roxo"><i class="fas fa-book-reader"> </i> Sou aluno</button>
+                                            </a>
+                                            <a href="" class="text-center mt-2">
+                                                <button class="btn btn-roxo"><i class="fas fa-chalkboard-teacher"> </i> Sou professor</button>
+                                            </a>                                        
+                                        </div>
+                                    </form>
                                 </div>
                             </div><!--/.Panel 7-->
 

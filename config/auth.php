@@ -36,19 +36,23 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
 
+        'prof' => [
+            'driver' => 'session',
+            'provider' => 'profs',
+        ],
+        'aluno' => [
+            'driver' => 'session',
+            'provider' => 'alunos',
+        ],
+
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
+            'provider' => 'admin',
             'hash' => false,
         ],
     ],
@@ -71,9 +75,9 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'admins' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Admin::class,
         ],
 
         'professors' => [

@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
+use Auth;
 
 class Controller extends BaseController
 {
@@ -17,42 +19,30 @@ class Controller extends BaseController
     public function login(){
         return view('login');
     }
+    public function postLogin(Request $request){
+        //dd($request->all());
+        $validator = validator($request->all(), [
+            'email' => 'required|min:3|max:100',
+            'password' => 'required|min:3|max:100',
+        ]);
 
-    /* ROTAS ALUNO */
-    public function inicial(){
-        return view('inicial');
-    }
-    public function missaoAluno(){
-        return view ('telaAluno.missao.telaMissao');
-    }
-    public function faseAluno(){
-        return view ('telaAluno.chefao.faseGeral');
-    }
-    public function listaTurmas(){
-        return view ('telaAluno.listaTurmas');
-    }
-    public function telaPerfilAluno(){
-        return view ('telaAluno.telaPerfilAluno');
-    }
+        if($validator->fails() ) {
+            return redirect('/login')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
 
-    /* ROTAS PROF */
-    public function inicialProf(){
-        return view('inicial');
-    }
-    public function missaoProf(){
-        return view ('telaProf.missao.telaMissao');
-    }
-    public function faseProf(){
-        return view ('telaProf.chefao.faseGeral');
-    }
-    public function listaTurmasProf(){
-        return view ('telaProf.listaTurmas');
-    }
-    public function configTurma(){
-        return view ('telaProf.configTurma.configTurma');
-    }
-    public function telaPerfilProf(){
-        return view ('telaProf.telaPerfilProf');
+        $credentials = ['email'=>$request->get('email'),'password'=>$request->get('password')];
+
+        if ( auth()->guard('aluno')->attempt($credentials) ){
+            return redirect('/inicial');
+        } else {
+            return redirect('/login')
+                    ->withErrors(['errors' => 'Login inválido!'])
+                    ->withInput();
+        }
+
+
     }
 
 
