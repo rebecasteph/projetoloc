@@ -19,6 +19,7 @@ class Controller extends BaseController
     public function login(){
         return view('login');
     }
+
     public function postLogin(Request $request){
         //dd($request->all());
         $validator = validator($request->all(), [
@@ -35,7 +36,7 @@ class Controller extends BaseController
         $credentials = ['email'=>$request->get('email'),'password'=>$request->get('password')];
 
         if ( auth()->guard('aluno')->attempt($credentials) ){
-            return redirect('/inicial');
+            return redirect('/minhas-turmas');
         } else {
             return redirect('/login')
                     ->withErrors(['errors' => 'Login inválido!'])

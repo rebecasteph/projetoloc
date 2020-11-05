@@ -5,6 +5,8 @@
     <div class="col-md-4">
         <div class="mt-3 text-center">
             <div class="align-middle mb-1">
+                {{auth()->guard('aluno')->user()}}
+
                 <img class="escudo-elo-sm d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
                 <h6 class="d-inline ">Nome da Equipe</h6>
                 <img class="escudo-elo-sm d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">

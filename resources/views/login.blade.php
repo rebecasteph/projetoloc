@@ -84,7 +84,7 @@
                                             <a href="login" class="text-center mt-2 mr-2">
                                                 <button class="btn btn-roxo"><i class="fas fa-book-reader"> </i> Sou aluno</button>
                                             </a>
-                                            <a href="" class="text-center mt-2">
+                                            <a href="login" class="text-center mt-2">
                                                 <button class="btn btn-roxo"><i class="fas fa-chalkboard-teacher"> </i> Sou professor</button>
                                             </a>                                        
                                         </div>
