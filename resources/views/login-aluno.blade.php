@@ -29,7 +29,7 @@
         <div class="container-fluid">
 
             <div class="row justify-content-center" style="height: 90vh;">
-                <div class="col-sm-5 align-self-center">
+                <div class="col-sm-7 align-self-center">
                     <a style="color: #cbbde2; font-size: 40px; font-family: 'Nunito', sans-serif; margin: 0; text-decoration: none;" href="/">
                         League of Class
                     </a>
@@ -44,80 +44,89 @@
                                 Cadastrar</a>
                             </li>
                         </ul>
+                        <div class="d-flex">
+                            <div class="col-sm-6">
+                                <!-- Tab panels -->
+                                <div class="tab-content">
+                                    <!--Panel 7-->
+                                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                                        <!--Body-->
+                                        <div class="modal-body mb-1">
+                                            <form role="form" action="{{url('/aluno/login')}}" method="post">
+                                                {!! csrf_field() !!}
 
-                        <!-- Tab panels -->
-                        <div class="tab-content">
-                            <!--Panel 7-->
-                            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-                                <!--Body-->
-                                <div class="modal-body mb-1">
-                                    <form role="form" action="{{url('/aluno/login')}}" method="post">
-                                        {!! csrf_field() !!}
+                                                <div class="md-form form-sm mb-4 form-group {{$errors->has('email') ? ' has-error' : ''}}">  
+                                                    <label data-error="wrong" data-success="right">
+                                                        <i class="fas fa-envelope prefix"></i> E-mail
+                                                    </label>
+                                                    <input type="email" name="email" class="form-control form-control-sm validate" value="{{old('email')}}">
+                                                    @if ($errors->has('email'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('email') }}</strong>
+                                                        </span>
+                                                    @endif
 
-                                        <div class="md-form form-sm mb-4 form-group {{$errors->has('email') ? ' has-error' : ''}}">  
-                                            <label data-error="wrong" data-success="right">
-                                                <i class="fas fa-envelope prefix"></i> E-mail
-                                            </label>
-                                            <input type="email" name="email" class="form-control form-control-sm validate" value="{{old('email')}}">
-                                            @if ($errors->has('email'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('email') }}</strong>
-                                                </span>
-                                            @endif
+                                                </div>
 
+                                                <div class="md-form form-sm mb-4 form-group {{$errors->has('password') ? ' has-error' : ''}}">                                    
+                                                    <label data-error="wrong" data-success="right">
+                                                        <i class="fas fa-lock prefix"></i> Senha
+                                                    </label>
+                                                    <input type="password" name="password" class="form-control form-control-sm validate">
+
+                                                    @if ($errors->has('password'))
+                                                        <span class="help-block">
+                                                            <strong>{{ $errors->first('password') }}</strong>
+                                                        </span>
+                                                    @endif
+
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="/aluno/login" class="text-center mt-2">
+                                                        <button class="btn btn-roxo"><i class="fas fa-book-reader mr-2"></i>Login Aluno</button>
+                                                    </a>
+                                                </div>
+                                            </form>
                                         </div>
+                                    </div><!--/.Panel 7-->
 
-                                        <div class="md-form form-sm mb-4 form-group {{$errors->has('password') ? ' has-error' : ''}}">                                    
-                                            <label data-error="wrong" data-success="right">
-                                                <i class="fas fa-lock prefix"></i> Senha
-                                            </label>
-                                            <input type="password" name="password" class="form-control form-control-sm validate">
+                                    <!--Panel 8-->
+                                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+                                        <!--Body-->
+                                        <div class="modal-body mb-1">
+                                            <div class="md-form form-sm mb-4">   
+                                                <label data-error="wrong" data-success="right" for="modalLRInput10">
+                                                    <i class="fas fa-envelope prefix"></i> E-mail
+                                                </label>
+                                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                            </div>
 
-                                            @if ($errors->has('password'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('password') }}</strong>
-                                                </span>
-                                            @endif
-
+                                            <div class="md-form form-sm mb-4">                                    
+                                                <label data-error="wrong" data-success="right" for="modalLRInput11">
+                                                    <i class="fas fa-lock prefix"></i> Senha
+                                                </label>
+                                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                            </div>
+                                            <div class="md-form form-sm mb-4">                                    
+                                                <label data-error="wrong" data-success="right" for="modalLRInput11">
+                                                    <i class="fas fa-lock prefix"></i> Confirmar Senha
+                                                </label>
+                                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                            </div>
+                                            <div class="text-center mt-2">
+                                                <button class="btn btn-roxo"><i class="fas fa-user-plus mr-2"></i>Cadastrar</button>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-center">
-                                            <a href="/aluno/login" class="text-center mt-2">
-                                                <button class="btn btn-roxo"><i class="fas fa-book-reader mr-2"></i>Login Aluno</button>
-                                            </a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div><!--/.Panel 7-->
+                                    </div> <!--/.Panel 8-->
+                                </div><!-- tab-content -->
+                                
+                            </div>
+                            <div class="col-sm-6 none-mobile"style="margin: auto;">
+                                <img class="img-login"src="{!!asset('img/guerreiro.png')!!}" alt="mago">  
+                            </div>
 
-                            <!--Panel 8-->
-                            <div class="tab-pane fade" id="panel8" role="tabpanel">
-                                <!--Body-->
-                                <div class="modal-body mb-1">
-                                    <div class="md-form form-sm mb-4">   
-                                        <label data-error="wrong" data-success="right" for="modalLRInput10">
-                                            <i class="fas fa-envelope prefix"></i> E-mail
-                                        </label>
-                                        <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                                    </div>
+                        </div>
 
-                                    <div class="md-form form-sm mb-4">                                    
-                                        <label data-error="wrong" data-success="right" for="modalLRInput11">
-                                            <i class="fas fa-lock prefix"></i> Senha
-                                        </label>
-                                        <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                                    </div>
-                                    <div class="md-form form-sm mb-4">                                    
-                                        <label data-error="wrong" data-success="right" for="modalLRInput11">
-                                            <i class="fas fa-lock prefix"></i> Confirmar Senha
-                                        </label>
-                                        <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                                    </div>
-                                    <div class="text-center mt-2">
-                                        <button class="btn btn-roxo"><i class="fas fa-user-plus mr-2"></i>Cadastrar</button>
-                                    </div>
-                                </div>
-                            </div> <!--/.Panel 8-->
-                        </div><!-- tab-content -->
                     </div><!-- card -->
                 </div><!-- col -->
             </div><!-- row -->
