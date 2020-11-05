@@ -27,6 +27,5 @@ class AlunoController extends Controller
     public function telaPerfilAluno(){
         return view ('telaAluno.telaPerfilAluno');
     }
-
     
 }

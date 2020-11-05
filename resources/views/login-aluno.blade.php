@@ -51,7 +51,7 @@
                             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
                                 <!--Body-->
                                 <div class="modal-body mb-1">
-                                    <form role="form" action="{{url('/login')}}" method="post">
+                                    <form role="form" action="{{url('/aluno/login')}}" method="post">
                                         {!! csrf_field() !!}
 
                                         <div class="md-form form-sm mb-4 form-group {{$errors->has('email') ? ' has-error' : ''}}">  
@@ -81,12 +81,9 @@
 
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <a href="login" class="text-center mt-2 mr-2">
-                                                <button class="btn btn-roxo"><i class="fas fa-book-reader"> </i> Sou aluno</button>
+                                            <a href="/aluno/login" class="text-center mt-2">
+                                                <button class="btn btn-roxo"><i class="fas fa-book-reader mr-2"></i>Login Aluno</button>
                                             </a>
-                                            <a href="login" class="text-center mt-2">
-                                                <button class="btn btn-roxo"><i class="fas fa-chalkboard-teacher"> </i> Sou professor</button>
-                                            </a>                                        
                                         </div>
                                     </form>
                                 </div>
@@ -116,7 +113,7 @@
                                         <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
                                     </div>
                                     <div class="text-center mt-2">
-                                        <button class="button is-primary is-outlined">Cadastrar</i></button>
+                                        <button class="btn btn-roxo"><i class="fas fa-user-plus mr-2"></i>Cadastrar</button>
                                     </div>
                                 </div>
                             </div> <!--/.Panel 8-->

@@ -43,7 +43,7 @@ return [
 
         'prof' => [
             'driver' => 'session',
-            'provider' => 'profs',
+            'provider' => 'professors',
         ],
         'aluno' => [
             'driver' => 'session',

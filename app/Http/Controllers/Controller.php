@@ -16,11 +16,14 @@ class Controller extends BaseController
     public function index(){
         return view ('welcome');
     }
-    public function login(){
-        return view('login');
+    public function loginAluno(){
+        return view('login-aluno');
+    }
+    public function loginProf(){
+        return view('login-prof');
     }
 
-    public function postLogin(Request $request){
+    public function postLoginAluno(Request $request){
         //dd($request->all());
         $validator = validator($request->all(), [
             'email' => 'required|min:3|max:100',
@@ -28,7 +31,7 @@ class Controller extends BaseController
         ]);
 
         if($validator->fails() ) {
-            return redirect('/login')
+            return redirect('/aluno/login')
                     ->withErrors($validator)
                     ->withInput();
         }
@@ -38,12 +41,34 @@ class Controller extends BaseController
         if ( auth()->guard('aluno')->attempt($credentials) ){
             return redirect('/minhas-turmas');
         } else {
-            return redirect('/login')
+            return redirect('/aluno/login')
                     ->withErrors(['errors' => 'Login inválido!'])
                     ->withInput();
         }
+    }
 
+    public function postLoginProf(Request $request){
+        //dd($request->all());
+        $validator = validator($request->all(), [
+            'email' => 'required|min:3|max:100',
+            'password' => 'required|min:3|max:100',
+        ]);
 
+        if($validator->fails() ) {
+            return redirect('/professor/login')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+        $credentials = ['email'=>$request->get('email'),'password'=>$request->get('password')];
+
+        if ( auth()->guard('prof')->attempt($credentials) ){
+            return redirect('/gerenciar-turmas');
+        } else {
+            return redirect('/professor/login')
+                    ->withErrors(['errors' => 'Login inválido!'])
+                    ->withInput();
+        }
     }
 
 
