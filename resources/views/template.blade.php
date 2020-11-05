@@ -20,8 +20,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <!-- local style -->
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/chat.css">
+        <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('/css/chat.css')}}">
 
         <title>LoC | @yield('title')</title>
     </head>
