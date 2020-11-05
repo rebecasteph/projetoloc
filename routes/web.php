@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'prof'], function() {
-    Route::group(['middleware' => 'auth'], function() {
+    Route::group(['middleware' => 'auth:prof'], function() {
         Route::get('/gerenciar-turmas', 'ProfController@listaTurmasProf');
         Route::get('/prof/turma/inicial', 'ProfController@inicial');
         Route::get('/config-turma', 'ProfController@configTurma');
@@ -16,7 +16,7 @@ Route::group(['middleware' => 'prof'], function() {
 });
 
 Route::group(['middleware' => 'aluno'], function() {
-    Route::group(['middleware' => 'auth'], function() {
+    Route::group(['middleware' => 'auth:aluno'], function() {
         Route::get('/minhas-turmas', 'AlunoController@listaTurmas');
         Route::get('/aluno/turma/inicial', 'AlunoController@inicial');
         Route::get('/missao-aluno/nome-missao','AlunoController@missaoAluno');
