@@ -78,7 +78,7 @@ class Controller extends BaseController
     }
     public function logoutProf(){
         auth()->guard('prof')->logout();
-        return redirect('/prof/login');
+        return redirect('/professor/login');
 
     }
 
