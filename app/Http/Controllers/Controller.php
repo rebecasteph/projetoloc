@@ -72,4 +72,15 @@ class Controller extends BaseController
     }
 
 
+    public function logoutAluno(){
+        auth()->guard('aluno')->logout();
+        return redirect('/aluno/login');
+    }
+    public function logoutProf(){
+        auth()->guard('prof')->logout();
+        return redirect('/prof/login');
+
+    }
+
+
 }
