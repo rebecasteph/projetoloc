@@ -10,7 +10,7 @@ class Aluno_participa extends Model
 
     protected $fillable = [
         'aluno_id',
-        'tuma_id',
+        'turma_id',
         'equipe_id',
         'pb_aluno',
         'xp_aluno'
