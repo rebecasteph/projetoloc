@@ -23,16 +23,39 @@ class TurmaSeeder extends Seeder
         Turma::create([
             'nome'          => 'Turma A', 
             'codigo'        => 'abc',
-            'instituicao'   => 'Instituto Teste',
+            'instituicao'   => 'Instituto Teste a',
     
             'up_xp_aluno'   => '20',
             'up_xp_equipe'  => '50',
             'plus_xp_reagir' => '5',
             'plus_pb_up_elo' => '5',
             'plus_xp_compra' => '5',
+            'prof_id'        => '1'
+        
+        ]);
+        Turma::create([
+            'nome'          => 'Turma B', 
+            'codigo'        => 'abcd',
+            'instituicao'   => 'Instituto Teste b',
     
-            'prof_id'       => '1'
+            'up_xp_aluno'   => '20',
+            'up_xp_equipe'  => '50',
+            'plus_xp_reagir' => '5',
+            'plus_pb_up_elo' => '5',
+            'plus_xp_compra' => '5',
+            'prof_id'        => '2'
+        ]);
+        Turma::create([
+            'nome'          => 'Turma C', 
+            'codigo'        => 'abcde',
+            'instituicao'   => 'Instituto Teste c',
     
+            'up_xp_aluno'   => '20',
+            'up_xp_equipe'  => '50',
+            'plus_xp_reagir' => '5',
+            'plus_pb_up_elo' => '5',
+            'plus_xp_compra' => '5',
+            'prof_id'        => '1'
         ]);
     }
 }

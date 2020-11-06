@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Turma extends Model
 {
     public $timestamps = false;
@@ -22,5 +23,10 @@ class Turma extends Model
         'prof_id'
 
     ];
+
+    public function professor(){
+        return $this->belongsTo(\App\Professor::class,'prof_id');
+    }
+
 
 }
