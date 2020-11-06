@@ -24,7 +24,7 @@ class CreateAlunoParticipasTable extends Migration
             $table->unsignedBigInteger('turma_id');
             $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
 
-            $table->unsignedBigInteger('equipe_id');
+            $table->unsignedBigInteger('equipe_id')->nullable();
             $table->foreign('equipe_id')->references('id')->on('equipes')->onDelete('cascade');
 
         });
