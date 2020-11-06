@@ -4,14 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Equipe extends Model
+class Missao extends Model
 {
-    public $timestamps = false;
-
     protected $fillable = [
         'nome',
-        'soma_xp',
-        'turma_id'
+        'ativa', 
+        'missao_id'
     ];
 
 }

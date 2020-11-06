@@ -15,10 +15,14 @@ class CreateAlunoParticipasTable extends Migration
     {
         Schema::create('aluno_participas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('pb_aluno');
+            $table->integer('xp_aluno');
             
             $table->unsignedBigInteger('aluno_id');
             $table->foreign('aluno_id')->references('id')->on('alunos')->onDelete('cascade');
+
+            $table->unsignedBigInteger('turma_id');
+            $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
 
             $table->unsignedBigInteger('equipe_id');
             $table->foreign('equipe_id')->references('id')->on('equipes')->onDelete('cascade');

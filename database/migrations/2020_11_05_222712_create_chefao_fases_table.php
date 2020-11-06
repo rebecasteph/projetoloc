@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTurmasTable extends Migration
+class CreateChefaoFasesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateTurmasTable extends Migration
      */
     public function up()
     {
-        Schema::create('turmas', function (Blueprint $table) {
+        Schema::create('chefao_fases', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            
-            $table->unsignedBigInteger('aluno_participa_id');
-            $table->foreign('aluno_participa_id')->references('id')->on('aluno_participas')->onDelete('cascade');
+
+            $table->unsignedBigInteger('turma_id');
+            $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
 
         });
     }
@@ -30,6 +30,6 @@ class CreateTurmasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('turmas');
+        Schema::dropIfExists('chefao_fases');
     }
 }

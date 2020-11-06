@@ -8,6 +8,8 @@ use Illuminate\Notifications\Notifiable;
 
 class Aluno extends Authenticatable
 {
+    public $timestamps = false;
+
     protected $fillable = [
         'nome', 'email', 'password',
     ];

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEquipesTable extends Migration
+class CreateMissaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateEquipesTable extends Migration
      */
     public function up()
     {
-        Schema::create('equipes', function (Blueprint $table) {
+        Schema::create('missaos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome')->unique();
-            $table->integer('soma_xp');
+            $table->timestamps();
+
+            $table->string('nome');
+            $table->boolean('ativa');
 
             $table->unsignedBigInteger('turma_id');
             $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
@@ -31,6 +33,6 @@ class CreateEquipesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('equipes');
+        Schema::dropIfExists('missaos');
     }
 }

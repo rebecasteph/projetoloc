@@ -4,16 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Aluno_participa extends Model
+class Sentenca extends Model
 {
     public $timestamps = false;
 
     protected $fillable = [
-        'aluno_id',
-        'tuma_id',
-        'equipe_id',
-        'pb_aluno',
-        'xp_aluno'
+        'descr',
+        'valor',
+        'tipo',
+        'turma_id'
     ];
-
 }
