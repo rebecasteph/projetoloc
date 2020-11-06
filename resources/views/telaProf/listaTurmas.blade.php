@@ -37,35 +37,46 @@
             </div>
         </div>
     </div>
-
+    
+    @forelse($turmas as $turma)
     <br>
-    <div class="card text-center">
+    <div class="card">
         <div class="card-header roxo justify-content-between">
-            <span>Nome da Instituição</span>
+            <span>{{$turma->instituicao}}</span>
             <a class="" href="config-turma">
                 <button class="button is-small is-primary is-outlined fas fa-pen"></button>
             </a>
         </div>
-        <div class="card-body">
-            <h5 class="card-title mb-0">Nome da Turma</h5>
-            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="tags has-addons mt-2 mr-2 mb-0">
-                    <span class="tag is-dark fas fa-users"></span>
-                    <span class="tag is-primary">20</span>
-                </div>
-                <div class="tags has-addons">
-                    <span class="tag is-dark far fa-clipboard"></span>
-                    <span class="tag is-primary">13</span>
+        <div class="card-body row">
+            <div class="col-md-8">
+                <h5 class="card-title mb-0">{{$turma->nome}}</h5>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-md-content-end align-items-center">
+                    <div class="tags has-addons mt-2 mr-2 mb-0">
+                        <span class="tag is-dark fas fa-users"></span>
+                        <span class="tag is-primary">$qtde</span>
+                    </div>
+                    <div class="tags has-addons">
+                        <span class="tag is-dark far fa-clipboard"></span>
+                        <span class="tag is-primary">$qtde</span>
+                    </div>
                 </div>
             </div>
-            <a href="config-turma">
-                <button class="button is-primary is-outlined">Abrir</button>
-            </a>
+            <div class="col-md-1 pl-md-0">
+                <a href="config-turma">
+                    <button class="button is-primary is-outlined">Abrir</button>
+                </a>            
+            </div>
 
 
         </div>
+
     </div>
+    @empty
+    <h1>Nenhuma turma cadastrada</h1>
+
+    @endforelse
 
 
 
