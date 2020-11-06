@@ -17,7 +17,7 @@ class CreateTurmasTable extends Migration
             $table->id();
             $table->string('nome')->unique();
             $table->string('codigo')->unique();
-            $table->string('instituição');
+            $table->string('instituicao');
 
             $table->integer('up_xp_aluno');
             $table->integer('up_xp_equipe');
