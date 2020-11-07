@@ -36,7 +36,7 @@ class ProfController extends Controller
     {
         //dd($turmas->all()); //$turmas = $turma->all() ;
         $alunos = $aluno->count();
-        $turmas = $turma->where('prof_id', auth()->user()->id)->get();
+        $turmas = $turma->where('prof_id', auth()->user()->id)->get(); //comment
  
         return view ('telaProf.listaTurmas', compact('turmas','alunos'));
     }
