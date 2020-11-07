@@ -76,41 +76,23 @@
         </div>
     </div>
 
+    @forelse($turmas as $turma)
     <br>
     <div class="card text-center">
-        <div class="card-header roxo"><span>Nome da Instituição</span></div>
+        <div class="card-header roxo"><span>{{$turma->instituicao}}</span></div>
         <div class="card-body">
-            <h5 class="card-title">Nome da Turma</h5>
+            <h5 class="card-title">{{$turma->nome}}</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
             <a href="/aluno/turma/inicial">
                 <button class="button is-primary is-outlined"> Visitar</button>
             </a>
         </div>
     </div>
+    @empty
+    <h1>Nenhuma turma cadastrada</h1>
 
-    <br>
-    <div class="card text-center">
-        <div class="card-header roxo"><span>Nome da Instituição</span></div>
-        <div class="card-body">
-            <h5 class="card-title">Nome da Turma</h5>
-            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="/aluno/turma/inicial">
-                <button class="button is-primary is-outlined"> Visitar</button>
-            </a>
-        </div>
-    </div>
+    @endforelse
 
-    <br>
-    <div class="card text-center">
-        <div class="card-header roxo"><span>Nome da Instituição</span></div>
-        <div class="card-body">
-            <h5 class="card-title">Nome da Turma</h5>
-            <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="/aluno/turma/inicial">
-                <button class="button is-primary is-outlined"> Visitar</button>
-            </a>
-        </div>
-    </div>
 
 
 

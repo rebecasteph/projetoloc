@@ -12,8 +12,24 @@
                 <a class="nav-link" href="meu-perfil">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Sair</a>
+                <a class="nav-link" href="/aluno/logout">Sair Aluno</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link disabled" href="">Notificação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="">Materiais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gerenciar-turmas">Turmas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="perfil-do-professor">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/professor/logout">Sair Prof</a>
             </li>
         </ul>
-    </div>
+    </div> disabled
 </nav>

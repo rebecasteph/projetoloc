@@ -39,6 +39,7 @@
     </div>
     
     @forelse($turmas as $turma)
+    @can('acesso-turma-prof', $turma)
     <br>
     <div class="card">
         <div class="card-header roxo justify-content-between">
@@ -69,10 +70,10 @@
                 </a>            
             </div>
 
-
         </div>
 
     </div>
+    @endcan
     @empty
     <h1>Nenhuma turma cadastrada</h1>
 
