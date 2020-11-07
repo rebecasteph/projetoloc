@@ -32,12 +32,10 @@ class AlunoController extends Controller
     public function listaTurmas(Turma $turma, Aluno_participa $participa)
     {
         //dd($turmas->all()); 
-        $turmas = $turma->all();
         $all_participa = $participa->where('aluno_id', auth()->user()->id)->get();
- 
-
-        return view ('telaAluno.listaTurmas',compact('turmas','all_participa'));
+        return view ('telaAluno.listaTurmas',compact('all_participa'));
     }
+    
     public function telaPerfilAluno(){
         return view ('telaAluno.telaPerfilAluno');
     }
