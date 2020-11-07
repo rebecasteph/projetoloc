@@ -32,8 +32,5 @@ class AuthServiceProvider extends ServiceProvider
             return $prof->id == $turma->prof_id;
         });
 
-/*         $gate->define('acesso-turma-aluno', function(Aluno_participa $participa, Turma $turma){
-            return $turma->id == $participa->turma_id;
-        });
- */    }
+    }
 }

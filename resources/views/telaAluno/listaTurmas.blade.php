@@ -76,12 +76,12 @@
         </div>
     </div>
 
-    @forelse($turmas as $turma)
+    @forelse($all_participa as $participa)
     <br>
     <div class="card text-center">
-        <div class="card-header roxo"><span>{{$turma->instituicao}}</span></div>
+        <div class="card-header roxo"><span>{{$participa->turma->instituicao}}</span></div>
         <div class="card-body">
-            <h5 class="card-title">{{$turma->nome}}</h5>
+            <h5 class="card-title">{{$participa->turma->nome}}</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
             <a href="/aluno/turma/inicial">
                 <button class="button is-primary is-outlined"> Visitar</button>
