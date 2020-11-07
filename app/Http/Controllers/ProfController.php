@@ -21,8 +21,9 @@ class ProfController extends Controller
 
 
     /* ROTAS PROF */
-    public function inicial(){
-        return view('telaProf.inicial');
+    public function inicial($idTurma){
+        $turma = Turma::find($idTurma);
+        return view('telaProf.inicial',compact('turma'));
     }
     public function missaoProf(){
         return view ('telaProf.missao.telaMissao');
@@ -31,26 +32,20 @@ class ProfController extends Controller
         return view ('telaProf.chefao.faseGeral');
     }
 
-    public function listaTurmasProf(Turma $turma){
-        $turmas = $turma->all() ;
-        //dd($turmas->all());
-/*         $sum_alunos = 0;
-        foreach ($turmas as $turma){
-            $sum_alunos = sumAlunos($turma);
-        }
- */
-        return view ('telaProf.listaTurmas', compact('turmas'));
+    public function listaTurmasProf(Turma $turma, Aluno_participa $aluno)
+    {
+        //dd($turmas->all()); //$turmas = $turma->all() ;
+        $alunos = $aluno->count();
+        $turmas = $turma->where('prof_id', auth()->user()->id)->get(); // ERRADO
+ 
+        return view ('telaProf.listaTurmas', compact('turmas','alunos'));
     }
-/*     public function sumAlunos(Turma $turma): int{
+    public function configTurma($idTurma)
+    {
+        $turma = Turma::find($idTurma);
+        $this->authorize('acesso-turma-prof', $turma);
 
-        $alunos = Aluno_participa::where('id' , '=' , $turma->id )->count();
-        //$alunos = $aluno_participa->all()->where('turma_id', $turma->id);
-        return $alunos;
-
-    }
- */
-    public function configTurma(){
-        return view ('telaProf.configTurma.configTurma');
+        return view ('telaProf.configTurma.configTurma',compact('turma'));
     }
     public function telaPerfilProf(){
         return view ('telaProf.telaPerfilProf');

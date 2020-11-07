@@ -3,9 +3,8 @@
 @section('title', 'Configurar Turma')
   
 @section('content')
-
 <div class="container tab-pane-tela mt-4" style="margin: 0 auto;" > 
-    <h3>Configurações de Turma<small class="text-muted">/Nome Turma</small></h3>
+    <h3>Configurações de Turma<small class="text-muted">{{$turma->nome}}</small></h3>
     <hr>
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">

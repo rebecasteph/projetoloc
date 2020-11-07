@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'prof'], function() {
     Route::group(['middleware' => 'auth:prof'], function() {
         Route::get('/gerenciar-turmas', 'ProfController@listaTurmasProf');
-        Route::get('/prof/turma/inicial', 'ProfController@inicial');
-        Route::get('/config-turma', 'ProfController@configTurma');
+        Route::get('/prof/turma-{id}/inicial', 'ProfController@inicial');
+        Route::get('/config-turma/{id}', 'ProfController@configTurma');
         Route::get('/perfil-do-professor', 'ProfController@telaPerfilProf');
         Route::get('/professor/logout', 'Controller@logoutProf');
 
