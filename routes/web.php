@@ -18,7 +18,7 @@ Route::group(['middleware' => 'prof'], function() {
 Route::group(['middleware' => 'aluno'], function() {
     Route::group(['middleware' => 'auth:aluno'], function() {
         Route::get('/minhas-turmas', 'AlunoController@listaTurmas');
-        Route::get('/aluno/turma/inicial', 'AlunoController@inicial');
+        Route::get('/aluno/{id}/inicial', 'AlunoController@inicial');
         Route::get('/missao-aluno/nome-missao','AlunoController@missaoAluno');
         Route::get('/fase-do-chefao/nome-fase','AlunoController@faseAluno');
         Route::get('/meu-perfil', 'AlunoController@telaPerfilAluno');

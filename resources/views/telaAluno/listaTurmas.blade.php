@@ -83,7 +83,7 @@
         <div class="card-body">
             <h5 class="card-title">{{$participa->turma->nome}}</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-            <a href="/aluno/turma/inicial">
+            <a href="{{url("/aluno/$participa->id/inicial")}}">
                 <button class="button is-primary is-outlined"> Visitar</button>
             </a>
         </div>

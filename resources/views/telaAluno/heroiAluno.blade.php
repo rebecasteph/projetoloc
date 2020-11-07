@@ -11,23 +11,23 @@
                 <img class="escudo-elo-sm d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
             </div>
             <div class="mb-2">
-                <h3 class="mb-1">Nome do Aluno</h3>
-                <span class="badge badge-pill badge-success">Nível 2</span>
-                <span class="badge badge-pill badge-warning">Nível Equipe</span>
+                <h3 class="mb-1">{{Auth::user()->nome}}</h3>
+                <span class="badge badge-pill badge-success">Nível {{$nivel_aluno}}</span>
+                <span class="badge badge-pill badge-warning">Nível {{$nivel_equipe}} Equipe</span>
             </div>
         </div>
         <div class="ml-3 mt-3 mb-md-3">
             <div class="xp">
                 <h3 class="d-inline-flex mr-2">XP</h3>
                 <div class="d-inline-flex progress progress-bar-size mb-2">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:{{$percentage}}%" aria-valuenow="{{$percentage}}" aria-valuemax="{{$turma->up_xp_aluno}}">
                         <!-- <span class="text-dark ml-1"><strong>25%</strong></span> -->
                     </div>
                 </div>
             </div>
             <div class="pb">
                 <h3 class="d-inline-flex mr-2">PB</h3>
-                <h3 class="d-inline-flex">999</h3>
+                <h3 class="d-inline-flex">{{$participa->pb_aluno}}</h3>
             </div>
         </div>
         <!-- --------------------- -->
