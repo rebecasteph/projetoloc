@@ -16,4 +16,9 @@ class Aluno_participa extends Model
         'xp_aluno'
     ];
 
+    public function turma(){
+        return $this->belongsTo(\App\Models\Turma::class,'turma_id');
+    }
+
+
 }
