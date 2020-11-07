@@ -24,8 +24,6 @@ class CreateSentencasTable extends Migration
             $table->integer('valor');
             $table->enum('tipo', ['positiva', 'negativa']);
 
-            $table->unsignedBigInteger('turma_id');
-            $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
 
 
         });
