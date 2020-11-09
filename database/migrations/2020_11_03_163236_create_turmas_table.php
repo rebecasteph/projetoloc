@@ -25,6 +25,8 @@ class CreateTurmasTable extends Migration
             $table->integer('plus_pb_up_elo');
             $table->integer('plus_xp_compra');
 
+            $table->unsignedBigInteger('prof_id');
+            $table->foreign('prof_id')->references('id')->on('professors')->onDelete('cascade');
 
         });
     }
