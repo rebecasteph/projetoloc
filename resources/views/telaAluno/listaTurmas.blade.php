@@ -50,15 +50,15 @@
                         <div class="row">
 
                         
-                        <div class="col-md-4">
+                        <div class="col-md-4 p-0">
                             <input id="heroi-1" type="radio" name="selecionar-heroi" value="heroi-1" />
                             <label class="selecao-heroi heroi-1" for="heroi-1"></label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 p-0">
                             <input id="heroi-2" type="radio" name="selecionar-heroi" value="heroi-2" />
                             <label class="selecao-heroi heroi-2"for="heroi-2"></label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 p-0">
                             <input id="heroi-3" type="radio" name="selecionar-heroi" value="heroi-3" />
                             <label class="selecao-heroi heroi-3"for="heroi-3"></label>
                         </div>
