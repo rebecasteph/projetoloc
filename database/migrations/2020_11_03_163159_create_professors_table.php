@@ -20,6 +20,12 @@ class CreateProfessorsTable extends Migration
             $table->string('password');
             $table->rememberToken();
 
+            $table->unsignedBigInteger('permission_user_id')->unsigned();
+            $table->foreign('permission_user_id')
+                        ->references('id')
+                        ->on('permission_user')
+                        ->onDelete('cascade');
+
         });
     }
 
