@@ -33,11 +33,13 @@ class AlunoController extends Controller
 
         return view('telaAluno.inicial',compact('turma','participa','nivel_aluno','nivel_equipe','percentage'));
     }
-    public function missaoAluno(){
-        return view ('telaAluno.missao.telaMissao');
+    public function missaoAluno($idParticipa){
+        $id = $idParticipa;
+        return view ('telaAluno.missao.telaMissao', compact('id'));
     }
-    public function faseAluno(){
-        return view ('telaAluno.chefao.faseGeral');
+    public function faseAluno($idParticipa){
+        $id = $idParticipa;
+        return view ('telaAluno.chefao.faseGeral', compact('id'));
     }
     public function listaTurmas(Turma $turma, Aluno_participa $participa)
     {

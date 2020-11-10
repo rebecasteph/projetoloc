@@ -19,8 +19,15 @@ Route::group(['middleware' => 'aluno'], function() {
     Route::group(['middleware' => 'auth:aluno'], function() {
         Route::get('/minhas-turmas', 'AlunoController@listaTurmas');
         Route::get('/aluno/{id}/inicial', 'AlunoController@inicial');
-        Route::get('/missao-aluno/nome-missao','AlunoController@missaoAluno');
-        Route::get('/fase-do-chefao/nome-fase','AlunoController@faseAluno');
+
+        Route::get('/aluno/{id}/missao-aluno/nome-missao','AlunoController@missaoAluno');
+        Route::redirect('/aluno/{id}/missao-aluno/minhas-turmas','/minhas-turmas',301);
+        Route::redirect('/aluno/{id}/missao-aluno/meu-perfil','/meu-perfil',301);
+
+        Route::get('/aluno/{id}/fase-do-chefao/nome-fase','AlunoController@faseAluno');
+        Route::redirect('/aluno/{id}/fase-do-chefao/minhas-turmas','/minhas-turmas',301);
+        Route::redirect('/aluno/{id}/fase-do-chefao/meu-perfil','/meu-perfil',301);
+
         Route::get('/meu-perfil', 'AlunoController@telaPerfilAluno');
         Route::get('/aluno/logout', 'Controller@logoutAluno');
     });

@@ -11,7 +11,7 @@
  <div class="area-fase-chefao">
 
      <!-- Botão para voltar -->
-     <a href="{{ url('/inicial') }}">
+     <a href="{{url("/aluno/$id/inicial")}}">
         <button type="button" class="btn btn-roxo"><span class="fas fa-angle-double-left"></span></button>
      </a> 
 
