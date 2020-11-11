@@ -19,4 +19,6 @@ class Professor extends Authenticatable
         'password', 'remember_token',
     ];
 
+    
+
 }

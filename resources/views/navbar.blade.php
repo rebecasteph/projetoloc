@@ -5,6 +5,7 @@
     </button>
     <div class="collapse navbar-collapse my-1 justify-content-end" id="navbarNav">
         <ul class="navbar-nav align-self-end">
+        @can('menu_aluno')
             <li class="nav-item active">
                 <a class="nav-link" href="minhas-turmas">Turmas</a>
             </li>
@@ -12,9 +13,10 @@
                 <a class="nav-link" href="meu-perfil">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/aluno/logout">Sair Aluno</a>
+                <a class="nav-link" href="/aluno/logout">Sair</a>
             </li>
-            
+        @endcan
+        @can('menu_professor')
             <li class="nav-item">
                 <a class="nav-link disabled" href="">Notificação</a>
             </li>
@@ -28,8 +30,9 @@
                 <a class="nav-link" href="perfil-do-professor">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/professor/logout">Sair Prof</a>
+                <a class="nav-link" href="/professor/logout">Sair</a>
             </li>
+        @endcan
         </ul>
-    </div> disabled
+    </div>
 </nav>
