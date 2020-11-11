@@ -15,17 +15,20 @@ class AlunoTableSeeder extends Seeder
         Aluno::create([
             'nome'  => 'aluno',
             'email' => 'aluno@gmail.com',
-            'password' => bcrypt('123')
+            'password' => bcrypt('123'),
+            'permission_user_id' => '2'
         ]);
         Aluno::create([
             'nome'  => 'outro aluno',
             'email' => 'outroaluno@gmail.com',
-            'password' => bcrypt('123')
+            'password' => bcrypt('123'),
+            'permission_user_id' => '2'
         ]);
         Aluno::create([
             'nome'  => 'outro aluno 2',
             'email' => 'outroaluno2@gmail.com',
-            'password' => bcrypt('123')
+            'password' => bcrypt('123'),
+            'permission_user_id' => '2'
         ]);
     }
 }

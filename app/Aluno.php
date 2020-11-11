@@ -11,7 +11,7 @@ class Aluno extends Authenticatable
     public $timestamps = false;
 
     protected $fillable = [
-        'nome', 'email', 'password',
+        'nome', 'email', 'password', 'permission_user_id'
     ];
 
 

@@ -15,12 +15,14 @@ class ProfessorTableSeeder extends Seeder
         Professor::create([
             'nome'  => 'prof',
             'email' => 'prof@gmail.com',
-            'password' => bcrypt('123')
+            'password' => bcrypt('123'),
+            'permission_user_id' => '1'
         ]);
         Professor::create([
             'nome'  => 'outro prof',
             'email' => 'outroprof@gmail.com',
-            'password' => bcrypt('123')
+            'password' => bcrypt('123'),
+            'permission_user_id' => '1'
         ]);
     }
 }
