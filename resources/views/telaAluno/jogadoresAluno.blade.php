@@ -22,7 +22,7 @@
         <div class="inbox_chat nav nav-tab" role="tablist">
 
           @forelse($colegas as $colega)
-          <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-{{$colega->aluno->id}}" href="#heroi-{{$colega->aluno->id}}" role="tab" aria-controls="heroiAluno-{{$colega->aluno->id}}" aria-selected="true">
+          <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-{{$loop->iteration}}" href="#heroi-{{$loop->iteration}}" role="tab" aria-controls="heroiAluno-{{$loop->iteration}}" aria-selected="true">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -48,7 +48,7 @@
       <div class="tela-dir">
         <div class="tab-content" id="pills-tabContent-alunos">
           @forelse($colegas as $colega)
-          <div class="tab-pane fade show active" id="heroi-{{$colega->aluno->id}}" role="tabpanel" aria-labelledby="heroiAluno-tab-{{$colega->aluno->id}}">oi {{$colega->aluno->id}} @include('telaAluno.heroiAluno')</div>
+          <div class="tab-pane fade show active" id="heroi-{{$loop->iteration}}" role="tabpanel" aria-labelledby="heroiAluno-tab-{{$loop->iteration}}">oi {{$loop->iteration}} @include('telaAluno.heroiAluno')</div>
           @empty
             <h1>Nenhum aluno cadastrado</h1>
           @endforelse
@@ -186,7 +186,7 @@
         <tbody>
           @forelse($colegas as $colega)
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">{{$loop->iteration}}</th>
             <td>{{$colega->aluno->nome}}</td>
             <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mitico.png')!!}" alt="elo"></th>
             <td class="nivel">{{intval($colega->xp_aluno/$colega->turma->up_xp_aluno)}}</td>
