@@ -60,6 +60,7 @@
     </div>
     <div class="col-12 col-md-8">
         <div class="area-heroi">
+            <img class="canva-heroi img-fluid" src="{{asset('img/heroi/Heroi_1_Becky/Becky-00.png')}}" alt="heroi">
             
         </div>
         

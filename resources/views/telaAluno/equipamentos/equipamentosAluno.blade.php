@@ -63,7 +63,8 @@
     </div>
     <div class="col-12 col-md-8">
         <div class="area-heroi">
-            
+            <img class="canva-heroi img-fluid" src="{{asset('img/heroi/Heroi_1_Becky/Becky-final.png')}}" alt="heroi">
+
         </div>
         
     </div>

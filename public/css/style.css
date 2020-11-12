@@ -29,7 +29,8 @@ a:hover{color: #00d1b2;}
     .received_withd_msg {padding: 0px !important; width: 57% !important;}
     .mesgs { padding: 30px 15px 0px 25px  !important;}
     .inbox_chat { height: 95.5% !important;}
-
+    .canva-heroi{ max-width: 100%; height: auto;padding-top: 0px !important;}
+    
 }
 
 .none-mobile{display:none;} 
@@ -93,6 +94,15 @@ a, .nome-tarefa{ color: #563d7c;}
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.canva-heroi{
+    max-height: 80vh;
+    width: auto;
+    padding-top: 45px;
+}
+
+.img-escura{opacity : 0.6 }
+
 .img-login{   
     /* filter: brightness(90%); */
     max-height: 250px;
@@ -108,6 +118,7 @@ a, .nome-tarefa{ color: #563d7c;}
 
 .grid-itens {
 display: grid;
+align-items: end;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-gap: 0.5rem;
@@ -115,8 +126,9 @@ grid-gap: 0.5rem;
 
 
 .item-img {
-width: 60%;
-/* height: 60%; */
+/* width: 60%; */
+max-width: 86.88px; 
+max-height: 86.88px; 
 object-fit: cover;
 display: block;
 margin-top: 8px;
