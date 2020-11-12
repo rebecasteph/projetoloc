@@ -15,7 +15,7 @@
         <div class="form-row">
             <div class="col-md-7 mb-3">
                 <label>Nome da turma</label>
-                <input type="text" class="form-control" id="nome-turma" placeholder="Nome da Turma" value="Nome" required>
+                <input type="text" class="form-control" value="{{$turma->nome}}"  id="nome-turma" placeholder="Nome da Turma"required>
                 <div class="valid-feedback">
                     Tudo certo!
                 </div>
@@ -24,7 +24,7 @@
         <div class="form-row">
             <div class="col-md-7 mb-3">
                 <label>Instituição vinculada</label>
-                <input type="text" class="form-control" id="nome-instituicao" placeholder="Instituição" required>
+                <input type="text" class="form-control" value="{{$turma->instituicao}}" id="nome-instituicao" placeholder="Instituição" required>
                 <div class="invalid-feedback">
                     Por favor, informe um e-mail válido.
                 </div>
