@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Dirape\Token\Token;
 use App\Models\Turma;
 
 class TurmaSeeder extends Seeder
@@ -17,12 +18,14 @@ class TurmaSeeder extends Seeder
         'plus_xp_compra',
 
         'prof_id'
+
+        Token :: UniqueString ( $ table_name , $ column_name , 10 );
      */
     public function run()
     {
         Turma::create([
             'nome'          => 'Turma A', 
-            'codigo'        => 'abc',
+            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 10),
             'instituicao'   => 'Instituto Teste a',
     
             'up_xp_aluno'   => '20',
@@ -35,7 +38,7 @@ class TurmaSeeder extends Seeder
         ]);
         Turma::create([
             'nome'          => 'Turma B', 
-            'codigo'        => 'abcd',
+            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 10),
             'instituicao'   => 'Instituto Teste b',
     
             'up_xp_aluno'   => '20',
@@ -47,7 +50,7 @@ class TurmaSeeder extends Seeder
         ]);
         Turma::create([
             'nome'          => 'Turma C', 
-            'codigo'        => 'abcde',
+            'codigo'        => (new Token())->Unique('turmas', 'codigo', 6),
             'instituicao'   => 'Instituto Teste c',
     
             'up_xp_aluno'   => '20',

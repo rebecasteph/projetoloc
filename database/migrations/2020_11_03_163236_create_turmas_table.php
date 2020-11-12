@@ -16,7 +16,7 @@ class CreateTurmasTable extends Migration
         Schema::create('turmas', function (Blueprint $table) {
             $table->id();
             $table->string('nome')->unique();
-            $table->string('codigo')->unique();
+            $table->string('codigo');
             $table->string('instituicao');
 
             $table->integer('up_xp_aluno');

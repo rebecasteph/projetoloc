@@ -2,7 +2,7 @@
     <form class="needs-validation" novalidate>
         <div class="form-row mb-3">
             <div class="col-md-3">
-                <label>Código da Turma: <strong>XXX123Abc</strong></label>
+                <label>Código da Turma: <strong>{{$turma->codigo}}</strong></label>
             </div>
             <div class="col-md-4">
                 <article class="message is-small is-info">
