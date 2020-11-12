@@ -36,7 +36,7 @@
   </div>
 
   <hr>
-  <div class="d-flex justify-content-end">
+  <div class="d-flex justify-content-center">
       <button class="btn btn-roxo" type="submit">Salvar</button>
   </div>
 
