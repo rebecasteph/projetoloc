@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Turma;
+use App\Models\Aluno_participa;
 use App\Professor;
 use App\Aluno;
 use App\Permission;
@@ -33,6 +34,10 @@ class AuthServiceProvider extends ServiceProvider
 
         $gate->define('acesso-turma-prof', function(Professor $prof, Turma $turma){
             return $prof->id == $turma->prof_id;
+        });
+
+        $gate->define('acesso-turma-aluno', function(Aluno $aluno, Aluno_participa $participa){
+            return ($aluno->id == $participa->aluno_id);
         });
 
         $gate->define('menu_aluno', function(){

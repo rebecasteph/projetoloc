@@ -34,6 +34,7 @@ class AlunoController extends Controller
         $colegas = $aluno_participa->where('turma_id',$participa->turma->id)->get();
 
 
+        $this->authorize('acesso-turma-aluno', $participa);
 
         return view('telaAluno.inicial',compact('colegas','participa','nivel_aluno','nivel_equipe','percentage'));
     }
