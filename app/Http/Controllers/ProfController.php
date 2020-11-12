@@ -40,12 +40,14 @@ class ProfController extends Controller
  
         return view ('telaProf.listaTurmas', compact('turmas','alunos'));
     }
-    public function configTurma($idTurma)
+    public function configTurma($idTurma, Aluno_participa $aluno)
     {
         $turma = Turma::find($idTurma);
+        $alunos = $aluno->where('turma_id',$turma->id)->get();
+
         $this->authorize('acesso-turma-prof', $turma);
 
-        return view ('telaProf.configTurma.configTurma',compact('turma'));
+        return view ('telaProf.configTurma.configTurma',compact('turma','alunos'));
     }
     public function telaPerfilProf(){
         return view ('telaProf.telaPerfilProf');
