@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Dirape\Token\Token;
+use DirapeToken;
 
 
 class Turma extends Model
