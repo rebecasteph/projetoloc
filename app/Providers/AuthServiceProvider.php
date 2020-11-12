@@ -45,7 +45,7 @@ class AuthServiceProvider extends ServiceProvider
 /*         menu_aluno
         menu_professor
  */
-        $permissions = Permission::with('permission_user')->get();
-        
+/*         $permissions = Permission::with('permission_user')->get();
+ */        
     }
 }
