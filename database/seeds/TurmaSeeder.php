@@ -25,7 +25,7 @@ class TurmaSeeder extends Seeder
     {
         Turma::create([
             'nome'          => 'Turma A', 
-            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 10),
+            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 6),
             'instituicao'   => 'Instituto Teste a',
     
             'up_xp_aluno'   => '20',
@@ -38,7 +38,7 @@ class TurmaSeeder extends Seeder
         ]);
         Turma::create([
             'nome'          => 'Turma B', 
-            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 10),
+            'codigo'        => (new Token())->UniqueString('turmas', 'codigo', 6),
             'instituicao'   => 'Instituto Teste b',
     
             'up_xp_aluno'   => '20',
