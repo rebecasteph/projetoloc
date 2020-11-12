@@ -20,7 +20,7 @@ class AlunoController extends Controller
     }
 
     /* ROTAS ALUNO */
-    public function inicial($idParticipa)
+    public function inicial($idParticipa, Aluno_participa $aluno_participa)
     {
         $participa = Aluno_participa::find($idParticipa);
 
@@ -30,7 +30,12 @@ class AlunoController extends Controller
         
         $nivel_equipe   = 'X';
 
-        return view('telaAluno.inicial',compact('turma','participa','nivel_aluno','nivel_equipe','percentage'));
+        /* JOGADORES->Turma */
+        $colegas = $aluno_participa->where('turma_id',$participa->turma->id)->get();
+
+
+
+        return view('telaAluno.inicial',compact('colegas','participa','nivel_aluno','nivel_equipe','percentage'));
     }
     public function missaoAluno($idParticipa){
         $id = $idParticipa;

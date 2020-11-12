@@ -19,6 +19,9 @@ class Aluno_participa extends Model
     public function turma(){
         return $this->belongsTo(\App\Models\Turma::class,'turma_id');
     }
+    public function aluno(){
+        return $this->belongsTo(\App\Aluno::class,'aluno_id');
+    }
 
 
 }

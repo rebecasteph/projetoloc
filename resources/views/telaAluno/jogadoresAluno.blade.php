@@ -18,83 +18,27 @@
   <div class="tab-pane fade" id="jogadores-heroi" role="tabpanel" aria-labelledby="jogadores-tab">
   <div class="container-fluid">
     <div class="row inbox_msg">
-
-    
       <div class="inbox_people">
         <div class="inbox_chat nav nav-tab" role="tablist">
 
-          <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-1" href="#heroi-1" role="tab" aria-controls="heroiAluno-1" aria-selected="true">
+          @forelse($colegas as $colega)
+          <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-{{$colega->aluno->id}}" href="#heroi-{{$colega->aluno->id}}" role="tab" aria-controls="heroiAluno-{{$colega->aluno->id}}" aria-selected="true">
             <div class="chat_people">
               <div class="chat_img chat_img-1">
                 <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
               </div>
               <div class="chat_ib">
-                <h5>Sunil Rajput <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
+                <h5>{{$colega->aluno->nome}}<span class="chat_img-1 badge badge-pill badge-success">{{intval($colega->xp_aluno/$colega->turma->up_xp_aluno)}}</span></h5>
                 <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
                 <span class="chat_img-2 badge badge-pill badge-success">2</span>
               </div>
             </div>
           </div>
-          <div class="nav-link chat_list" data-toggle="tab" id="heroiAluno-tab-2" href="#heroi-2" role="tab" aria-controls="heroiAluno-2" aria-selected="false">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Bráulio Freiria <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-3" role="tab" aria-controls="heroiAluno-3" aria-selected="false">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Lineu Campelo <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-4" role="tab" aria-controls="heroiAluno-4" aria-selected="false">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Arnaldo Lagoa<span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-5" role="tab" aria-controls="heroiAluno-5" aria-selected="false">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Bruno Villaça <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
-          <div class="nav-link chat_list" data-toggle="tab" href="#heroi-6" role="tab" aria-controls="heroiAluno-6" aria-selected="false">
-            <div class="chat_people">
-              <div class="chat_img chat_img-1">
-                <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-              </div>
-              <div class="chat_ib">
-                <h5>Sunil Rajput <span class="chat_img-1 badge badge-pill badge-success">2</span></h5>
-                <img class="chat_img-2" style="height: 19.3px; width: 19.3px; margin-left: 43%;" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-                <span class="chat_img-2 badge badge-pill badge-success">2</span>
-              </div>
-            </div>
-          </div>
+          @empty
+            <h1>Nenhum aluno cadastrado</h1>
+          @endforelse
+
+
           
 
         </div>
@@ -103,12 +47,12 @@
 
       <div class="tela-dir">
         <div class="tab-content" id="pills-tabContent-alunos">
-          <div class="tab-pane fade show active" id="heroi-1" role="tabpanel" aria-labelledby="heroiAluno-tab-1">1 @include('telaAluno.heroiAluno')</div>
-          <div class="tab-pane fade" id="heroi-2" role="tabpanel" aria-labelledby="heroiAluno-tab-2">2 @include('telaAluno.heroiAluno')</div>
-          <div class="tab-pane fade" id="heroi-3" role="tabpanel" aria-labelledby="heroiAluno-tab-3">3 @include('telaAluno.heroiAluno')</div>
-          <div class="tab-pane fade" id="heroi-4" role="tabpanel" aria-labelledby="heroiAluno-tab-4">4 @include('telaAluno.heroiAluno')</div>
-          <div class="tab-pane fade" id="heroi-5" role="tabpanel" aria-labelledby="heroiAluno-tab-5">5 @include('telaAluno.heroiAluno')</div>
-          <div class="tab-pane fade" id="heroi-6" role="tabpanel" aria-labelledby="heroiAluno-tab-6">6 @include('telaAluno.heroiAluno')</div>
+          @forelse($colegas as $colega)
+          <div class="tab-pane fade show active" id="heroi-{{$colega->aluno->id}}" role="tabpanel" aria-labelledby="heroiAluno-tab-{{$colega->aluno->id}}">oi {{$colega->aluno->id}} @include('telaAluno.heroiAluno')</div>
+          @empty
+            <h1>Nenhum aluno cadastrado</h1>
+          @endforelse
+
         </div>
       </div>
     </div>
@@ -221,19 +165,12 @@
       
       <br/> 
       <br/> 
-
-
-
     </div>
-
-
-
-  
   </div>
 
   <!-- TURMA -->
   <div class="tab-pane p-4 fade" id="turma" role="tabpanel" aria-labelledby="turma-tab">
-    <h3>Ranking da Turma 1</h3>
+    <h3>Ranking {{$participa->turma->nome}}</h3>
     <br>
     <table class="table table-sm table-hover">
         <thead>
@@ -247,12 +184,12 @@
           </tr>
         </thead>
         <tbody>
-          
+          @forelse($colegas as $colega)
           <tr>
             <th scope="row">1</th>
-            <td>Roberta</td>
+            <td>{{$colega->aluno->nome}}</td>
             <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mitico.png')!!}" alt="elo"></th>
-            <td class="nivel">6</td>
+            <td class="nivel">{{intval($colega->xp_aluno/$colega->turma->up_xp_aluno)}}</td>
             <td class="xp">
               <div class="d-inline-flex progress progress-bar-size mb-2">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -260,71 +197,9 @@
             </td>
             <td class="pb">88</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Roberta</td>
-            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Lenda.png')!!}" alt="elo"></th>
-            <td class="nivel">6</td>
-            <td class="xp">
-              <div class="d-inline-flex progress progress-bar-size mb-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </td>
-            <td class="pb">88</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Roberta</td>
-            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo"></th>
-            <td class="nivel">4</td>
-            <td class="xp">
-              <div class="d-inline-flex progress progress-bar-size mb-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </td>
-            <td class="pb">55</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Roberta</td>
-            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mestre.png')!!}" alt="elo"></th>
-            <td class="nivel">3</td>
-            <td class="xp">
-              <div class="d-inline-flex progress progress-bar-size mb-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </td>
-            <td class="pb">65</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Roberta</td>
-            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Elite.png')!!}" alt="elo"></th>
-            <td class="nivel">3</td>
-            <td class="xp">
-              <div class="d-inline-flex progress progress-bar-size mb-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </td>
-            <td class="pb">65</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>Roberta</td>
-            <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Guerreiro.png')!!}" alt="elo"></th>
-            <td class="nivel">3</td>
-            <td class="xp">
-              <div class="d-inline-flex progress progress-bar-size mb-2">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </td>
-            <td class="pb">65</td>
-          </tr>
-
-
-
-
-
+          @empty
+          <h1>Nenhum aluno cadastrado</h1>
+          @endforelse
 
         </tbody>
       </table>
