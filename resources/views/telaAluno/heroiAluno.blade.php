@@ -20,7 +20,7 @@
             <div class="xp">
                 <h3 class="d-inline-flex mr-2">XP</h3>
                 <div class="d-inline-flex progress progress-bar-size mb-2">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:{{$percentage}}%" aria-valuenow="{{$percentage}}" aria-valuemax="{{$turma->up_xp_aluno}}">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:{{$percentage}}%" aria-valuenow="{{$percentage}}" aria-valuemax="{{$participa->turma->up_xp_aluno}}">
                         <!-- <span class="text-dark ml-1"><strong>25%</strong></span> -->
                     </div>
                 </div>

@@ -14,30 +14,18 @@
                 <div class="panel-heading">Turmas <i class="fa fas fa-award fa-1x"></i></div>
                 <div class="panel-body">
                     <ul class="list-group">
+                        @forelse($all_participa as $participa)
                         <li class="list-group-item text-right">
                             <span class="pull-left">
-                                <strong>Turma Alfa</strong>
-                                <span class="badge badge-pill badge-success">Nível 2</span>
+                                <strong>{{$participa->turma->nome}}</strong>
+                                <span class="badge badge-pill badge-success">Nível {{intval($participa->xp_aluno/$participa->turma->up_xp_aluno)}}</span>
                             </span>
                         </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>Turma Base</strong>
-                                <span class="badge badge-pill badge-success">Nível 3</span>
-                            </span>
-                        </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>Turma 1ºC</strong>
-                                <span class="badge badge-pill badge-success">Nível 1</span>
-                            </span>
-                        </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>Turma Matemática</strong>
-                                <span class="badge badge-pill badge-success">Nível 5</span>
-                            </span>
-                        </li>
+                        @empty
+                        <span class="pull-left">
+                            <strong>Nenhuma turma cadastrada</strong>
+                        </span>
+                        @endforelse
                     </ul> 
                 </div>
             </div>
@@ -46,23 +34,17 @@
 
     	<div class="col-sm-9">
             <form class="needs-validation" novalidate>
-                <!-- <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validar-codigo-aluno">Código do Aluno</label>
-                        <input class="form-control" type="text" placeholder="XXX098abc" readonly>                    
-                    </div>
-                </div> -->
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label>Primeiro nome</label>
-                        <input type="text" class="form-control" id="nome-aluno" placeholder="Nome" value="Nome" required>
+                        <input type="text" class="form-control" id="nome-aluno" placeholder="Nome" value="{{auth()->user()->nome}}" required>
                         <div class="valid-feedback">
                             Tudo certo!
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label>Sobrenome</label>
-                        <input type="text" class="form-control" id="sobrenome-aluno" placeholder="Sobrenome" value="Sobrenome" required>
+                        <input type="text" class="form-control" id="sobrenome-aluno" placeholder="Sobrenome" value="xxx" required>
                         <div class="valid-feedback">
                             Tudo certo!
                         </div>
@@ -71,7 +53,7 @@
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label>E-mail</label>
-                        <input type="text" class="form-control" id="email-aluno" placeholder="e-mail" required>
+                        <input type="text" class="form-control" id="email-aluno" placeholder="e-mail" value="{{auth()->user()->email}}" required>
                         <div class="invalid-feedback">
                             Por favor, informe um e-mail válido.
                         </div>
@@ -107,7 +89,7 @@
     </div><!--/row-->
 
 
-
+    <!-- REVER -->
     <script>
         // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
         (function() {

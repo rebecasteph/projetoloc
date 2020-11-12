@@ -23,11 +23,10 @@ class AlunoController extends Controller
     public function inicial($idParticipa)
     {
         $participa = Aluno_participa::find($idParticipa);
-        $turma = Turma::find($participa->turma_id);
 
-        $nivel_aluno    = intval($participa->xp_aluno/$turma->up_xp_aluno);
-        $atual   = (($nivel_aluno + 1) * $turma->up_xp_aluno) - $participa->xp_aluno;
-        $percentage = round((100*$atual)/$turma->up_xp_aluno, 2);
+        $nivel_aluno    = intval($participa->xp_aluno/$participa->turma->up_xp_aluno);
+        $atual   = (($nivel_aluno + 1) * $participa->turma->up_xp_aluno) - $participa->xp_aluno;
+        $percentage = round((100*$atual)/$participa->turma->up_xp_aluno, 2);
         
         $nivel_equipe   = 'X';
 
@@ -41,15 +40,18 @@ class AlunoController extends Controller
         $id = $idParticipa;
         return view ('telaAluno.chefao.faseGeral', compact('id'));
     }
-    public function listaTurmas(Turma $turma, Aluno_participa $participa)
+    public function listaTurmas(Aluno_participa $participa)
     {
         //dd($turmas->all()); 
         $all_participa = $participa->where('aluno_id', auth()->user()->id)->get();
         return view ('telaAluno.listaTurmas',compact('all_participa'));
     }
 
-    public function telaPerfilAluno(){
-        return view ('telaAluno.telaPerfilAluno');
+    public function telaPerfilAluno( Aluno_participa $participa)
+    {
+        $all_participa = $participa->where('aluno_id', auth()->user()->id)->get();
+
+        return view ('telaAluno.telaPerfilAluno',compact('all_participa'));
     }
     
 }
