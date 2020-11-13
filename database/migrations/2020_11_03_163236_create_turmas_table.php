@@ -17,13 +17,13 @@ class CreateTurmasTable extends Migration
             $table->id();
             $table->string('nome')->unique();
             $table->string('codigo');
-            $table->string('instituicao');
+            $table->string('instituicao')->nullable();
 
-            $table->integer('up_xp_aluno');
-            $table->integer('up_xp_equipe');
-            $table->integer('plus_xp_reagir');
-            $table->integer('plus_pb_up_elo');
-            $table->integer('plus_xp_compra');
+            $table->integer('up_xp_aluno')->default('20');
+            $table->integer('up_xp_equipe')->default('150');
+            $table->integer('plus_xp_reagir')->default('2');
+            $table->integer('plus_pb_up_elo')->default('2');
+            $table->integer('plus_xp_compra')->default('2');
 
             $table->unsignedBigInteger('prof_id');
             $table->foreign('prof_id')->references('id')->on('professors')->onDelete('cascade');
