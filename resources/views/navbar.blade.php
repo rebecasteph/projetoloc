@@ -7,13 +7,13 @@
         <ul class="navbar-nav align-self-end">
         @can('menu_aluno')
             <li class="nav-item active">
-                <a class="nav-link" href="minhas-turmas">Turmas</a>
+                <a class="nav-link" href="{{url("/minhas-turmas")}}">Turmas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="meu-perfil">Perfil</a>
+                <a class="nav-link" href="{{url("/meu-perfil")}}">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/aluno/logout">Sair</a>
+                <a class="nav-link" href="{{url("/aluno/logout"")}}>Sair</a>
             </li>
         @endcan
         @can('menu_professor')
@@ -24,13 +24,13 @@
                 <a class="nav-link disabled" href="">Materiais</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gerenciar-turmas">Turmas</a>
+                <a class="nav-link" href="{{url("/gerenciar-turmas")}}">Turmas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="perfil-do-professor">Perfil</a>
+                <a class="nav-link" href="{{url("/perfil-do-professor")}}">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/professor/logout">Sair</a>
+                <a class="nav-link" href="{{url("/professor/logout")}}">Sair</a>
             </li>
         @endcan
         </ul>
