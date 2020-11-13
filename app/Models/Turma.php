@@ -13,7 +13,6 @@ class Turma extends Model
     
     protected $fillable = [
         'nome', 
-        'codigo',
         'instituicao',
 
         'up_xp_aluno',
@@ -22,8 +21,10 @@ class Turma extends Model
         'plus_pb_up_elo',
         'plus_xp_compra',
 
-        'prof_id'
-
+        
+    ];
+    protected $guarded = [
+        'codigo', 'prof_id'
     ];
 
     public function professor(){

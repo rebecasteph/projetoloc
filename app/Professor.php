@@ -11,7 +11,10 @@ class Professor extends Authenticatable
     public $timestamps = false;
     
     protected $fillable = [
-        'nome', 'email', 'password', 'permission_user_id'
+        'nome', 'email', 'password', 
+    ];
+    protected $guarded = [
+        'permission_user_id'
     ];
 
 

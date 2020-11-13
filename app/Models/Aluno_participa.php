@@ -8,7 +8,7 @@ class Aluno_participa extends Model
 {
     public $timestamps = false;
 
-    protected $fillable = [
+    protected $guarded = [
         'aluno_id',
         'turma_id',
         'equipe_id',

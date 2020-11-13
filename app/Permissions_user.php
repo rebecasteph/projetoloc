@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Permissions_user extends Model
 {
-    protected $fillable = [
+    protected $guarded = [
         'tipo_usuario'
     ];
     
