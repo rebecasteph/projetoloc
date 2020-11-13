@@ -13,7 +13,7 @@
                 <a class="nav-link" href="{{url("/meu-perfil")}}">Perfil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url("/aluno/logout"")}}>Sair</a>
+                <a class="nav-link" href="{{url("/aluno/logout")}}">Sair</a>
             </li>
         @endcan
         @can('menu_professor')
