@@ -17,6 +17,8 @@ class CreateAlunoParticipasTable extends Migration
             $table->id();
             $table->integer('pb_aluno');
             $table->integer('xp_aluno');
+
+            $table->enum('heroi_id', ['heroi-1', 'heroi-2','heroi-3']);
             
             $table->unsignedBigInteger('aluno_id');
             $table->foreign('aluno_id')->references('id')->on('alunos')->onDelete('cascade');
