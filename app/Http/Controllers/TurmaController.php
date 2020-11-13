@@ -40,7 +40,21 @@ class TurmaController extends Controller
 
         $insert = $this->turma->insert($dataForm);
 
-        return redirect()->to('/gerenciar-turmas');
+        return redirect()->to('/gerenciar-turmas')
+                ->with('mensagem', 'Nova turma criada com sucesso!');
+    }
+
+    public function show (Request $request, $id){
+
+        $dataForm = $request->except('_token');
+        $turma = $this->turma->find($id);
+
+        $turma->update($dataForm);
+        
+        return redirect()->to('/gerenciar-turmas')
+                ->with('mensagem', 'Dados alterados com sucesso!');
+        
+
     }
 
     

@@ -3,6 +3,14 @@
 @section('title', 'Minhas Turmas')
   
 @section('content')
+    @if(session('mensagem'))
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <h5>{{session('mensagem')}}</h5>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
 
 <div class="container w-75 tab-pane-tela" style="margin: 0 auto;" > 
 

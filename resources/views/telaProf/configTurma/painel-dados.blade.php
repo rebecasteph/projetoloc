@@ -1,5 +1,6 @@
 <div class="pt-4">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" method="PATCH" action="{{route('turma.update', $turma->id)}}" novalidate>
+        {!! csrf_field() !!}
         <div class="form-row mb-3">
             <div class="col-md-3">
                 <label>Código da Turma: <strong>{{$turma->codigo}}</strong></label>
@@ -15,7 +16,7 @@
         <div class="form-row">
             <div class="col-md-7 mb-3">
                 <label>Nome da turma</label>
-                <input type="text" class="form-control" value="{{$turma->nome}}"  id="nome-turma" placeholder="Nome da Turma"required>
+                <input type="text" class="form-control" value="{{$turma->nome}}"  name="nome" placeholder="Nome da Turma"required>
                 <div class="valid-feedback">
                     Tudo certo!
                 </div>
@@ -24,7 +25,7 @@
         <div class="form-row">
             <div class="col-md-7 mb-3">
                 <label>Instituição vinculada</label>
-                <input type="text" class="form-control" value="{{$turma->instituicao}}" id="nome-instituicao" placeholder="Instituição" required>
+                <input type="text" class="form-control" value="{{$turma->instituicao}}" name="instituicao" placeholder="Nome da instituição" required>
                 <div class="invalid-feedback">
                     Por favor, informe um e-mail válido.
                 </div>
@@ -32,7 +33,7 @@
         </div>
         <hr>
         <div class="d-flex justify-content-center">
-            <button class="btn btn-roxo" type="submit">Enviar</button>
+            <button class="btn btn-roxo">Salvar</button>
         </div>
     </form>
 </div>
