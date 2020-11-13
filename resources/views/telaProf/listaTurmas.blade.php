@@ -31,7 +31,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form class="form-sm mb-4" method="post" action="{{route('turma.store')}}">
+                <form class="form-sm" method="post" action="{{route('turma.store')}}">
                     <div class="modal-body">
                         {!! csrf_field() !!}                                 
                         <input type="text" class="form-control" name="nome" placeholder="Inserir nome da turma" required>
