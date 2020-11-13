@@ -32,14 +32,6 @@ class ProfController extends Controller
         return view ('telaProf.chefao.faseGeral');
     }
 
-    public function listaTurmasProf(Turma $turma, Aluno_participa $aluno)
-    {
-        //dd($turmas->all()); //$turmas = $turma->all() ;
-        $alunos = $aluno->count();
-        $turmas = $turma->where('prof_id', auth()->user()->id)->get(); //comment
- 
-        return view ('telaProf.listaTurmas', compact('turmas','alunos'));
-    }
     public function configTurma($idTurma, Aluno_participa $aluno)
     {
         $turma = Turma::find($idTurma);

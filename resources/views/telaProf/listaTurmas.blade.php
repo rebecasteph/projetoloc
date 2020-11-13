@@ -23,17 +23,16 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="form-sm mb-4">                                    
-                        <input type="text" class="form-control" id="cod-addturma" placeholder="Inserir nome da turma" required>
+                <form class="form-sm mb-4" method="post" action="{{route('turma.store')}}">
+                    <div class="modal-body">
+                        {!! csrf_field() !!}                                 
+                        <input type="text" class="form-control" name="nome" placeholder="Inserir nome da turma" required>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="button is-white" data-dismiss="modal">Cancelar</button>
-                    <a href="{{route('turma.create')}}">
+                    <div class="modal-footer">
+                        <button type="button" class="button is-white" data-dismiss="modal">Cancelar</button>
                         <button class="button is-primary" >Adicionar Turma</button>
-                    </a>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -43,7 +42,7 @@
     <br>
     <div class="card">
         <div class="card-header roxo justify-content-between">
-            <span>{{$turma->instituicao}} - {{$turma->professor->nome}}</span>
+            <span>{{$turma->instituicao}}</span>
             <a class="" href="{{url("config-turma/$turma->id")}}">
                 <button class="button is-small is-primary is-outlined fas fa-pen"></button>
             </a>
