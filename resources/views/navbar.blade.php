@@ -24,7 +24,7 @@
                 <a class="nav-link disabled" href="">Materiais</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gerenciar-turmas">Turmas</a>
+                <a class="nav-link" href="{{route('turma.create')}}">Turmas</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="perfil-do-professor">Perfil</a>

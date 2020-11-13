@@ -13,7 +13,7 @@
         </button>
     </div>
 
-    <!-- Modal add Código Turma-->
+    <!-- Modal Nova Turma-->
     <div class="modal fade" id="addturma" tabindex="-1" role="dialog" aria-labelledby="addturma" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="button is-white" data-dismiss="modal">Cancelar</button>
-                    <a href="config-turma">
+                    <a href="{{route('turma.create')}}">
                         <button class="button is-primary" >Adicionar Turma</button>
                     </a>
                 </div>
