@@ -63,7 +63,17 @@
     </div>
     <div class="col-12 col-md-8">
         <div class="area-heroi">
-            <img class="canva-heroi img-fluid" src="{{asset('img/heroi/Heroi_1_Becky/Becky-final.png')}}" alt="heroi">
+        @switch($participa->heroi_id)
+                @case('heroi-1')
+                    <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-1/heroi-1-final.png')}}" alt="heroi">
+                    @break
+                @case('heroi-2')
+                    <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-2/heroi-2-final.png')}}" alt="heroi">
+                    @break
+                @case('heroi-3')
+                    <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-3/heroi-3-final.png')}}" alt="heroi">
+                    @break
+            @endswitch
 
         </div>
         

@@ -15,8 +15,8 @@ class CreateAlunoParticipasTable extends Migration
     {
         Schema::create('aluno_participas', function (Blueprint $table) {
             $table->id();
-            $table->integer('pb_aluno');
-            $table->integer('xp_aluno');
+            $table->integer('pb_aluno')->default('0');
+            $table->integer('xp_aluno')->default('0');
 
             $table->enum('heroi_id', ['heroi-1', 'heroi-2','heroi-3']);
             

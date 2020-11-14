@@ -234,9 +234,9 @@ padding: 0px;
         -moz-appearance:none;
                 appearance:none;
     }
-    .heroi-1{background-image:url('/img/heroi/Heroi_1_Becky/Becky-final.png');}
-    .heroi-2{background-image:url('/img/heroi/Heroi_2_Eve/Eve-final.png');}
-    .heroi-3{background-image:url('/img/heroi/Heroi_3_Tao/Tao-final.png');}
+    .heroi-1{background-image:url('/img/heroi/heroi-1/heroi-1-final.png');}
+    .heroi-2{background-image:url('/img/heroi/heroi-2/heroi-2-final.png');}
+    .heroi-3{background-image:url('/img/heroi/heroi-3/heroi-3-final.png');}
 
     .hero-selector input:active +.selecao-heroi{opacity: .9;}
     .hero-selector input:checked +.selecao-heroi{
