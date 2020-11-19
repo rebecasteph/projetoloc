@@ -87,7 +87,12 @@
     @forelse($all_participa as $participa)
     <br>
     <div class="card text-center">
-        <div class="card-header roxo"><span>{{$participa->turma->instituicao}}</span></div>
+        <div class="card-header roxo justify-content-between">
+            <span>{{$participa->turma->instituicao}}</span>
+            <a class="" href="{{url("/aluno/$participa->id/regras")}}">
+                <button class="button is-small is-primary is-outlined">Ver regras</button>
+            </a>
+        </div>
         <div class="card-body">
             <h5 class="card-title">{{$participa->turma->nome}}</h5>
             <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>

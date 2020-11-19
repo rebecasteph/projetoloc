@@ -20,6 +20,7 @@ Route::group(['middleware' => 'aluno'], function() {
         //Route::redirect('/aluno/{id}/fase-do-chefao/minhas-turmas','/minhas-turmas',301);
         Route::get('/minhas-turmas',                        'Aluno_participaController@lista');
         Route::get('/aluno/{id}/inicial',                   'Aluno_participaController@inicial');
+        Route::get('/aluno/{id}/regras',                   'Aluno_participaController@regras');
         Route::get('/aluno/{id}/missao-aluno/nome-missao',  'AlunoController@missaoAluno');
         Route::get('/aluno/{id}/fase-do-chefao/nome-fase',  'AlunoController@faseAluno');
         Route::get('/meu-perfil',                           'AlunoController@telaPerfilAluno');
