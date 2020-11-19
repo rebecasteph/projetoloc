@@ -1,3 +1,11 @@
+<div class="col-md-4" style="position: absolute; right: 16px;">
+    <article class="mt-4 message is-info">
+        <div class="message-body p-2">
+        Os Elos de equipe também estão disponíveis para seus alunos.
+        </div>
+    </article>
+</div>
+
 <div class="timeline">
     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">

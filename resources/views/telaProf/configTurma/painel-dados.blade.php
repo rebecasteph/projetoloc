@@ -6,7 +6,7 @@
                 <h5><small>Código da Turma:</small> <strong>{{$turma->codigo}}</strong></h5>
             </div>
             <div class="col-md-4">
-                <article class="message is-small is-info">
+                <article class="message is-info">
                     <div class="message-body p-2">
                         Copie e compartilhe o código com seus alunos.
                     </div>
