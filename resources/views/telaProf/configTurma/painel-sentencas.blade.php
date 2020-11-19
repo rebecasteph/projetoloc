@@ -1,3 +1,11 @@
+<div class="col-md-4" style="position: absolute; right: 16px;">
+    <article class="mt-4 message is-info">
+        <div class="message-body p-2">
+        Crie e edite pontuações bônus e penalidades que poderão ser atribuídas.
+        </div>
+    </article>
+</div>
+
 <div class="row pt-5">
     <div class="col-sm-6">
         <h4 class="mb-3 text-danger">XP-</h4>

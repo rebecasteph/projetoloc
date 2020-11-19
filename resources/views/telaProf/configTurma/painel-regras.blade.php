@@ -1,3 +1,11 @@
+<div class="col-md-5" style="position: absolute; right: 16px;">
+    <article class="mt-4 message is-info">
+        <div class="message-body p-2">
+        Edite as metas e obetivos de pontuação da turma.
+        </div>
+    </article>
+</div>
+
 <form class="pt-5" method="PATCH" action="{{route('turma.update', $turma->id)}}">
   
   <div class="form-group row">
