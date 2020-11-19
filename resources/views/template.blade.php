@@ -22,6 +22,7 @@
         <!-- local style -->
         <link rel="stylesheet" href="{{asset('/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('/css/chat.css')}}">
+        <link rel="stylesheet" href="{{asset('/css/elos.css')}}">
 
         <title>LoC | @yield('title')</title>
     </head>
