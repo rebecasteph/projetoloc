@@ -37,9 +37,17 @@ class ProfController extends Controller
         $turma = Turma::find($idTurma);
         $alunos = $aluno->where('turma_id',$turma->id)->get();
 
+        $meta_elite     = ($turma->up_xp_equipe);
+        $meta_mestre    = ($turma->up_xp_equipe)*2;
+        $meta_epico     = ($turma->up_xp_equipe)*3;
+        $meta_lendario  = ($turma->up_xp_equipe)*4;
+        $meta_mitico    = ($turma->up_xp_equipe)*5;
+
+
         $this->authorize('acesso-turma-prof', $turma);
 
-        return view ('telaProf.configTurma.configTurma',compact('turma','alunos'));
+        return  view ('telaProf.configTurma.configTurma',
+                compact('turma','alunos','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
     }
     public function telaPerfilProf(){
         return view ('telaProf.telaPerfilProf');

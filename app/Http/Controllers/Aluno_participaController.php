@@ -30,6 +30,22 @@ class Aluno_participaController extends Controller
         return view ('telaAluno.listaTurmas',compact('all_participa'));
     }
 
+    public function regras($idParticipa, Aluno_participa $aluno_participa, Turma $turma)
+    {
+        $participa = Aluno_participa::find($idParticipa);
+        $this->authorize('acesso-turma-aluno', $participa);
+        $turma = Turma::find($participa->turma_id);
+        
+        $meta_elite     = ($turma->up_xp_equipe);
+        $meta_mestre    = ($turma->up_xp_equipe)*2;
+        $meta_epico     = ($turma->up_xp_equipe)*3;
+        $meta_lendario  = ($turma->up_xp_equipe)*4;
+        $meta_mitico    = ($turma->up_xp_equipe)*5;
+
+        return  view('telaAluno.regras.regrasTurma',
+                compact('turma','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
+    }
+
     public function inicial($idParticipa, Aluno_participa $aluno_participa)
     {
         $participa = Aluno_participa::find($idParticipa);
