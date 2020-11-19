@@ -52,7 +52,7 @@
         <div class="card-header roxo justify-content-between">
             <span>{{$turma->instituicao}}</span>
             <a class="" href="{{url("config-turma/$turma->id")}}">
-                <button class="button is-small is-primary is-outlined fas fa-pen"></button>
+                <button class="button is-small is-primary is-outlined fas fa-cog"></button>
             </a>
         </div>
         <div class="card-body row">
