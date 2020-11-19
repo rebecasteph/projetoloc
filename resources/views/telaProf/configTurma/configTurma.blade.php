@@ -28,7 +28,7 @@
         <div class="tab-pane fade pl-5 pr-5 show active" id="painel-dados" role="tabpanel" aria-labelledby="dados-tab">@include('telaprof.configTurma.painel-dados')</div>
         <div class="tab-pane fade pl-5 pr-5" id="painel-alunos" role="tabpanel" aria-labelledby="alunos-tab">@include('telaprof.configTurma.painel-alunos')</div>
         <div class="tab-pane fade pl-5 pr-5" id="painel-regras" role="tabpanel" aria-labelledby="regras-tab">@include('telaprof.configTurma.painel-regras')</div>
-        <div class="tab-pane fade pl-5 pr-5" id="painel-sentencas" role="tabpanel" aria-labelledby="sentencas-tab">@include('telaprof.configTurma.painel-sentencas')</div>
+        <div class="tab-pane fade" id="painel-sentencas" role="tabpanel" aria-labelledby="sentencas-tab">@include('telaprof.configTurma.painel-sentencas')</div>
         <div class="tab-pane fade pl-5 pr-5" id="painel-elos" role="tabpanel" aria-labelledby="elos-tab">@include('telaprof.configTurma.painel-elos')</div>
     </div>
 
