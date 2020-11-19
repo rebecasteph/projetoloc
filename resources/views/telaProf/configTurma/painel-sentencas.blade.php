@@ -14,7 +14,7 @@
                     <td class="">23</td>
                     <td class="">descr</td>
                     <td class=""> 
-                        <button class="btn btn-sm btn-outline-warning"><i class="fa fas fa-pen"></i></button> 
+                        <button class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#edit-sentenca"><i class="fa fas fa-pen"></i></button> 
                         <button class="btn btn-sm btn-outline-danger"><i class="fa fas fa-trash"></i></button> 
                     </td>
                 </tr>
@@ -40,7 +40,7 @@
                     <td>23</td>
                     <td>descr</td>
                     <td> 
-                        <button class="btn btn-sm btn-outline-warning"><i class="fa fas fa-pen"></i></button> 
+                        <button class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#edit-sentenca"><i class="fa fas fa-pen"></i></button> 
                         <button class="btn btn-sm btn-outline-danger"><i class="fa fas fa-trash"></i></button> 
                     </td>
                 </tr>
@@ -77,7 +77,7 @@
                 <div class="form-group">
                     <label>Valor</label>
                     <input name="valor" class="form-control">
-                    <small id="passwordHelpInline" class="text-muted">
+                    <small class="text-muted">
                         Leve em consideração os objetivos e metas individuais e de equipe.
                     </small>
                 </div>
