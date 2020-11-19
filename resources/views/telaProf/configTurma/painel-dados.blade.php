@@ -3,7 +3,7 @@
         {!! csrf_field() !!}
         <div class="form-row mb-3">
             <div class="col-md-3">
-                <label>Código da Turma: <strong>{{$turma->codigo}}</strong></label>
+                <h5><small>Código da Turma:</small> <strong>{{$turma->codigo}}</strong></h5>
             </div>
             <div class="col-md-4">
                 <article class="message is-small is-info">
