@@ -26,6 +26,9 @@ class Aluno_participa extends Model
     public function aluno(){
         return $this->belongsTo(\App\Aluno::class,'aluno_id');
     }
+    public function equipe(){
+        return $this->belongsTo(\App\Models\Equipe::class,'equipe_id');
+    }
 
 
 }

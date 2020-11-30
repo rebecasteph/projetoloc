@@ -10,8 +10,11 @@ class Equipe extends Model
 
     protected $fillable = [
         'nome',
-        'soma_xp',
         'turma_id'
     ];
+
+    public function turma(){
+        return $this->belongsTo(\App\Models\Turma::class,'turma_id');
+    }
 
 }
