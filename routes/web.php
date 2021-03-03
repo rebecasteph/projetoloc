@@ -6,11 +6,16 @@ Route::group(['middleware' => 'prof'], function() {
     Route::group(['middleware' => 'auth:prof'], function() {
         Route::get('/gerenciar-turmas',         'TurmaController@lista');
         Route::get('/prof/turma-{id}/inicial',  'ProfController@inicial');
-        Route::get('/config-turma/{id}',        'ProfController@configTurma');
+        Route::get('/config-turma/{id}',        'TurmaController@configTurma');
         Route::get('/perfil-do-professor',      'ProfController@telaPerfilProf');
         Route::get('/professor/logout',         'Controller@logoutProf');
         
         Route::resource('turma',                'TurmaController');
+        Route::resource('aluno',                'AlunoController');
+        Route::resource('prof',                 'ProfController');
+        Route::resource('participa',            'Aluno_participaController');
+        Route::resource('missao',               'MissaoController');
+        Route::resource('fase',                 'FaseController');
     }); 
     
 });
