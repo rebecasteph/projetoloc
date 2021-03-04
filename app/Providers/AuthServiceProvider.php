@@ -47,9 +47,6 @@ class AuthServiceProvider extends ServiceProvider
             return Auth::user()->permission_user_id == '1';
         });
 
-/*         menu_aluno
-        menu_professor
- */
 /*         $permissions = Permission::with('permission_user')->get();
  */        
     }

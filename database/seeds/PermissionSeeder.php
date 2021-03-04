@@ -20,13 +20,5 @@ class PermissionSeeder extends Seeder
             'nome' => 'menu_aluno',
             'permission_user_id' => '2'
         ]);
-        Permission::create([
-            'nome' => 'outro_professor',
-            'permission_user_id' => '1'
-        ]);
-        Permission::create([
-            'nome' => 'outro_professor',
-            'permission_user_id' => '1'
-        ]);
     }
 }
