@@ -20,14 +20,13 @@
     <div class="row">
   		<div class="col-sm-3"><!--left col-->
             <div class="panel panel-default">
-                <div class="panel-heading">Turmas <i class="fa fas fa-award fa-1x"></i></div>
+                <div class="panel-heading">Turmas <i class="fas fa-chalkboard-teacher fa-1x"></i></div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        @forelse($all_participa as $participa)
+                        @forelse($turmas as $aturma)
                         <li class="list-group-item text-right">
                             <span class="pull-left">
-                                <strong>{{$participa->turma->nome}}</strong>
-                                <span class="badge badge-pill badge-success">Nível {{intval($participa->xp_aluno/$participa->turma->up_xp_aluno)}}</span>
+                                <strong>{{$aturma->nome}}</strong>
                             </span>
                         </li>
                         @empty
@@ -52,7 +51,7 @@
             </div>
         @endif -->
 
-            <form class="needs-validation" method="PATCH" action="{{route('alunoo.update', auth()->user()->id)}}" novalidate>
+            <form class="needs-validation" method="PATCH" action="{{route('prof.update', auth()->user()->id)}}" novalidate>
                 {!! csrf_field() !!}
                 <div class="form-row">
                     <div class="col-md-6 mb-3">

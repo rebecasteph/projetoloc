@@ -33,7 +33,26 @@ class ProfController extends Controller
     }
 
     public function telaPerfilProf(){
-        return view ('telaProf.telaPerfilProf');
+        $turmas = Turma::where('prof_id', auth()->user()->id)->get();
+        return view ('telaProf.telaPerfilProf', compact('turmas'));
     }
+
+    /* MANTER PERFIL */   
+    public function show (Request $request){
+        $dataForm = $request->except('_token', 'password');
+
+        if ($request['password'] != null)
+            $dataForm['password'] = bcrypt($request['password']);
+
+        $update = auth()->user()->update($dataForm);
+
+        if($update)
+            return redirect()->to('/perfil-do-professor')
+                    ->with('sucesso', 'Dados alterados com sucesso!');
+        
+        return redirect()->to('/perfil-do-professor')
+                ->with('erro', 'Erro ao alterar dados.');
+    }
+
     
 }
