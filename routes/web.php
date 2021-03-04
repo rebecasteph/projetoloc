@@ -11,7 +11,6 @@ Route::group(['middleware' => 'prof'], function() {
         Route::get('/professor/logout',         'Controller@logoutProf');
         
         Route::resource('turma',                'TurmaController');
-        Route::resource('aluno',                'AlunoController');
         Route::resource('prof',                 'ProfController');
         Route::resource('participa',            'Aluno_participaController');
         Route::resource('missao',               'MissaoController');
@@ -32,6 +31,7 @@ Route::group(['middleware' => 'aluno'], function() {
         Route::get('/aluno/logout',                         'Controller@logoutAluno');
         
         Route::resource('participa',                        'Aluno_participaController');
+        Route::resource('alunoo',                           'AlunoController');
 
     });
 
