@@ -27,7 +27,7 @@
                 <label>Instituição vinculada</label>
                 <input type="text" class="form-control" value="{{$turma->instituicao}}" name="instituicao" placeholder="Nome da instituição" required>
                 <div class="invalid-feedback">
-                    Por favor, informe um e-mail válido.
+                    Por favor, informe um nome válido.
                 </div>
             </div>
         </div>
