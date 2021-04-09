@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="modal-body">
-                    @include('telaAluno.missao.painelAtvAluno')
+                    @include('menu.missao.painelAtvAluno')
                 </div>
             </div>
         </div>

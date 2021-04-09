@@ -27,7 +27,7 @@
                 <a class="nav-link" href="{{url("/gerenciar-turmas")}}">Turmas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url("/perfil-do-professor")}}">Perfil</a>
+                <a class="nav-link" href="{{url("/professor/meu-perfil")}}">Perfil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{url("/professor/logout")}}">Sair</a>

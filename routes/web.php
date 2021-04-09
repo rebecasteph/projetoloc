@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'prof'], function() {
     Route::group(['middleware' => 'auth:prof'], function() {
-        Route::get('/gerenciar-turmas',         'TurmaController@lista');
-        Route::get('/prof/turma-{id}/inicial',  'ProfController@inicial');
+        Route::get('/gerenciar-turmas',         'TurmaController@listaTurmaProf');
+        Route::get('/prof/turma-{id}/inicial',  'TurmaController@inicialProf');
         Route::get('/config-turma/{id}',        'TurmaController@configTurma');
-        Route::get('/perfil-do-professor',      'ProfController@telaPerfilProf');
+        Route::get('/professor/meu-perfil',     'ProfController@telaPerfilProf');
         Route::get('/professor/logout',         'Controller@logoutProf');
         
         Route::resource('turma',                'TurmaController');
@@ -22,8 +22,8 @@ Route::group(['middleware' => 'prof'], function() {
 Route::group(['middleware' => 'aluno'], function() {
     Route::group(['middleware' => 'auth:aluno'], function() {
         //Route::redirect('/aluno/{id}/fase-do-chefao/minhas-turmas','/minhas-turmas',301);
-        Route::get('/minhas-turmas',                        'Aluno_participaController@lista');
-        Route::get('/aluno/{id}/inicial',                   'Aluno_participaController@inicial');
+        Route::get('/minhas-turmas',                        'Aluno_participaController@listaTurmaAluno');
+        Route::get('/aluno/{id}/inicial',                   'Aluno_participaController@inicialAluno');
         Route::get('/aluno/{id}/regras',                   'Aluno_participaController@regras');
         Route::get('/aluno/{id}/missao-aluno/nome-missao',  'AlunoController@missaoAluno');
         Route::get('/aluno/{id}/fase-do-chefao/nome-fase',  'AlunoController@faseAluno');

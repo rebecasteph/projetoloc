@@ -21,10 +21,6 @@ class ProfController extends Controller
 
 
     /* ROTAS PROF */
-    public function inicial($idTurma){
-        $turma = Turma::find($idTurma);
-        return view('telaProf.inicial',compact('turma'));
-    }
     public function missaoProf(){
         return view ('telaProf.missao.telaMissao');
     }
@@ -34,7 +30,7 @@ class ProfController extends Controller
 
     public function telaPerfilProf(){
         $turmas = Turma::where('prof_id', auth()->user()->id)->get();
-        return view ('telaProf.telaPerfilProf', compact('turmas'));
+        return view ('meuPerfil', compact('turmas'));
     }
 
     /* MANTER PERFIL */   
@@ -47,10 +43,10 @@ class ProfController extends Controller
         $update = auth()->user()->update($dataForm);
 
         if($update)
-            return redirect()->to('/perfil-do-professor')
+            return redirect()->to('/meu-perfil')
                     ->with('sucesso', 'Dados alterados com sucesso!');
         
-        return redirect()->to('/perfil-do-professor')
+        return redirect()->to('/meu-perfil')
                 ->with('erro', 'Erro ao alterar dados.');
     }
 

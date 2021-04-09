@@ -17,14 +17,25 @@ class TurmaController extends Controller
         $this->turma = $turma;
     }
 
-    public function lista(Turma $turma, Aluno_participa $aluno)
+    public function listaTurmaProf(Turma $turma, Aluno_participa $aluno)
     {
         //dd($turmas->all()); //$turmas = $turma->all() ;
         $alunos = $aluno->count();
         $turmas = $turma->where('prof_id', auth()->user()->id)->orderBy('nome', 'asc')->get(); //comment
  
-        return view ('telaProf.listaTurmas', compact('turmas','alunos'));
+        return view ('listaTurmas', compact('turmas','alunos'));
     }
+
+    public function inicialProf($idTurma){
+        $turma  = Turma::find($idTurma);
+
+        $alunos = Aluno_participa::where('turma_id',$turma->id)->get();
+        
+        $this->authorize('acesso-turma-prof', $turma);
+
+        return view('menu.inicial',compact('turma', 'alunos'));
+    }
+
 
     public function store (Request $request){
         //dd($request->only('codigo-turma'));

@@ -24,7 +24,7 @@ class AlunoController extends Controller
     public function missaoAluno($idParticipa)
     {
         $id = $idParticipa;
-        return view ('telaAluno.missao.telaMissao', compact('id'));
+        return view ('menu.missao.telaMissao', compact('id'));
     }
     public function faseAluno($idParticipa)
     {
@@ -34,7 +34,7 @@ class AlunoController extends Controller
     public function telaPerfilAluno( Aluno_participa $participa)
     {
         $all_participa = $participa->where('aluno_id', auth()->user()->id)->get();
-        return view ('telaAluno.telaPerfilAluno',compact('all_participa'));
+        return view ('meuPerfil',compact('all_participa'));
     }
 
     /* MANTER PERFIL */   

@@ -90,7 +90,6 @@
                     </small>
                 </div>
 
-
                 </div>
                 <div class="modal-footer">
                 <button class="btn btn-sm btn-outline-success"><i class="fa fas fa-check"></i></button> 
@@ -100,28 +99,5 @@
         </div>
     </div>
 
-
 </div>
 
-
-<!--     <form>
-        <div class="row">
-            <div class="col-6">
-            <h4 class="mb-3 text-success">XP+</h4>
-                <input name="descr" class="form-control" placeholder="Nome">
-            </div>
-            <div class="col-6">
-                <h4 class="mb-3 text-danger">XP-</h4>
-                <div class="row-form d-flex">
-                <div class="col-10 pl-0">
-                    <input name="descr" class="form-control" placeholder="Sobrenome">
-                </div>
-                <div class="col-2 pl-0">
-                    <input name="descr" class="form-control" placeholder="Sobrenome">
-                </div>
-
-                </div>
-            </div>
-        </div>
-    </form>
- -->
