@@ -14,19 +14,16 @@ Route::group(['middleware' => 'prof'], function() {
         Route::resource('prof',                 'ProfController');
         Route::resource('participa',            'Aluno_participaController');
         Route::resource('missao',               'MissaoController');
-        Route::resource('fase',                 'FaseController');
     }); 
     
 });
 
 Route::group(['middleware' => 'aluno'], function() {
     Route::group(['middleware' => 'auth:aluno'], function() {
-        //Route::redirect('/aluno/{id}/fase-do-chefao/minhas-turmas','/minhas-turmas',301);
         Route::get('/minhas-turmas',                        'Aluno_participaController@listaTurmaAluno');
         Route::get('/aluno/{id}/inicial',                   'Aluno_participaController@inicialAluno');
         Route::get('/aluno/{id}/regras',                   'Aluno_participaController@regras');
         Route::get('/aluno/{id}/missao-aluno/nome-missao',  'AlunoController@missaoAluno');
-        Route::get('/aluno/{id}/fase-do-chefao/nome-fase',  'AlunoController@faseAluno');
         Route::get('/meu-perfil',                           'AlunoController@telaPerfilAluno');
         Route::get('/aluno/logout',                         'Controller@logoutAluno');
         

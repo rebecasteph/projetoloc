@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Aluno_participa;
-use App\Models\ChefaoFase;
 use App\Models\Equipe;
 use App\Models\Missao;
 use App\Models\MissaoAtv;
@@ -24,10 +23,6 @@ class ProfController extends Controller
     public function missaoProf(){
         return view ('telaProf.missao.telaMissao');
     }
-    public function faseProf(){
-        return view ('telaProf.chefao.faseGeral');
-    }
-
     public function telaPerfilProf(){
         $turmas = Turma::where('prof_id', auth()->user()->id)->get();
         return view ('meuPerfil', compact('turmas'));

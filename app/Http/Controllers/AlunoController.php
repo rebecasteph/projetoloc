@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Aluno_participa;
-use App\Models\ChefaoFase;
 use App\Models\Equipe;
 use App\Models\Missao;
 use App\Models\MissaoAtv;
@@ -25,11 +24,6 @@ class AlunoController extends Controller
     {
         $id = $idParticipa;
         return view ('menu.missao.telaMissao', compact('id'));
-    }
-    public function faseAluno($idParticipa)
-    {
-        $id = $idParticipa;
-        return view ('telaAluno.chefao.faseGeral', compact('id'));
     }
     public function telaPerfilAluno( Aluno_participa $participa)
     {
