@@ -21,9 +21,6 @@
                 <a class="nav-link disabled" href="">Notificação</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="">Materiais</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="{{url("/gerenciar-turmas")}}">Turmas</a>
             </li>
             <li class="nav-item">
