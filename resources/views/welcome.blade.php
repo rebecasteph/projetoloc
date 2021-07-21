@@ -52,7 +52,7 @@
     </head>
     <body class="grad p-0">
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <a class="navbar-brand" href="#">
                 <img src="/img/loc-titulo.png" height="30" class="d-inline-block align-top" alt="">
             </a>
@@ -61,10 +61,10 @@
             </button>
             <div class="collapse navbar-collapse" id="menu-inicial">
                 <div class="navbar-nav links m-2">
-                    <a class="nav-item nav-link" href="/aluno/login">O projeto</a>
-                    <a class="nav-item nav-link" href="/professor/login">O sistema</a>
-                    <a class="nav-item nav-link" href="">sobre nós</a>
-                    <a class="nav-item nav-link btn is-primary is-inverted" href="">login</a>
+                    <a class="nav-item nav-link btn is-primary is-inverted" href="/login">Login</a>
+                    <a class="nav-item nav-link" href="#">O projeto</a>
+                    <a class="nav-item nav-link" href="#">O sistema</a>
+                    <a class="nav-item nav-link" href="#">Sobre nós</a>
                 </div>
             </div>
         </nav>
@@ -91,7 +91,7 @@
             
             </div>
             <!-- IMAGEM -->
-            <img src="img/herois-inicial.png" class="herois-inicial " srcset="">
+            <img src="img/herois-inicial.png" class="herois-inicial none-mobile" srcset="">
         </div>
 
 
