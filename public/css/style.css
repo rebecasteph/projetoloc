@@ -7,6 +7,19 @@ footer{
     width:  100%;
     margin-top:25px;
 }
+
+.grad {
+    background-image: linear-gradient(45deg, #2f2143 ,#2f2143, #563d7c);
+  }
+
+.herois-inicial {
+    float: left;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 a:hover{color: #00d1b2;}
 
 .tab-pane-tela{ min-height: 83vh;}
@@ -30,6 +43,7 @@ a:hover{color: #00d1b2;}
     .mesgs { padding: 30px 15px 0px 25px  !important;}
     .inbox_chat { height: 95.5% !important;}
     .canva-heroi{ max-width: 100%; height: auto;padding-top: 0px !important;}
+    .herois-inicial{max-width: 40%;}
     
 }
 
@@ -263,3 +277,4 @@ padding: 0px;
                 filter: brightness(1.2) grayscale(.5) opacity(.9);
     }
 /* fim selecionar heroi */
+

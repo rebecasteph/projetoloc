@@ -13,84 +13,87 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bulma.css">
+
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/c1d8bcdf04.js" crossorigin="anonymous"></script>
+            
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+
         <style>
             html, body {
-                /* background-color: #563d7c;
-                color: #fff; */
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
                 margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
+                height: 100%;
             }
 
             .links > a {
-                color: #fff;
+                color: #cbbde2;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 15px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
         </style>
     </head>
-    <body class="roxo p-0">
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    League of Class
+    <body class="grad p-0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="/img/loc-titulo.png" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-inicial" aria-controls="menu-inicial" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-inicial">
+                <div class="navbar-nav links m-2">
+                    <a class="nav-item nav-link" href="/aluno/login">O projeto</a>
+                    <a class="nav-item nav-link" href="/professor/login">O sistema</a>
+                    <a class="nav-item nav-link" href="">sobre nós</a>
+                    <a class="nav-item nav-link btn is-primary is-inverted" href="">login</a>
                 </div>
-                <!--
-                <div class="subtitle m-b-md">
-                    Pontuações baseado no engajamento do estudante
-                </div>
-                -->
-                <div class="links">
-                    <a href="/aluno/login">Aluno</a>
-                    <a href="/professor/login">Professor</a>
-                    <a href="">Blog</a>
-                    <a href="">Sobre nós</a>
-
-
-
-                    
-                </div>
-
-                
             </div>
+        </nav>
+
+
+        <div class="conteiner">
+            <div class="p-md-5 pt-3 col-md-6 align-items-center" style="color: #dee2e6 !important;">
+                <h1 class="display-4">League of Class</h1>
+                <p class="lead">Aumente o engajamento de seus alunos na submissão de respostas e atividades</p>
+
+                <p>O League of Class é uma plataforma gamificada inspirada
+                    em jogos Multiplayer Online Battle Arena (MOBA), com pontuações baseadas
+                    em submissões de atividades.</p>
+                <p>Automatize suas avaliações e incentive o trabalho em equipe em suas aulas.</p>
+            
+                
+                    <a class="btn is-primary is-inverted" href="#" role="button">Saiba mais</a>
+
+                    <a class="btn is-primary is-outlined" href="#" role="button">Começar agora</a>
+
+
+
+
+            
+            </div>
+            <!-- IMAGEM -->
+            <img src="img/herois-inicial.png" class="herois-inicial " srcset="">
         </div>
+
 
         
     </body>
