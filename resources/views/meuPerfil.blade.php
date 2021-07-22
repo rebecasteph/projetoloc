@@ -88,9 +88,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 mb-3 align-self-end">
-                        <a data-toggle="collapse" href="#novasenha" role="button" aria-expanded="false" aria-controls="novasenha">
-                            <u>Editar senha</u>
-                        </a>
+                        <a class="not-active " href="">Recuperar senha</a>
                     </div>
                 </div>
                 

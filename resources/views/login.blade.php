@@ -43,7 +43,7 @@
     <body class="grad pt-0" >
 
     <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand none-mobile" href="#">
+            <a class="navbar-brand none-mobile" href="/">
                 <img src="/img/loc-titulo.png" height="30" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-inicial" aria-controls="menu-inicial" aria-expanded="false" aria-label="Alterna navegação">
@@ -105,7 +105,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="d-flex justify-content-between text-center mt-2">
-                                                    <a href="">Recuperar senha</a>
+                                                    <a class="not-active " href="">Recuperar senha</a>
                                                     <button class="btn btn-roxo">Login</button>
                                                 </div>                                        
                                             </form>

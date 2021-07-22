@@ -23,6 +23,13 @@ footer{
 
 .titulo-login{height: 45px;width: 336px;}
 
+.not-active {
+    pointer-events: none !important;
+    cursor: default !important;
+    text-decoration: none !important;
+    color: #2f2143 !important;
+  }
+
 a:hover{color: #00d1b2;}
 
 .tab-pane-tela{ min-height: 83vh;}
