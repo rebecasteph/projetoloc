@@ -7,7 +7,7 @@
     </button>
     <div class="collapse navbar-collapse my-1 justify-content-between" id="navbarNav">
         @can('menu_aluno')<h5 class="m-0 navbar-text">Área do Aluno</h5>@endcan
-        @can('menu_porfessor')<h5 class="m-0 navbar-text">Área do Professor</h5>@endcan
+        @can('menu_professor')<h5 class="m-0 navbar-text">Área do Professor</h5>@endcan
         <ul class="navbar-nav">
         @can('menu_aluno')
             <li class="nav-item active">
