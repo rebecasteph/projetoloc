@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PermissionSeeder::class);
         $this->call(TurmaSeeder::class);
         $this->call(Aluno_participaSeeder::class);
+        $this->call(SentencaSeeder::class);
 
 
         

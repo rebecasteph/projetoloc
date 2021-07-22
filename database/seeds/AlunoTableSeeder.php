@@ -13,7 +13,7 @@ class AlunoTableSeeder extends Seeder
     public function run()
     {
         Aluno::create([
-            'nome'  => 'aluno',
+            'nome'  => 'Aluno',
             'email' => 'aluno@gmail.com',
             'password' => bcrypt('123'),
             'permission_user_id' => '2'
