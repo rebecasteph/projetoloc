@@ -5,7 +5,6 @@
 
         <link rel="sortcut icon" href="loc-titulo.png" type="image/png" />;
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
         <!-- icons -->
         <script src="https://kit.fontawesome.com/c1d8bcdf04.js" crossorigin="anonymous"></script>
             
@@ -26,18 +25,47 @@
         <link rel="stylesheet" href="../css/chat.css">
 
         <title>LoC | Login</title>
+
+        <style>
+            .links > a {
+                color: #cbbde2;
+                padding: 0 25px;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+        </style>
+
     </head>
     <body class="grad pt-0" >
-        <div class="container-fluid">
 
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand none-mobile" href="#">
+                <img src="/img/loc-titulo.png" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-inicial" aria-controls="menu-inicial" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-inicial">
+                <div class="navbar-nav links m-2">
+                    <a class="nav-item nav-link show-mobile" href="/">início</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <a href="/">
+                <img class="titulo-login show-mobile"src="{!!asset('img/loc-titulo-extendido-2.png')!!}" alt="titulo">
+            </a>
             <div class="row justify-content-center" style="height: 90vh;">
-                <div class="col-sm-7 align-self-center">
-                    <a style="color: #cbbde2; font-size: 40px; font-family: 'Nunito', sans-serif; margin: 0; text-decoration: none;" href="/">
-                        League of Class
-                    </a>
+                <div class="col-md-7 align-self-center">
                     <div class="card" > 
                         <div class="d-flex" style="height: 70vh;">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                                 <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
@@ -130,8 +158,11 @@
                                     </div> <!--/.Panel 8-->
                                 </div><!-- tab-content -->
                             </div>
-                            <div class="col-sm-6 none-mobile"style="margin: auto;">
-                                <img class="img-login"src="{!!asset('img/mago.png')!!}" alt="mago">  
+                            <div class="col-md-6 none-mobile"style="margin: auto;">
+                                <div class="">
+                                    <img class="titulo-login"src="{!!asset('img/loc-titulo-extendido.png')!!}" alt="titulo">  
+                                    <img class="img-login"src="{!!asset('img/mago.png')!!}" alt="mago">  
+                                </div>
                             </div>
                         </div>
                         
