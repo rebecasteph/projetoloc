@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="col-sm-6">
-        <h4 class="mb-3 text-success">XP+</h4>
+        <h4 class="mb-3 text-warning">XP+</h4>
         <table class="table table-sm">
             <thead>
                 <tr>
