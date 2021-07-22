@@ -13,18 +13,14 @@ class CreateSentencasTable extends Migration
      */
     public function up()
     {
-/*         'descr',
-        'valor',
-        'tipo',
-        'turma_id'
- */
         Schema::create('sentencas', function (Blueprint $table) {
             $table->id();
-            $table->string('descr')->unique();
+            $table->string('descr');
             $table->integer('valor');
             $table->enum('tipo', ['positiva', 'negativa']);
 
-
+            $table->unsignedBigInteger('turma_id');
+            $table->foreign('turma_id')->references('id')->on('turmas')->onDelete('cascade');
 
         });
     }
