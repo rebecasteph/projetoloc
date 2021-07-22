@@ -40,11 +40,9 @@ Route::group(['middleware' => 'aluno'], function() {
 
 Route::get('/', 'Controller@index')->name('/');
 
-Route::get('/aluno/login',          'Controller@loginAluno');
-Route::post('/aluno/login',         'Controller@postLoginAluno');
-
-Route::get('/professor/login',      'Controller@loginProf');
-Route::post('/professor/login',     'Controller@postLoginProf');
+Route::get('/login',          'Controller@login');
+Route::post('/login',     'Controller@postLogin');
+Route::post('/cadastro',     'Controller@cadastro');
 
 
 
