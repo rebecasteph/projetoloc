@@ -2,7 +2,7 @@
   $(function () {
     $('#tela-jogadores-tab ').click(function(event) {
         $('#jogadores-heroi .tela-dir .tab-content .tab-pane').tab('show');
-    });  
+    }); 
   })
 </script>
 
@@ -72,7 +72,7 @@
           <div class="tab-content" id="pills-tabContent-alunos">
             @can('menu_aluno')
               @forelse($colegas as $colega)
-              <div class="tab-pane fade" id="heroi-{{$loop->iteration}}"">
+              <div class="tab-pane fade" id="heroi-{{$loop->iteration}}">
                 @include('menu.heroiJogadores')
               </div>
               @empty
@@ -80,6 +80,13 @@
               @endforelse
             @endcan
             @can('menu_professor')
+              <script>
+                $(function () {
+                  $(document).ready(function(){
+                      $('#jogadores-heroi .tela-dir .tab-content #heroi-1').tab('show');
+                  }); 
+                })
+              </script>
               @forelse($alunos as $participante)
               <div class="tab-pane fade" id="heroi-{{$loop->iteration}}">
                 @include('menu.heroiJogadores')

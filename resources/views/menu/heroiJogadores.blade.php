@@ -20,12 +20,12 @@
             @can('menu_aluno')
             <h3 class="mb-1">{{$colega->aluno->nome}}</h3>
             <span class="badge badge-pill badge-success">Nível {{intval($colega->xp_aluno/$colega->turma->up_xp_aluno)}}</span>
-            <span class="badge badge-pill badge-warning">Nível {{$nivel_equipe}} Equipe</span>
+            <span class="badge badge-pill badge-warning">Nível X Equipe</span>
             @endcan
             @can('menu_professor')
             <h3 class="mb-1">{{$participante->aluno->nome}}</h3>
             <span class="badge badge-pill badge-success">Nível {{intval($participante->xp_aluno/$participante->turma->up_xp_aluno)}}</span>
-            <span class="badge badge-pill badge-warning">Nível {{$nivel_equipe}} Equipe</span>
+            <span class="badge badge-pill badge-warning">Nível X Equipe</span>
             @endcan
         </div>
     </div>
@@ -107,7 +107,7 @@
                 @break
         @endswitch
     @endcan
-    @can('menu_profesoor')
+    @can('menu_professor')
         @switch($participante->heroi_id)
             @case('heroi-1')
                 <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-1/heroi-1-00.png')}}" alt="heroi">
