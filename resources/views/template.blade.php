@@ -39,7 +39,7 @@
  
         <footer>
             <div class="text-center py-3 ">
-                © 2020 League of Class
+                © 2021 League of Class
             </div>
         </footer>
     </body>
