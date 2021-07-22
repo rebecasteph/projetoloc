@@ -105,7 +105,7 @@
     <div class="tabela-equipe">
       <div class=" mb-1">
         <img class="escudo-elo-md d-inline" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
-        <h3 class="d-inline ">Nome da Equipe 1</h3>
+        <h3 class="d-inline ">Equipe 1 (fictícia)</h3>
       </div>
       <table class="table table-hover">
         <thead>
@@ -154,7 +154,7 @@
     <div class="tabela-equipe">
       <div class=" mb-1">
         <img class="escudo-elo-md d-inline" src="{!!asset('img/elos/elo_Guerreiro.png')!!}" alt="elo">
-        <h3 class="d-inline ">Nome da Equipe 2</h3>
+        <h3 class="d-inline ">Equipe 2 (fictícia)</h3>
       </div>
       <table class="table table-hover">
         <thead>
@@ -216,6 +216,7 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Nome</th>
+          <th scope="col">Sentenças</th>
           <th scope="col" class="elo-equipe-turma">Equipe</th>
           <th scope="col" class="nivel">Nível</th>            
           <th scope="col" class="xp">XP</th>
@@ -246,7 +247,11 @@
         <tr>
           <th scope="row">{{$loop->iteration}}</th>
           <td>{{$participante->aluno->nome}}</td>
-          <th class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mitico.png')!!}" alt="elo"></th>
+          <td> 
+            <button class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#sentenca-positiva"><i class="fa fas fa-plus"></i></button> 
+            <button class="btn btn-sm btn-outline-danger"  data-toggle="modal" data-target="#sentenca-negativa"><i class="fa fas fa-minus"></i></button> 
+          </td>
+          <td class="elo-equipe-turma"><img class="escudo-elo-sm " src="{!!asset('img/elos/elo_Mitico.png')!!}" alt="elo"></th>
           <td class="nivel">{{intval($participante->xp_aluno/$turma->up_xp_aluno)}}</td>
           <td class="xp">
             <div class="d-inline-flex progress progress-bar-size mb-2">
@@ -254,6 +259,7 @@
             </div>
           </td>
           <td class="pb">88</td>
+
         </tr>
         @empty
         <h1>Nenhum aluno cadastrado</h1>
@@ -264,5 +270,58 @@
 
   </div>
 
+</div>
+
+<!-- Modal SENTENÇA POSITIVA -->
+<div class="modal fade" id="sentenca-positiva" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Atribuir sentença positiva</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Selecionar sentença</label>
+          <select class="form-control" id="">
+            <option>Sentença 1</option>
+            <option>Sentença 2</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-between">
+          <small class="form-text text-warning">Valor: +0</small>
+          <button class="btn btn-sm btn-outline-warning"><i class="fa fas fa-plus"></i> Atribuir</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal SENTENÇA NEGATIVA -->
+<div class="modal fade" id="sentenca-negativa" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Atribuir sentença negativa</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Selecionar sentença</label>
+          <select class="form-control" id="exampleFormControlSelect2">
+            <option>Sentença 1</option>
+            <option>Sentença 2</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-between">
+          <small class="form-text text-danger">Valor: -0</small>
+          <button class="btn btn-sm btn-outline-danger"><i class="fa fas fa-minus"></i> Atribuir</button> 
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
