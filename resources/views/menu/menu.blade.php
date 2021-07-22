@@ -5,13 +5,11 @@
       <a class="nav-link active" id="heroiAluno-tab" data-toggle="pill" href="#heroi" role="tab" aria-controls="heroi" aria-selected="true">Herói</a>
       <a class="nav-link"   id="tela-jogadores-tab"       data-toggle="pill" href="#tela-jogadores" role="tab" aria-controls="jogadores" aria-selected="false">Jogadores</a>
       <a class="nav-link"   id="equipamentos-tab"    data-toggle="pill" href="#equipamentos" role="tab" aria-controls="equipamentos" aria-selected="false">Equipamentos</a>
-      <a class="nav-link"   id="chefao-tab"          data-toggle="pill" href="#fase-do-chefao" role="tab" aria-controls="chefao" aria-selected="false">Fase do Chefão</a>
       <a class="nav-link"   id="missao-tab"          data-toggle="pill" href="#missao" role="tab" aria-controls="missao" aria-selected="false">Missão</a>
       <a class="nav-link"   id="chat-tab"            data-toggle="pill" href="#chat" role="tab" aria-controls="chat" aria-selected="false">Chat</a>
     @endcan
     @can('menu_professor')
       <a class="nav-link active"   id="tela-jogadores-tab"     data-toggle="pill" href="#tela-jogadores" role="tab" aria-controls="jogadores" aria-selected="true">Jogadores</a>
-      <a class="nav-link"   id="chefao-tab"          data-toggle="pill" href="#fase-do-chefao" role="tab" aria-controls="chefao" aria-selected="false">Fase do Chefão</a>
       <a class="nav-link"   id="missao-tab"          data-toggle="pill" href="#missao" role="tab" aria-controls="missao" aria-selected="false">Missão</a>
       <a class="nav-link"   id="relatorio-tab"       data-toggle="pill" href="#relatorio" role="tab" aria-controls="relatorio" aria-selected="false">Relatórios</a>
       <a class="nav-link"   id="chat-tab"            data-toggle="pill" href="#chat" role="tab" aria-controls="chat" aria-selected="false">Chat</a>
