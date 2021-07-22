@@ -19,12 +19,12 @@
             </li>
         @endcan
         @can('menu_professor')
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="">Notificação</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="">Materiais</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="{{url("/gerenciar-turmas")}}">Turmas</a>
             </li>

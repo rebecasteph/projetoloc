@@ -27,13 +27,13 @@
   @endcan
   @can('menu_aluno')
     <div class="tab-pane-tela tab-pane fade show active" id="heroi" role="tabpanel" aria-labelledby="heroiAluno-tab">
-      <div class="nav nav-sec text-md-center"><p>{{$participa->turma->nome}}</p></div>@include('telaAluno.meuHeroi')
+      <div class="nav nav-sec text-md-center"><p>{{$participa->turma->nome}}</p></div>@include('menu.heroiAluno')
     </div>
     <div class="tab-pane-tela tab-pane fade" id="tela-jogadores" role="tabpanel" aria-labelledby="jogadoresAluno-tab">@include('menu.jogadores')</div>
     <div class="tab-pane-tela tab-pane fade" id="equipamentos" role="tabpanel" aria-labelledby="equipamentosAluno-tab">
       <div class="nav nav-sec text-md-center"><p>Loja de Equipamentos</p></div>@include('telaAluno.equipamentos.equipamentosAluno')
     </div>
-    <div class="tab-pane-tela tab-pane fade" id="fase-do-chefao" role="tabpanel" aria-labelledby="chefaoAluno-tab">
+    <!-- <div class="tab-pane-tela tab-pane fade" id="fase-do-chefao" role="tabpanel" aria-labelledby="chefaoAluno-tab">
       <div class="nav nav-sec text-md-center"><p>{{$participa->turma->nome}}</p></div>@include('telaAluno.chefao.chefaoAluno')
     </div>
     <div class="tab-pane-tela tab-pane fade" id="missao" role="tabpanel" aria-labelledby="missaoAluno-tab">
@@ -42,12 +42,7 @@
     </div>
     <div class="tab-pane-tela tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chatAluno-tab">
       <div class="nav nav-sec text-md-center"><p>Contatos Recentes</p></div>@include('chat')
-    </div>
+    </div> -->
   @endcan 
   </div>
 </div>
-<!-- <footer>
-  <div class="text-center py-3">© 2020 League of Class
-  </div>
-</footer>
- -->

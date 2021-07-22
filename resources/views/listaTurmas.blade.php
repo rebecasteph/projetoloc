@@ -137,10 +137,10 @@
             <a class="" href="{{url("config-turma/$turma->id")}}"><button class="button is-small is-primary is-outlined fas fa-cog"></button></a>
         </div>
         <div class="card-body row">
-            <div class="col-md-8">
+            <div class="col-11">
                 <h5 class="card-title mb-0">{{$turma->nome}}</h5>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="d-flex justify-md-content-end align-items-center">
                     <div class="tags has-addons mt-2 mr-2 mb-0">
                         <span class="tag is-dark fas fa-users"></span>
@@ -151,8 +151,8 @@
                         <span class="tag is-primary">$qtde</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-1 pl-md-0">
+            </div> -->
+            <div class="col-1 pl-md-0">
                 <a href="{{url("/prof/turma-$turma->id/inicial")}}"><button class="button is-primary is-outlined">Abrir</button></a>            
             </div>
         </div>
