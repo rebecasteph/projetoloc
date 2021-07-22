@@ -95,7 +95,20 @@
 <div class="col-12 col-md-8">
     <div class="area-heroi">
     @can('menu_aluno')
-        @switch($participa->heroi_id)
+        @switch($colega->heroi_id)
+            @case('heroi-1')
+                <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-1/heroi-1-00.png')}}" alt="heroi">
+                @break
+            @case('heroi-2')
+                <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-2/heroi-2-00.png')}}" alt="heroi">
+                @break
+            @case('heroi-3')
+                <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-3/heroi-3-00.png')}}" alt="heroi">
+                @break
+        @endswitch
+    @endcan
+    @can('menu_profesoor')
+        @switch($participante->heroi_id)
             @case('heroi-1')
                 <img class="canva-heroi img-fluid" src="{{asset('img/heroi/heroi-1/heroi-1-00.png')}}" alt="heroi">
                 @break

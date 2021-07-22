@@ -1,4 +1,10 @@
-
+<script>
+  $(function () {
+    $('#tela-jogadores-tab ').click(function(event) {
+        $('#jogadores-heroi .tela-dir .tab-content .tab-pane').tab('show');
+    });  
+  })
+</script>
 
 <ul class="nav-sec justify-content-center nav nav-pills" id="pills-tab" role="tablist">
   <li class="nav-item active">
@@ -20,8 +26,8 @@
       <div class="row inbox_msg">
 
         <div class="inbox_people">
-
-          <div class="inbox_chat nav nav-tab" role="tablist">
+          
+          <div class="inbox_chat nav nav-tab" id=""role="tablist">
             @can('menu_aluno')
               @forelse($colegas as $colega)
               <div class="nav-link chat_list" data-toggle="tab" href="#heroi-{{$loop->iteration}}">
