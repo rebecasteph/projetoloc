@@ -24,7 +24,7 @@
           <div class="inbox_chat nav nav-tab" role="tablist">
             @can('menu_aluno')
               @forelse($colegas as $colega)
-              <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-{{$loop->iteration}}" href="#heroi-{{$loop->iteration}}" role="tab" aria-controls="heroiAluno-{{$loop->iteration}}" aria-selected="true">
+              <div class="nav-link chat_list" data-toggle="tab" href="#heroi-{{$loop->iteration}}">
                 <div class="chat_people">
                   <div class="chat_img chat_img-1">
                     <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -42,7 +42,7 @@
             @endcan          
             @can('menu_professor')
               @forelse($alunos as $participante)
-              <div class="nav-link chat_list active" data-toggle="tab" id="heroiAluno-tab-{{$loop->iteration}}" href="#heroi-{{$loop->iteration}}" role="tab" aria-controls="heroiAluno-{{$loop->iteration}}" aria-selected="true">
+              <div class="nav-link chat_list" data-toggle="tab" href="#heroi-{{$loop->iteration}}">
                 <div class="chat_people">
                   <div class="chat_img chat_img-1">
                     <img class="escudo-elo-sm mb-2" src="{!!asset('img/elos/elo_Epico.png')!!}" alt="elo">
@@ -66,8 +66,8 @@
           <div class="tab-content" id="pills-tabContent-alunos">
             @can('menu_aluno')
               @forelse($colegas as $colega)
-              <div class="tab-pane fade show active" id="heroi-{{$loop->iteration}}" role="tabpanel" aria-labelledby="heroiAluno-tab-{{$loop->iteration}}">
-                {{$loop->iteration}} @include('menu.heroiAluno')
+              <div class="tab-pane fade" id="heroi-{{$loop->iteration}}"">
+                @include('menu.heroiJogadores')
               </div>
               @empty
                 <h1>Nenhum aluno cadastrado</h1>
@@ -75,9 +75,8 @@
             @endcan
             @can('menu_professor')
               @forelse($alunos as $participante)
-              <div class="tab-pane fade show active" id="heroi-{{$loop->iteration}}" role="tabpanel" aria-labelledby="heroiAluno-tab-{{$loop->iteration}}">
-                {{$loop->iteration}} 
-                @include('menu.heroiAluno')
+              <div class="tab-pane fade" id="heroi-{{$loop->iteration}}">
+                @include('menu.heroiJogadores')
               </div>
               @empty
                 <h1>Nenhum aluno cadastrado</h1>

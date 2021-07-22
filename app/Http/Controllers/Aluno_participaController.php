@@ -49,15 +49,15 @@ class Aluno_participaController extends Controller
     {
         $participa      = Aluno_participa::find($idParticipa);
         $nivel_aluno    = intval($participa->xp_aluno/$participa->turma->up_xp_aluno);
-        $atual          = (($nivel_aluno + 1) * $participa->turma->up_xp_aluno) - $participa->xp_aluno;
-        $percentage     = round((100*$atual)/$participa->turma->up_xp_aluno, 2);
+        $percentage     = ($participa->xp_aluno%$participa->turma->up_xp_aluno)/$participa->turma->up_xp_aluno*100;
+        $atual          = $participa->xp_aluno % $participa->turma->up_xp_aluno;
         $nivel_equipe   = 'X';
         /* JOGADORES->Turma */
         $colegas = $aluno_participa->where('turma_id',$participa->turma->id)->get();
         
         $this->authorize('acesso-turma-aluno', $participa);
 
-        return view('menu.inicial',compact('colegas','participa','nivel_aluno','nivel_equipe','percentage'));
+        return view('menu.inicial',compact('colegas','participa','nivel_aluno','atual','nivel_equipe','percentage'));
     }
 
     

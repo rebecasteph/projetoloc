@@ -29,7 +29,6 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
 
         <style>
             html, body {
@@ -69,7 +68,6 @@
             </div>
         </nav>
 
-
         <div class="conteiner">
             <div class="p-md-5 pt-3 col-md-6 align-items-center" style="color: #dee2e6 !important;">
                 <h1 class="display-4">League of Class</h1>
@@ -79,22 +77,13 @@
                     em jogos Multiplayer Online Battle Arena (MOBA), com pontuações baseadas
                     em submissões de atividades.</p>
                 <p>Automatize suas avaliações e incentive o trabalho em equipe em suas aulas.</p>
-            
-                
-                    <a class="btn is-primary is-inverted" href="#" role="button">Saiba mais</a>
 
-                    <a class="btn is-primary is-outlined" href="#" role="button">Começar agora</a>
-
-
-
-
-            
+                <a class="btn is-primary is-inverted" href="#" role="button">Saiba mais</a>
+                <a class="btn is-primary is-outlined" href="login" role="button">Começar agora</a>
             </div>
             <!-- IMAGEM -->
             <img src="img/herois-inicial.png" class="herois-inicial none-mobile" srcset="">
+            
         </div>
-
-
-        
     </body>
 </html>

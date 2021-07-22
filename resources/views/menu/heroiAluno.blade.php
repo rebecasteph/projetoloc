@@ -18,7 +18,7 @@
             </div>
             <div class="mb-2">
                 @can('menu_aluno')
-                <h3 class="mb-1">{{$colega->aluno->nome}}</h3>
+                <h3 class="mb-1">{{$participa->aluno->nome}}</h3>
                 <span class="badge badge-pill badge-success">Nível {{$nivel_aluno}}</span>
                 <span class="badge badge-pill badge-warning">Nível {{$nivel_equipe}} Equipe</span>
                 @endcan
@@ -27,9 +27,14 @@
         <div class="ml-3 mt-3 mb-md-3">
             <div class="xp">
                 <h3 class="d-inline-flex mr-2">XP</h3>
+                @can('menu_aluno')
+                    <h>{{$atual}}/{{$participa->turma->up_xp_aluno}}</h>
+                @endcan
                 <div class="d-inline-flex progress progress-bar-size mb-2">
                     @can('menu_aluno')
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width:{{$percentage}}%" aria-valuenow="{{$percentage}}" aria-valuemax="{{$participa->turma->up_xp_aluno}}"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                    style="width:{{$percentage}}%" aria-valuenow="{{$percentage}}"
+                    aria-valuemax="{{$participa->turma->up_xp_aluno}}"></div>
                     @endcan
                 </div>
             </div>
@@ -37,7 +42,6 @@
                 <h3 class="d-inline-flex mr-2">PB</h3>
                 <h3 class="d-inline-flex">
                     @can('menu_aluno')      {{$participa->pb_aluno}} @endcan
-                    @can('menu_professor')  {{$participante->pb_aluno}} @endcan
                 </h3>
             </div>
         </div>
