@@ -38,7 +38,7 @@
                 <div class="modal-header">
                     <div class="col-auto">
                         <h5 class="modal-title">Título da Atividade</h5>
-                        <div class="row show-moblie">
+                        <div class="row show-mobile">
                             <div class="col-auto tags has-addons mb-0">
                                 <span class="tag is-dark mb-0">XP</span>
                                 <span class="tag is-warning mb-0">15</span>

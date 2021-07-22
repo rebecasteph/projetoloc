@@ -21,6 +21,8 @@ footer{
     right: 0;
 }
 
+.titulo-login{height: 45px;width: 336px;}
+
 a:hover{color: #00d1b2;}
 
 .tab-pane-tela{ min-height: 83vh;}
@@ -37,7 +39,7 @@ a:hover{color: #00d1b2;}
     .chat_img-2 { display: none !important; text-align: center;}
     .chat_img-1 { display: block !important;}
     .chat_ib { padding: 0 0 0 15px !important;}
-    .show-moblie{display:none;}
+    .show-mobile{display:none;}
     .none-mobile{display:flex !important;}
     .coment_img{width: 4% !important;}
     .received_withd_msg {padding: 0px !important; width: 57% !important;}
