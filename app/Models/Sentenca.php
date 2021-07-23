@@ -19,5 +19,7 @@ class Sentenca extends Model
         return $this->belongsTo(\App\Models\Turma::class,'turma_id');
     }
 
+    
+
 
 }

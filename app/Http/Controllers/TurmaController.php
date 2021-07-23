@@ -70,12 +70,15 @@ class TurmaController extends Controller
 
     public function configTurma($idTurma, Aluno_participa $aluno)
     {
-        $turma        = Turma::find($idTurma);
-        $s_positivas  = Sentenca::where('turma_id',$turma->id)
-                                ->with('tipo','positivas')->get();
-        $s_negativas  = Sentenca::where('turma_id',$turma->id)
-                                ->with('tipo','negativas')->get();
-        $alunos     = $aluno->where('turma_id',$turma->id)->get();
+        $turma          = Turma::find($idTurma);
+        $p_sentencas      = Sentenca::where('turma_id',$turma->id)
+                                    ->where('tipo','positiva')->get();
+        $n_sentencas      = Sentenca::where('turma_id',$turma->id)
+                                    ->where('tipo','negativa')->get();
+
+        //dd($p_sentencas->all());
+
+        $alunos         = $aluno->where('turma_id',$turma->id)->get();
 
         $meta_elite     = ($turma->up_xp_equipe);
         $meta_mestre    = ($turma->up_xp_equipe)*2;
@@ -87,7 +90,7 @@ class TurmaController extends Controller
         $this->authorize('acesso-turma-prof', $turma);
 
         return  view ('telaProf.configTurma.configTurma',
-                compact('turma','alunos','s_positivas','s_negativas','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
+                compact('turma','alunos','p_sentencas','n_sentencas','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
     }
 
 

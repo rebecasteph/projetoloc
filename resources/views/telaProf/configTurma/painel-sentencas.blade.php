@@ -18,8 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-           {{ dd($s_positivas)}}
-            @foreach($s_negativas as $sentenca)
+            @forelse($n_sentencas as $sentenca)
                 <tr>
                     <td>{{$sentenca->valor}}</td>
                     <td>{{$sentenca->descr}}</td>
@@ -28,48 +27,10 @@
                         <button class="btn btn-sm btn-outline-danger"><i class="fa fas fa-trash"></i></button> 
                     </td>
                 </tr>
+            @empty
+            <span>Nenhuma sentença cadastrada</span>
+            @endforelse
             </tbody>
-            <!-- Modal EDITAR SENTENÇA -->
-            <div class="modal fade" id="edit-sentenca" data-sentenca="{{$sentenca}}" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Dados da sentença</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form role="form" action="{{url('/editsentenca', $turma->id)}}" method="post">
-                                {!! csrf_field() !!}
-                                <div class="form-group">
-                                    <label >Tipo da sentença</label>
-                                    <select selected="{{$sentenca->tipo}}" class="form-control" name="tipo">
-                                        <option value="positiva">Positiva</option>
-                                        <option value="negativa">Negativa</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>Descrição</label>
-                                    <textarea value="{{$sentenca->descr}}" name="descr" class="form-control" rows="3"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Valor</label>
-                                    <input value="{{$sentenca->valor}}" name="valor" class="form-control">
-                                    <small class="text-muted">
-                                        Leve em consideração os objetivos e metas individuais e de equipe.
-                                    </small>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                    <button class="btn btn-roxo"><i class="fa fas fa-plus pr-1"> </i>Salvar</button> 
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            @endforeach
         </table>
         <hr>
         <div class="d-flex justify-content-center">
@@ -87,14 +48,18 @@
                 </tr>
             </thead>
             <tbody>
+            @forelse($p_sentencas as $sentenca)
                 <tr>
-                    <td>23</td>
-                    <td>descr</td>
+                    <td>{{$sentenca->valor}}</td>
+                    <td>{{$sentenca->descr}}</td>
                     <td> 
                         <button class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#edit-sentenca"><i class="fa fas fa-pen"></i></button> 
                         <button class="btn btn-sm btn-outline-danger"><i class="fa fas fa-trash"></i></button> 
                     </td>
                 </tr>
+            @empty
+            <h1>Nenhuma sentença cadastrada</h1>
+            @endforelse
             </tbody>
         </table>
         <hr>
