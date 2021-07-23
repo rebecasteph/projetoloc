@@ -15,6 +15,9 @@ Route::group(['middleware' => 'prof'], function() {
         Route::resource('participa',            'Aluno_participaController');
         Route::resource('missao',               'MissaoController');
         Route::resource('fase',                 'FaseController');
+        
+        Route::post('/novasentenca',             'TurmaController@createSentenca');
+        Route::post('/editsentenca',             'TurmaController@editSentenca');
     }); 
     
 });

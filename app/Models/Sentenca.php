@@ -15,4 +15,9 @@ class Sentenca extends Model
         'turma_id'
     ];
 
+    public function turma(){
+        return $this->belongsTo(\App\Models\Turma::class,'turma_id');
+    }
+
+
 }
