@@ -178,7 +178,7 @@
                     <div class="d-flex justify-content-around md-form form-sm mb-2">
                         <div class="form-check">
                             <input class="form-check-input" id="tipo-positiva" type="radio" name="tipo" value="positiva" checked>
-                            <label>Psitiva</label>
+                            <label>Positiva</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" id="tipo-negativa" type="radio" name="tipo" value="negativa">
