@@ -29,7 +29,7 @@ class Aluno_participaController extends Controller
         return view ('listaTurmas',compact('all_participa'));
     }
 
-    public function regras($idParticipa, Aluno_participa $aluno_participa, Turma $turma)
+    public function regras($idParticipa, Aluno_participa $aluno_participa, Turma $turma, Sentenca $sentenca)
     {
         $participa = Aluno_participa::find($idParticipa);
         $this->authorize('acesso-turma-aluno', $participa);
@@ -41,8 +41,15 @@ class Aluno_participaController extends Controller
         $meta_lendario  = ($turma->up_xp_equipe)*4;
         $meta_mitico    = ($turma->up_xp_equipe)*5;
 
+
+        $p_sentencas    = Sentenca::where('turma_id',$turma->id)
+                                        ->where('tipo','positiva')->get();
+        $n_sentencas    = Sentenca::where('turma_id',$turma->id)
+                                        ->where('tipo','negativa')->get();
+
+
         return  view('telaAluno.regrasTurma',
-                compact('turma','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
+                compact('turma','p_sentencas','n_sentencas','meta_elite','meta_mestre','meta_epico','meta_lendario','meta_mitico'));
     }
 
     public function inicialAluno($idParticipa, Aluno_participa $aluno_participa)
