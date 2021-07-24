@@ -75,5 +75,27 @@ class Aluno_participaController extends Controller
         ->with('mensagem', 'Nova turma cadastrada com sucesso!');
     }
 
+    public function atribSentenca (Request $request){
+
+        $tab        =   $request->tab_id;
+        $participa  =   $request->participa_id;
+        $valor      =   (int)$request->recipientvalor;
+        $tipo       =   $request->tipo;
+
+        //dd($request);
+
+        $aluno      = Aluno_participa::find($participa);
+
+        if ($tipo == 'positiva'){
+            $aluno->xp_aluno     = $aluno->xp_aluno + $valor;
+        }elseif ($tipo == 'negativa'){
+            $aluno->xp_aluno     = $aluno->xp_aluno - $valor;
+        };
+
+        $aluno->save();
+
+        return back()->withInput(['tab'=>$tab]);
+    }
+
 
 }

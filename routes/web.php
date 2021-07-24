@@ -18,6 +18,9 @@ Route::group(['middleware' => 'prof'], function() {
         
         Route::post('/novasentenca',             'TurmaController@createSentenca');
         Route::post('/editsentenca',             'TurmaController@editSentenca');
+        Route::get('/getsentenca/{id}',          'TurmaController@getSentenca');
+        
+        Route::post('/atribsentenca',             'Aluno_participaController@atribSentenca');
     }); 
     
 });

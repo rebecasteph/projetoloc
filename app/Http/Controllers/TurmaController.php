@@ -128,8 +128,18 @@ class TurmaController extends Controller
         $sentenca->update($dataForm);
         
         return back()->withInput(['tab'=>$tab]);
-        
     }
+
+    public function getSentenca($idSentenca){
+        
+        $sentenca   = Sentenca::find($idSentenca);
+        $valor      = $sentenca->valor;
+                
+        return ($valor);
+
+    }
+
+
 
 
     
