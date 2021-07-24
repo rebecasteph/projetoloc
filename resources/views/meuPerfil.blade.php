@@ -73,7 +73,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label>Sobrenome</label>
-                        <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" value="xxx" required>
+                        <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" readonly>
                         <div class="valid-feedback">
                             Tudo certo!
                         </div>
