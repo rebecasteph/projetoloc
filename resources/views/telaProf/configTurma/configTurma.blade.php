@@ -3,7 +3,7 @@
 @section('title', 'Configurar Turma')
   
 @section('content')
-<div class="container tab-pane-tela mt-4" style="margin: 0 auto;" > 
+<div class="container tab-pane-tela mt-4" id="tabconf" style="margin: 0 auto;" > 
     <h3>Configurações de Turma<small class="text-muted">{{$turma->nome}}</small></h3>
     <hr>
 
@@ -32,6 +32,14 @@
         <div class="tab-pane fade pl-5 pr-5" id="painel-elos" role="tabpanel" aria-labelledby="elos-tab">@include('painel-elos')</div>
     </div>
 
+    <script>
+        //redirect to specific tab
+        $(document).ready(function () {
+            $('#tabconf li a[href="#{{ old('tab') }}"]').tab('show')
+        });
+    </script>
+
 
 </div>
+
 @endsection

@@ -9,6 +9,7 @@ use App\Models\Aluno_participa;
 use Dirape\Token\Token;
 use DirapeToken;
 use Illuminate\Support\Facades\Auth;
+Use Redirect;
 
 class TurmaController extends Controller
 {
@@ -94,31 +95,39 @@ class TurmaController extends Controller
     }
 
 
-    public function createSentenca (Request $request, $turma){
+    public function createSentenca (Request $request){
+
+        $turma  =   $request->input('turma_id');
+        $tab    =   $request->input('tab_id');
 
         $dataForm = [
             'descr'     => $request->input('descr'),
             'valor'     => $request->input('valor'),
             'tipo'      => $request->input('tipo'),
-            'turma_id'  => $turma->id
+            'turma_id'  => $turma
         ];
         
         $sentenca = new Sentenca;
         $sentenca->insert($dataForm);  
 
-        return redirect()->to('/config-turma')
-                ->with('mensagem', 'Nova sentença criada com sucesso!');
+        return back()->withInput(['tab'=>$tab]);
     }
 
-    public function editSentenca (Request $request, $id_sentenca){
+    public function editSentenca (Request $request){
 
-        $dataForm = $request;
-        $sentenca = $this->sentenca->find($id_sentenca);
+        $tab    =   $request->input('tab_id');
+        $sid    =   $request->input('sent_id');
+        $turma  =   $request->input('turma_id');
 
+        $dataForm = [
+            'descr'     => $request->input('descr'),
+            'valor'     => $request->input('valor'),
+        ];
+
+        $sentenca = Sentenca::find($sid);
         $sentenca->update($dataForm);
         
-        return redirect()->to('/gerenciar-turmas')
-                ->with('mensagem', 'Senteça alterada com sucesso!');
+        return back()->withInput(['tab'=>$tab]);
         
     }
 
