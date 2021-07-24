@@ -139,6 +139,17 @@ class TurmaController extends Controller
 
     }
 
+    public function deleteSentenca(Request $request, $idSentenca){
+
+        $tab    =   $request->input('tab_id');
+        $sentenca = Sentenca::find($idSentenca);
+        if(!$sentenca){
+            return back()->withInput(['tab'=>$tab]);
+        }
+        $sentenca->delete();
+        return back()->withInput(['tab'=>$tab]);
+    }
+
 
 
 

@@ -9,7 +9,7 @@
 <div class="row pt-5">
     <div class="col-sm-6">
         <h4 class="mb-3 text-danger">XP-</h4>
-        <table class="table table-sm">
+        <table class="table table-sm mb-0">
             <thead>
                 <tr>
                     <th scope="col">Valor</th>
@@ -23,13 +23,19 @@
                     <td>{{$sentenca->valor}}</td>
                     <td>{{$sentenca->descr}}</td>
                     <td> 
-                        <button  type="button" class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#exampleModal" 
-                        data-idsentenca="{{$sentenca->id}}" data-idturma="{{$sentenca->turma_id}}" data-valor="{{$sentenca->valor}}" data-descr="{{$sentenca->descr}}">
-                            <i class="fa fas fa-pen"></i>
-                        </button> 
-                        <button class="btn btn-sm btn-outline-danger">
-                            <i class="fa fas fa-trash"></i>
-                        </button> 
+                        <div class="d-flex">
+                            <button  type="button" class="mb-3 mr-1 btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#exampleModal" 
+                            data-idsentenca="{{$sentenca->id}}" data-idturma="{{$sentenca->turma_id}}" data-valor="{{$sentenca->valor}}" data-descr="{{$sentenca->descr}}">
+                                <i class="fa fas fa-pen"></i>
+                            </button> 
+                            <form action="{{url('/deletesentenca', $sentenca->id )}}" method="POST">
+                                {!! csrf_field() !!}
+                                {!! Form::hidden('tab_id',   'painel-sentencas'   )!!}
+                                <button class="btn btn-sm btn-outline-danger" type="submit">
+                                    <i class="fa fas fa-trash"></i>
+                                </button> 
+                            </form>
+                        </div>
                     </td>
                 </tr>
 
@@ -68,16 +74,14 @@
                     </div>
                     </div>
                 </div>
-                </div>
+            </div>
                 <!-- END MODEL -->
-
-
             @empty
             <span>Nenhuma sentença cadastrada</span>
             @endforelse
             </tbody>
         </table>
-        <hr>
+        <hr class="mt-0">
         <div class="d-flex justify-content-center">
             <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#add-sentenca"><i class="fa fas fa-plus"></i></button>
         </div>
@@ -85,7 +89,7 @@
 
     <div class="col-sm-6">
         <h4 class="mb-3 text-warning">XP+</h4>
-        <table class="table table-sm">
+        <table class="table table-sm mb-0">
             <thead>
                 <tr>
                     <th scope="col">Valor</th>
@@ -99,15 +103,21 @@
                 <td>{{$sentenca2->valor}}</td>
                 <td>{{$sentenca2->descr}}</td>
                 <td> 
-                    <button  type="button" class="btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#exampleModal2" 
-                    data-idsentenca="{{$sentenca2->id}}" data-idturma="{{$sentenca2->turma_id}}" data-valor="{{$sentenca2->valor}}" data-descr="{{$sentenca2->descr}}">
-                        <i class="fa fas fa-pen"></i>
-                    </button> 
-                    <button class="btn btn-sm btn-outline-danger">
-                        <i class="fa fas fa-trash"></i>
-                    </button> 
+                    <div class="d-flex">
+                        <button type="button" class="mb-3 mr-1 btn btn-sm btn-outline-warning" data-toggle="modal" data-target="#exampleModal2" 
+                        data-idsentenca="{{$sentenca2->id}}" data-idturma="{{$sentenca2->turma_id}}" data-valor="{{$sentenca2->valor}}" data-descr="{{$sentenca2->descr}}">
+                            <i class="fa fas fa-pen"></i>
+                        </button> 
+                        <form action="{{url('/deletesentenca', $sentenca->id )}}" method="POST">
+                            {!! csrf_field() !!}
+                            {!! Form::hidden('tab_id',   'painel-sentencas'   )!!}
+                            <button class="btn btn-sm btn-outline-danger" type="submit">
+                                <i class="fa fas fa-trash"></i>
+                            </button> 
+                        </form>
+                    </div>
                 </td>
-            </tr>
+            </tr class="mt-0">
 
             <!-- MODEL EDIT POSITIVA -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
@@ -151,7 +161,7 @@
             @endforelse
             </tbody>
         </table>
-        <hr>
+        <hr class="mt-0">
         <div class="d-flex justify-content-center">
             <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#add-sentenca"><i class="fa fas fa-plus"></i></button>
         </div>
