@@ -58,14 +58,14 @@ class TurmaController extends Controller
     }
 
     public function show (Request $request, $id){
-
+        
+        $tab    =   $request->input('tab_id');
         $dataForm = $request->except('_token');
         $turma = $this->turma->find($id);
 
         $turma->update($dataForm);
         
-        return redirect()->to('/gerenciar-turmas')
-                ->with('mensagem', 'Dados alterados com sucesso!');
+        return back()->withInput(['tab'=>$tab]);
         
     }
 

@@ -1,6 +1,7 @@
 <div class="pt-4">
     <form class="needs-validation" method="PATCH" action="{{route('turma.update', $turma->id)}}" novalidate>
         {!! csrf_field() !!}
+        {!! Form::hidden('tab_id',   'painel-dados'   )!!}
         <div class="form-row mb-3">
             <div class="col-md-3">
                 <h5><small>Código da Turma:</small> <strong>{{$turma->codigo}}</strong></h5>
