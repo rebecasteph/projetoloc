@@ -8,7 +8,7 @@
 
 <div class="row pt-5">
     <div class="col-sm-6">
-        <h4 class="mb-3 text-danger">XP-</h4>
+        <h4><span class="badge badge-danger">- XP</span></h4>
         <table class="table table-sm mb-0">
             <thead>
                 <tr>
@@ -88,7 +88,7 @@
     </div>
 
     <div class="col-sm-6">
-        <h4 class="mb-3 text-warning">XP+</h4>
+        <h4><span class="badge badge-warning">+ XP</span></h4>
         <table class="table table-sm mb-0">
             <thead>
                 <tr>
