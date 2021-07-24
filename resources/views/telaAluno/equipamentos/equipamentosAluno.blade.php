@@ -32,10 +32,7 @@
         <div class="mb-2">
             <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="capacete-tab" data-toggle="tab" href="#capacete" role="tab" aria-controls="capacete" aria-selected="true"><img class="icon-sm" src="{!!asset('img/icons/capacete.png')!!}"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="arm-sup-tab" data-toggle="tab" href="#arm-sup" role="tab" aria-controls="arm-sup" aria-selected="false"><img class="icon-sm" src="{!!asset('img/icons/arm-sup.png')!!}"></a>
+                    <a class="nav-link active" id="arm-sup-tab" data-toggle="tab" href="#arm-sup" role="tab" aria-controls="arm-sup" aria-selected="false"><img class="icon-sm" src="{!!asset('img/icons/arm-sup.png')!!}"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="arm-inf-tab" data-toggle="tab" href="#arm-inf" role="tab" aria-controls="arm-inf" aria-selected="false"><img class="icon-sm" src="{!!asset('img/icons/arm-inf.png')!!}"></a>
@@ -49,14 +46,17 @@
                 <li class="nav-item">
                     <a class="nav-link" id="adereco-tab" data-toggle="tab" href="#adereco" role="tab" aria-controls="adereco" aria-selected="false"><img class="icon-sm" src="{!!asset('img/icons/adereco.png')!!}"></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="capacete-tab" data-toggle="tab" href="#capacete" role="tab" aria-controls="capacete" aria-selected="true"><img class="icon-sm" src="{!!asset('img/icons/capacete.png')!!}"></a>
+                </li>
             </ul>
             <div class="tab-content">
-                <div class="aba-equip tab-pane fade show active" id="capacete" role="tabpanel" aria-labelledby="capacete-tab">@include('telaAluno.equipamentos.painelCapacete')</div>
-                <div class="aba-equip tab-pane fade" id="arm-sup" role="tabpanel" aria-labelledby="arm-sup-tab">@include('telaAluno.equipamentos.painelArmSup')</div>
+                <div class="aba-equip tab-pane fade show active" id="arm-sup" role="tabpanel" aria-labelledby="arm-sup-tab">@include('telaAluno.equipamentos.painelArmSup')</div>
                 <div class="aba-equip tab-pane fade" id="arm-inf" role="tabpanel" aria-labelledby="arm-inf-tab">@include('telaAluno.equipamentos.painelArmInf')</div>
                 <div class="aba-equip tab-pane fade" id="arma" role="tabpanel" aria-labelledby="arma-tab">@include('telaAluno.equipamentos.painelArma')</div>
                 <div class="aba-equip tab-pane fade" id="bota" role="tabpanel" aria-labelledby="bota-tab">@include('telaAluno.equipamentos.painelBota')</div>
                 <div class="aba-equip tab-pane fade" id="adereco" role="tabpanel" aria-labelledby="adereco-tab">@include('telaAluno.equipamentos.painelAdereco')</div>
+                <div class="aba-equip tab-pane fade" id="capacete" role="tabpanel" aria-labelledby="capacete-tab">@include('telaAluno.equipamentos.painelCapacete')</div>
             </div>
 
         </div>
