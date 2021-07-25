@@ -82,7 +82,7 @@
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label>E-mail</label>
-                        <input type="text" class="form-control"  placeholder="e-mail" name="email" value="{{auth()->user()->email}}" required>
+                        <input type="text" class="form-control"  placeholder="e-mail" name="email" value="{{auth()->user()->email}}" readonly>
                         <div class="invalid-feedback">
                             Por favor, informe um e-mail válido.
                         </div>
