@@ -31,7 +31,7 @@ class Controller extends BaseController
 
         if($validator->fails() ) {
             return redirect('/login')
-                    ->withErrors($validator)
+                    ->with(['errors' => 'Dados inválidos.'])
                     ->withInput();
         }
 
@@ -45,7 +45,7 @@ class Controller extends BaseController
         }
          else {
             return redirect('/login')
-                    ->withErrors(['errors' => 'Login inválido.'])
+                    ->with(['errors' => 'Login inválido.'])
                     ->withInput();
         }
         

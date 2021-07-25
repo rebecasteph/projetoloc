@@ -100,8 +100,8 @@
                                                     @if (session('errors'))
                                                         <small class="form-text text-danger"><i class="fas fa-exclamation-triangle"></i> {{session('errors') }}</small>
                                                     @endif
-                                                    @if(session('mensagem'))
-                                                        <small class="form-text text-success"><i class="fas fa-check-circle"></i> {{session('mensagem')}}</small>
+                                                    @if(session('sucesso'))
+                                                        <small class="form-text text-success"><i class="fas fa-check-circle"></i> {{session('sucesso')}}</small>
                                                     @endif
                                                 </div>
                                                 <div class="d-flex justify-content-between text-center mt-2">
@@ -148,7 +148,7 @@
                                                     <label>
                                                         <i class="fas fa-lock prefix"></i> Confirmar Senha
                                                     </label>
-                                                    <input type="password" id="password2" class="form-control form-control-sm" required>
+                                                    <input type="password" name="password2" id="password2" class="form-control form-control-sm" required>
                                                 </div>
                                                 <div class="d-flex justify-content-end text-center mt-3">
                                                     <button class="btn btn-roxo">Cadastrar-se</button>
