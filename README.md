@@ -21,7 +21,7 @@ Aplicação full stack web construída para fins acadêmicos.
 * Realiza a compra de bens virtuais
 
 > O **_League of Class_** é fruto de uma produção acadêmica que pode ser lida [aqui](https://sol.sbc.org.br/index.php/educomp/article/view/14501).
-> O sistema também foi apresentado como solução proposta no meu Trabalho de Conclusão de Curso superior de Licenciatura em Computação pela Universidade do Estado do Amazonas (UEA).
+> O sistema também foi apresentado como solução proposta no meu Trabalho de Conclusão de Curso superior de Licenciatura em Computação pela Universidade do Estado do Amazonas (UEA) [(saiba mais)](https://github.com/rebecasteph/projetoloc/wiki/Projeto-League-of-Class).
 
 # Layout mobile
 # Layout web
