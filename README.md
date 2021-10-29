@@ -1,9 +1,9 @@
 # Projeto _League of Class_
-Aplicação full stack web construída para fins acadêmicos.
+Aplicação full stack web construída em PHP Laravel para fins acadêmicos.
 
 > O **_League of Class_** é um Sistema de Gestão de Aprendizagem _gamificado_ com elementos de jogos inspirados no estilo de jogos MOBA (_Multiplayer Online Battle Arena_).
 
-![Layout 1](https://github.com/rebecasteph/img-projetos/blob/main/eduPC/eduPC.png)
+![Layout 1](https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/projetoloc.png)
 
 ## Na plataforma o professor cria e administra:
 * Turmas
@@ -24,7 +24,24 @@ Aplicação full stack web construída para fins acadêmicos.
 > O sistema também foi apresentado como solução proposta no meu Trabalho de Conclusão de Curso superior de Licenciatura em Computação pela Universidade do Estado do Amazonas (UEA) [(saiba mais)](https://github.com/rebecasteph/projetoloc/wiki/Projeto-League-of-Class).
 
 # Layout mobile
+<div class="d-flex">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/login-sm.png" width="247">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/meuperfil-sm.png" width="250">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/turmas-aluno-sm.png" width="250">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/equipes-aluno-sm.png" width="250">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/elos-sm.png" width="250">  
+</div>
+
 # Layout web
+<div class="d-flex">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/regras-lg.png" width="700">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/esolhaheroi-lg.png" width="700">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/jogadores-lg.png" width="700">
+    <img src="https://github.com/rebecasteph/img-projetos/blob/main/LOC/modelagem/telas/equipamentos-lg.png" width="700">
+  
+</div>
+
+
 # Modelo Conceitual
 Diagrama de domínio
 
